@@ -1,0 +1,100 @@
+baseurl = "http://nmcconnell.com/"
+title = "Nathanial L. McConnell"
+author = "Nathanial L. McConnell"
+# Shown in the side menu
+copyright = "&copy; 2016. All rights reserved."
+canonifyurls = true
+
+
+[taxonomies]
+  tag = "tags"
+  topic = "topics"
+  course = "courses"
+  series = "series"
+
+[params]
+  # Shown in the home page
+  subtitle = "Braindumps, Diatribes, & Other Distractions"
+  brand = "nmcconnell"
+  editor = "atom"
+  googleAnalytics = "UA-75154327-1"
+  disqus = "nmcconnellcom"
+  # CSS name for highlight.js
+  highlightjs = "androidstudio"
+  languageCdoe = "en"
+  dateFormat = "02 Jan 2006, 15:04"
+
+[menu]
+  # Shown in the side menu.
+  [[menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 0
+    identifier = "home"
+    url = "/"
+  [[menu.main]]
+    name = "Posts"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 1
+    identifier = "post"
+    url = "/post/"
+  [[menu.main]]
+    name = "About"
+    pre = "<i class='fa fa-user fa-fw'></i>"
+    weight = 2
+    identifier = "about"
+    url = "/about/"
+  [[menu.main]]
+    name = "Contact"
+    pre = "<i class='fa fa-phone fa-fw'></i>"
+    weight = 3
+    url = "/contact/"
+
+[social]
+  # Link your social networking accounts to the side menu
+  # by entering your username or ID.
+
+  # SNS microblogging
+  twitter = "FluxAugur"
+  facebook = "FluxAugur"
+  googleplus = "NathanialMcConnell"
+  tumblr = "fluxaugur"
+
+  # SNS audio/music sharing
+  lastfm = "FluxAugur"
+  spotify = "121088690"
+
+  # SNS photo/video sharing
+  instagram = "FluxAugur"
+  flickr = "fluxaugur"
+  pinterest = "fluxaugur"
+  youtube = "FluxAugur"
+  vimeo = "fluxaugur"
+  slideshare = "NathanialMcConnell"
+
+  # SNS career oriented
+  linkedin = "nathanialmcconnell"
+  namedrop = "nathanialmcconnell"
+  trello = "nathaniallmcconnell"
+  skype = "fluxaugur"
+
+  # SNS gaming
+  boardgamegeek = "FluxAugur"
+  steam = "fluxaugur"
+
+  # SNS news
+  reddit = "FluxAugur"
+  hackernews = "FluxAugur"
+
+  # SNS Travel
+  foursquare = "fluxaugur"
+
+  # SNS Techie
+  github = "FluxAugur"
+  bitbucket = "FluxAugur"
+  stackoverflow = "2199507"
+  keybase = "fluxaugur"
+
+  # SNS Payments
+  bitcoin = "fluxaugur"
+  paypal = "fluxaugur"
