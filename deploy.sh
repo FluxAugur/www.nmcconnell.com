@@ -17,5 +17,5 @@ fi
 git commit -a -S -m "$msg"
 
 # Push source and build repos
-git push develop
-git push master
+git push origin develop
+git push origin master
