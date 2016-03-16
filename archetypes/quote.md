@@ -1,8 +1,6 @@
 +++
-description = ""
+title = ""
+date = ""
+originator = ""
 draft = true
-tags = []
-topics = []
-courses = []
-series = []
 +++

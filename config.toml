@@ -1,10 +1,13 @@
-baseurl = "http://nmcconnell.com/"
+baseurl = "http://www.nmcconnell.com/"
+contentDir = "content"
+dataDir = "data"
+layoutDir = "layouts"
+publishDir = "public"
 title = "Nathanial L. McConnell"
 author = "Nathanial L. McConnell"
 # Shown in the side menu
 copyright = "&copy; 2016. All rights reserved."
 canonifyurls = true
-
 
 [taxonomies]
   tag = "tags"
@@ -17,11 +20,13 @@ canonifyurls = true
   subtitle = "Braindumps, Diatribes, & Other Distractions"
   brand = "nmcconnell"
   editor = "atom"
+  newContentEditor = "atom"
+  MetaDataFormat = "toml"
   googleAnalytics = "UA-75154327-1"
   disqus = "nmcconnellcom"
   # CSS name for highlight.js
   highlightjs = "androidstudio"
-  languageCdoe = "en"
+  languageCode = "en-us"
   dateFormat = "02 Jan 2006, 15:04"
 
 [menu]
