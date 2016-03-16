@@ -3,12 +3,12 @@
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
-# Build the project
-hugo # if using a theme, use `hugo -t <themename>`
-
 # Remove old files
 rm -rf public
 mkdir public
+
+# Build the project
+hugo # if using a theme, use `hugo -t <themename>`
 
 # Add static files
 cp -R static/* public
