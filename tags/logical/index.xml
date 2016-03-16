@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Logical on Nathanial L. McConnell</title>
+    <link>http://www.nmcconnell.com/tags/logical/</link>
+    <description>Recent content in Logical on Nathanial L. McConnell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 07 Jul 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.nmcconnell.com/tags/logical/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A Ruby Primer, Part 14 -- Logical operators</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-14-logical-operators/</link>
+      <pubDate>Mon, 07 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-14-logical-operators/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;p&gt;If you are unfamiliar with using the Ruby Interactive Shell, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;logic-in-ruby:2336848c71f70babb58568cf7b3ec16e&#34;&gt;Logic in Ruby&lt;/h3&gt;
+
+&lt;p&gt;Ruby provides the standard logic operators of &amp;lsquo;and&amp;rsquo;, &amp;lsquo;or&amp;rsquo;, and &amp;lsquo;not&amp;rsquo; through the logical operators &amp;lsquo;and&amp;rsquo;, &amp;lsquo;or&amp;rsquo;, and &amp;lsquo;not&amp;rsquo; (or if you prefer C-style, &amp;lsquo;&amp;amp;&amp;amp;&amp;lsquo;, &amp;lsquo;||&amp;rsquo;, and &amp;lsquo;!&amp;rsquo;), respectively.&lt;/p&gt;
+
+&lt;p&gt;The logical operator &amp;lsquo;and&amp;rsquo; is true if, and only if, both relational (comparison) operators are true. Any other combination is false.&lt;/p&gt;
+
+&lt;p&gt;The logical operator &amp;lsquo;or&amp;rsquo; is false if, and only if, both relational (comparison) operators are false. Any other combination is true.&lt;/p&gt;
+
+&lt;p&gt;The logical operator &amp;lsquo;not&amp;rsquo; negates the truth value of a relational (comparison) operator (e.g. not true is false, and not false is true).&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see the logical operators in action. (Note: We will set up some variables for use in our example.)&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;irb Logical operators
+irb(main):001&amp;gt; wage = 10
+=&amp;gt; 10
+irb(main):002&amp;gt; hours = 40
+=&amp;gt; 40
+irb(main):003&amp;gt; wage == 10 and hours == 40
+=&amp;gt; true
+irb(main):004&amp;gt; wage &amp;lt; 10 and hours == 40
+=&amp;gt; false
+irb(main):005&amp;gt; wage == 10 &amp;amp;&amp;amp; hours == 40
+=&amp;gt; true
+irb(main):006&amp;gt; wage == 10 or hours &amp;lt; 40
+=&amp;gt; true
+irb(main):007&amp;gt; wage &amp;lt; 10 or hours == 40
+=&amp;gt; true
+irb(main):008&amp;gt; wage &amp;lt; 10 || hours == 40
+=&amp;gt; true
+irb(main):009&amp;gt; not true
+=&amp;gt; false
+irb(main):010&amp;gt; not false
+=&amp;gt; true
+irb(main):011&amp;gt; not wage == 10
+=&amp;gt; false
+irb(main):012&amp;gt; !wage == 10
+=&amp;gt; false
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You have learned about relational operators.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:2336848c71f70babb58568cf7b3ec16e&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

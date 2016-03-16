@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ranges on Nathanial L. McConnell</title>
+    <link>http://www.nmcconnell.com/tags/ranges/</link>
+    <description>Recent content in Ranges on Nathanial L. McConnell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.nmcconnell.com/tags/ranges/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A Ruby Primer, Part 8 -- Ranges</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-8-ranges/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-8-ranges/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;p&gt;If you are unfamiliar with using the Ruby Interactive Shell, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;terms:9f2a4904fbbfdf016d50c8acea0d53f5&#34;&gt;Terms&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Range:&lt;/strong&gt; &lt;em&gt;A range is a sequenced interval of data.&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Range.html&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;ranges-in-ruby:9f2a4904fbbfdf016d50c8acea0d53f5&#34;&gt;Ranges in Ruby&lt;/h3&gt;
+
+&lt;p&gt;Ruby allows us to create sequenced intervals of data (e.g. the integers 1 through 10) as a range object. We can create a range of any type of object in Ruby, as well as create our own custom ranges.&lt;/p&gt;
+
+&lt;p&gt;In Ruby, ranges can be either inclusive of the end value, or exclusive of the end value, and use the binary operators &amp;lsquo;..&amp;rsquo;, or &amp;lsquo;&amp;hellip;&amp;rsquo;, respectively. Like other literals, we can assign ranges to variables.&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see ranges in action.&lt;/p&gt;
+
+&lt;p&gt;``` irb Range literals
+irb(main):001:0&amp;gt; 24..42
+=&amp;gt; 24..42
+irb(main):002:0&amp;gt; &amp;lsquo;a&amp;rsquo;..&amp;lsquo;z&amp;rsquo;
+=&amp;gt; &amp;ldquo;a&amp;rdquo;..&amp;ldquo;z&amp;rdquo;
+irb(main):003:0&amp;gt; &amp;lsquo;aabb&amp;rsquo;..&amp;lsquo;aacc&amp;rsquo;
+=&amp;gt; &amp;ldquo;aabb&amp;rdquo;..&amp;ldquo;aacc&amp;rdquo;
+irb(main):004:0&amp;gt; positive_numbers_under_ten = 1&amp;hellip;10
+=&amp;gt; 1&amp;hellip;10
+irb(main):005:0&amp;gt; letters = &amp;lsquo;a&amp;rsquo;..&amp;lsquo;z&amp;rsquo;
+=&amp;gt; &amp;ldquo;a&amp;rdquo;..&amp;ldquo;z&amp;rdquo;
+irb(main):006:0&amp;gt; custom_range = &amp;lsquo;aabb&amp;rsquo;..&amp;lsquo;aacc&amp;rsquo;
+=&amp;gt; &amp;ldquo;aabb&amp;rdquo;..&amp;ldquo;aacc&amp;rdquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+What does the range &#39;aabb&#39;..&#39;aacc&#39; do? It creates a custom range containing the words &#39;aabb&#39;, &#39;aabc&#39;, &#39;aabd&#39;, ..., &#39;aaca&#39;, &#39;aacb&#39;, &#39;aacc&#39;.
+
+#### The include? Method
+&amp;gt; **Method Signatures:**
+&amp;gt;
+&amp;gt; - *include?(obj) -&amp;gt; true or false* [Ruby documentation](http://www.ruby-doc.org/core-2.1.1/Range.html#method-i-include-3F)
+
+In Ruby, the `include?` method will compare the specified object to determine if it exists within a range. (*Note that if we want to use the `include?` method on a range literal, we need to enclose the range literal in parentheses.*)
+
+From IRB, let&#39;s see the `include?` method in action.
+
+``` irb The include? method
+irb(main):007:0&amp;gt; (24...42).include? 42
+=&amp;gt; false
+irb(main):008:0&amp;gt; (&#39;a&#39;..&#39;z&#39;).include?(&#39;r&#39;)
+=&amp;gt; true
+irb(main):009:0&amp;gt; letters.include? &#39;y&#39;
+=&amp;gt; true
+irb(main):010:0&amp;gt; positive_numbers_under_ten.include? 0
+=&amp;gt; false
+irb(main):011:0&amp;gt; custom_range.include? &#39;aabz&#39;
+=&amp;gt; true
+irb(main):010:0&amp;gt; custom_range.include? &#39;abcd&#39;
+=&amp;gt; false
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;the-min-method:9f2a4904fbbfdf016d50c8acea0d53f5&#34;&gt;The min Method&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Method Signatures:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;min -&amp;gt; obj&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Range.html#method-i-min&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;min {| a, b | block } -&amp;gt; obj&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Range.html#method-i-min&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In Ruby, the &lt;code&gt;min&lt;/code&gt; method returns the minimum value in a range.&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see the &lt;code&gt;min&lt;/code&gt; method in action.&lt;/p&gt;
+
+&lt;p&gt;``` irb The min method
+irb(main):011:0&amp;gt; (24..42).min
+=&amp;gt; 24
+irb(main):012:0&amp;gt; (24&amp;hellip;42).min
+=&amp;gt; 24
+irb(main):013:0&amp;gt; letters.min
+=&amp;gt; &amp;ldquo;a&amp;rdquo;
+irb(main):014:0&amp;gt; positive_numbers_under_ten.min
+=&amp;gt; 1
+irb(main):015:0&amp;gt; custom_range.min
+=&amp;gt; &amp;ldquo;aabb&amp;rdquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+#### The max Method
+&amp;gt; **Method Signatures:**
+&amp;gt; - *max -&amp;gt; obj* [Ruby documentation](http://www.ruby-doc.org/core-2.1.1/Range.html#method-i-max)
+&amp;gt;
+&amp;gt; - *max \{\| a, b \| block \} -&amp;gt; obj* [Ruby documentation](http://www.ruby-doc.org/core-2.1.1/Range.html#method-i-max)
+
+In Ruby, the `max` method returns the maximum value in a range.
+
+From IRB, let&#39;s see the `max` method in action.
+
+``` irb The max method
+irb(main):016:0&amp;gt; (24..42).max
+=&amp;gt; 42
+irb(main):017:0&amp;gt; (24...42).max
+=&amp;gt; 41
+irb(main):018:0&amp;gt; letters.max
+=&amp;gt; &amp;quot;z&amp;quot;
+irb(main):019:0&amp;gt; positive_numbers_under_ten.max
+=&amp;gt; 9
+irb(main):020:0&amp;gt; custom_range.max
+=&amp;gt; &amp;quot;aacc&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;the-each-method:9f2a4904fbbfdf016d50c8acea0d53f5&#34;&gt;The each Method&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Method Signatures:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;each {| i | block } -&amp;gt; rng&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Range.html#method-i-each&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;each -&amp;gt; an_enumerator&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Range.html#method-i-each&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In Ruby, the &lt;code&gt;each&lt;/code&gt; method will iterate over the elements of a range, sending each element, i, to the block (a block of code, containing one or more statements or expressions).&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see the &lt;code&gt;each&lt;/code&gt; method in action.&lt;/p&gt;
+
+&lt;p&gt;``` irb The each method
+irb(main):021:0&amp;gt; (24..42).each {| n | print n }
+24252627282930313233343536373839404142=&amp;gt; 24..42
+irb(main):022:0&amp;gt; letters.each {| letter | print letter, &amp;lsquo; &amp;rsquo; }
+a b c d e f g h i j k l m n o p q r s t u v w x y z =&amp;gt; &amp;ldquo;a&amp;rdquo;..&amp;ldquo;z&amp;rdquo;
+irb(main):023:0&amp;gt; positive_number_under_ten.each {| number | number * 2 }
+2 4 6 8 10 12 14 16 18 =&amp;gt; 1&amp;hellip;10
+irb(main):024:0&amp;gt; custom_range.each {| word | puts word }
+aabb
+aabc
+aabd
+aabe
+aabf
+aabg
+aabh
+aabi
+aabj
+aabk
+aabl
+aabm
+aabn
+aabo
+aabp
+aabq
+aabr
+aabs
+aabt
+aabu
+aabv
+aabw
+aabx
+aaby
+aabz
+aaca
+aacb
+aacc
+=&amp;gt; &amp;ldquo;aabb&amp;rdquo;..&amp;ldquo;aacc&amp;rdquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+#### Another Comparison Operator
+
+When using ranges, Ruby gives us another comparison operation, &#39;is a case of&#39; (or &#39;is an element of&#39;), through the binary operator &#39;===&#39;.
+
+From IRB, let&#39;s see this new comparison operator in action.
+
+``` irb New comparison operator
+irb(main):025:0&amp;gt; (24..42) === 30
+=&amp;gt; true
+irb(main):026:0&amp;gt; (&#39;a&#39;..&#39;z&#39;) === 5
+=&amp;gt; false
+irb(main):027:0&amp;gt; letters === &#39;q&#39;
+=&amp;gt; true
+irb(main):028:0&amp;gt; positive_numbers_under_ten === 10
+=&amp;gt; false
+irb(main):029:0&amp;gt; custom_range === &#39;aabr&#39;
+=&amp;gt; true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ruby provides many other useful range methods. We recommend exploring the &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Range.html&#34;&gt;Ruby documentation&lt;/a&gt; and trying out some of these on your own to gain a better understanding. We will be using various range methods throughout the rest of this primer.&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You have learned about some of the basic ways to use the range data type.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:9f2a4904fbbfdf016d50c8acea0d53f5&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

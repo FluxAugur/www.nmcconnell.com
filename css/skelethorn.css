@@ -1,0 +1,107 @@
+.color-light {
+  color: #c9a6ff;
+}
+.color-stable {
+  color: #ae8ee0;
+}
+.color-positive {
+  color: #5298cf;
+}
+.color-calm {
+  color: #8dbada;
+}
+.color-balanced {
+  color: #96e594;
+}
+.color-energized {
+  color: #faf2a2;
+}
+.color-assertive {
+  color: #8f5d6c;
+}
+.color-royal {
+  color: #635b96;
+}
+.color-dark {
+  color: #2b2437;
+}
+.color-absent {
+  color: #1B1723;
+}
+
+.header {
+  font-family: "Raleway", Helvetica, Arial, sans-serif
+}
+
+a {
+  color: #8dbada;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+a:visited {
+  color: #5298cf;
+}
+
+.small-print {
+  font-size: 0.8em;
+  margin: 0.6em;
+}
+
+.post-meta {
+  font-size: 90%;
+}
+
+article > footer {
+  text-align: right;
+}
+
+.prev-next-post {
+  margin-top: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-top: 1px solid #8dbada;
+  border-bottom: 1px solid #8dbada;
+}
+
+.prev-next-post .prev {
+  float: left;
+  text-align: left;
+  overflow: hidden;
+}
+
+.prev-next-post .next {
+  float: right;
+  text-align: right;
+  overflow: hidden;
+}
+
+#menu .brand {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  text-transform: none;
+  background: transparent;
+  text-decoration: none;
+  margin: 0.5em 0;
+}
+
+#menu .pure-menu {
+  font-size: 0.9em;
+}
+
+i {
+  display: inline-block;
+  margin-right: 0.2em;
+}
+
+.pagination {
+  text-align: center;
+}
+
+time {
+  color: #96e594;
+}

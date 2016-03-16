@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Variables on Nathanial L. McConnell</title>
+    <link>http://www.nmcconnell.com/tags/variables/</link>
+    <description>Recent content in Variables on Nathanial L. McConnell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 03 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.nmcconnell.com/tags/variables/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A Ruby Primer, Part 11 -- Variables and constants</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-11-variables-and-constants/</link>
+      <pubDate>Thu, 03 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-11-variables-and-constants/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;p&gt;If you are unfamiliar with using the Ruby Interactive Shell, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;terms:9a039d157e06c473def69a4197e0f32b&#34;&gt;Terms&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Variable:&lt;/strong&gt; &lt;em&gt;A variable is a symbolic name associated with some value, whether known or unknown.&lt;/em&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Variable_(computer_science&#34;&gt;Wikipedia article&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Constant:&lt;/strong&gt; &lt;em&gt;A constant is a symbolic name associated with some known value, that is not intended to change.&lt;/em&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Constant_(programming&#34;&gt;Wikipedia article&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;variables-in-ruby:9a039d157e06c473def69a4197e0f32b&#34;&gt;Variables in Ruby&lt;/h3&gt;
+
+&lt;p&gt;Ruby allows us to create variables to store any object available in Ruby. We can name our variable &lt;strong&gt;almost&lt;/strong&gt; anything we want, but there are a few rules that we must follow:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;All variables must begin with either a lowercase letter or an underscore (&amp;rsquo;_&amp;lsquo;).&lt;/li&gt;
+&lt;li&gt;After the first letter (or underscore) of a variable, the variable name can only contain letters, numbers, or underscores.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When naming variables, the &lt;strong&gt;proper&lt;/strong&gt; standard practice is to use meaningful variable names (e.g. rate instead of r, or publication_date instead of date) that reduce abiguity and confusion for anyone reading your code (yourself included). For complex variable names (e.g. positive_numbers_under_ten), the Ruby convention is to use underscore to separate the words in the complex variable name. (&lt;em&gt;Note that in other languages, &lt;a href=&#34;http://en.wikipedia.org/wiki/CamelCase&#34;&gt;CamelCase&lt;/a&gt; is often used. This is purely a convention and stylistic choice of many Ruby programmers. You are free to use either in your own Ruby code.&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;In Ruby, we create a variable through an assignment operation, using the binary operator &amp;lsquo;=&amp;rsquo;. Ruby is smart enough to figure out what data type the variable should be, so that we do not have to specify a data type when creating a variable.&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see variable creation and assignment in action.&lt;/p&gt;
+
+&lt;p&gt;``` irb Variable creation and assignment
+irb(main):001:0&amp;gt; letter = &amp;ldquo;a&amp;rdquo;
+=&amp;gt; &amp;ldquo;a&amp;rdquo;
+irb(main):002:0&amp;gt; letter
+=&amp;gt; &amp;ldquo;a&amp;rdquo;
+irb(main):003:0&amp;gt; _number = 42
+=&amp;gt; 42
+irb(main):004:0&amp;gt; _number
+=&amp;gt; 42
+irb(main):005:0&amp;gt; first_name = &amp;ldquo;Clark&amp;rdquo;
+=&amp;gt; &amp;ldquo;Clark&amp;rdquo;
+irb(main):006:0&amp;gt; lastName = &amp;ldquo;Kent&amp;rdquo;
+=&amp;gt; &amp;ldquo;Kent&amp;rdquo;
+irb(main):007:0&amp;gt; date_of_first_appearance_of_superman = 1938
+=&amp;gt; 1938&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+### Constants in Ruby
+
+Ruby allows us to create constants, by using **all** uppercase letters in the name of our constant (e.g. TAU = 6.28319). (*Note that in Ruby, a constant isn&#39;t really constant, and can be changed at a later point in your program. However, the convention in Ruby is that constants should **not** be changed. Ruby will give you a warning when you try to reassign a constant, but will go ahead and do the reassignment anyway.*)
+
+From IRB, let&#39;s see constant creation and assignment in action.
+
+``` irb Constant creation and assignment
+irb(main):008:0&amp;gt; TAU = 6.28319
+=&amp;gt; 6.28319
+irb(main):009:0&amp;gt; TAU
+=&amp;gt; 6.28319
+irb(main):010:0&amp;gt; SITE_NAME = &amp;quot;Disciples of Code&amp;quot;
+=&amp;gt; &amp;quot;Disciples of Code&amp;quot;
+irb(main):011:0&amp;gt; SITE_NAME
+=&amp;gt; &amp;quot;Disciples of Code&amp;quot;
+irb(main):012:0&amp;gt; SITE_NAME = &amp;quot;Your Really Awesome Site&amp;quot;
+(irb):12: warning: already initializaed constant SITE_NAME
+(irb):11: warning: previous definition of SITE_NAME was here
+=&amp;gt; &amp;quot;Your Really Awesome Site&amp;quot;
+irb(main):013:0&amp;gt; SITE_NAME
+=&amp;gt; &amp;quot;Your Really Awesome Site&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We will be using variables and constant throughout the rest of this primer.&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You have learned about some of the basic ways to create and assign values to variables and constants.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:9a039d157e06c473def69a4197e0f32b&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

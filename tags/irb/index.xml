@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Irb on Nathanial L. McConnell</title>
+    <link>http://www.nmcconnell.com/tags/irb/</link>
+    <description>Recent content in Irb on Nathanial L. McConnell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 25 Mar 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.nmcconnell.com/tags/irb/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A Ruby Primer, Part 2 -- Using the Ruby interactive shell IRB</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/</link>
+      <pubDate>Tue, 25 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;using-irb:13a4833975b30c7ec5267d72bdd63db4&#34;&gt;Using IRB&lt;/h3&gt;
+
+&lt;p&gt;The Ruby Interactive Shell, or IRB, provides a command line with which we can immediately evaluate a Ruby statement or expression. To load IRB, open a Terminal window (OS X or Linux) or a Command Prompt (Windows), and execute the following command.&lt;/p&gt;
+
+&lt;p&gt;``` bash Loading IRB
+$ irb&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+You should now be inside IRB, and should have a command prompt similar to the following.
+
+``` irb IRB command prompt
+irb(main):001:0&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In Ruby, a literal number evaluates to itself. (&lt;em&gt;Note that each line beginning with &amp;lsquo;irb(main)&amp;rsquo; is a command prompt, and each line beginning with &amp;lsquo;=&amp;gt;&amp;rsquo; is the resultant evaluation of the statement or expression to be evaluated.&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;``` irb Evaluation of a literal number
+irb(main):001:0&amp;gt; 1
+=&amp;gt; 1&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+An arithmetic expression evaluates to the result of the expression, taking into account order of precedence of arithmetic operators (more on this in future parts of the Ruby primer).
+
+``` irb Evaluation of an arithmetic expression
+irb(main):002:0&amp;gt; 1 + 2
+=&amp;gt; 3
+irb(main):003:0&amp;gt; 3 * 3
+=&amp;gt; 9
+irb(main):004:0&amp;gt; 1 + 2 * 3
+=&amp;gt; 7
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Strings evaluate to themselves, and can be concatenated (using the &amp;lsquo;+&amp;rsquo; operator).&lt;/p&gt;
+
+&lt;p&gt;``` irb Evaluation of a string
+irb(main):005:0&amp;gt; &amp;ldquo;hello, world&amp;rdquo;
+=&amp;gt; &amp;ldquo;hello, world&amp;rdquo;
+irb(main):006:0&amp;gt; &amp;ldquo;hello, &amp;rdquo; + &amp;ldquo;world&amp;rdquo;
+=&amp;gt; &amp;ldquo;hello, world&amp;rdquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+Data can be stored in variables (using the &#39;=&#39; operator, and the variable will evaluate to the contents of the variable.
+
+``` irb Storing data in and evaluating variables
+irb(main):007:0&amp;gt; greeting = &amp;quot;hello&amp;quot;
+=&amp;gt; &amp;quot;hello&amp;quot;
+irb(main):008:0&amp;gt; greeting
+=&amp;gt; &amp;quot;hello&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Variables can be concatenated (again, using the &amp;lsquo;+&amp;rsquo; operator).&lt;/p&gt;
+
+&lt;p&gt;``` irb Concatenating and evaluating variables
+irb(main):009:0&amp;gt; greeting + &amp;ldquo;, world&amp;rdquo;
+=&amp;gt; &amp;ldquo;hello, world&amp;rdquo;
+irb(main):010:0&amp;gt; subject = &amp;ldquo;world&amp;rdquo;
+=&amp;gt; &amp;ldquo;world&amp;rdquo;
+irb(main):011:0&amp;gt; greeting + &amp;ldquo;, &amp;rdquo; + subject
+=&amp;gt; &amp;ldquo;hello, world&amp;rdquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+Complex expressions can be evaluated. (Don&#39;t worry too much about what exactly is happening here, as it will be covered in-depth in future parts of this Ruby primer.)
+
+``` irb Evaluating a complex expression
+irb(main):012:0&amp;gt; i = 1
+=&amp;gt; 1
+irb(main):013:0&amp;gt; while i &amp;lt; 100
+irb(main):014:1&amp;gt;   print i
+irb(main):015:1&amp;gt;   i += 1
+irb(main):016:1&amp;gt; end
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899=&amp;gt; nil
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Functions can be defined and evaluated. (&lt;em&gt;Note that in Ruby, functions do not require a &amp;lsquo;return&amp;rsquo; statement, you can just have an expression. If that expression is the last statement, that is what will be returned.&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;``` irb Defining and evaluating functions
+irb(main):017:0&amp;gt; def square(n)
+irb(main):018:1&amp;gt;   return n * n
+irb(main):019:1&amp;gt; end
+=&amp;gt; nil
+irb(main):020:0&amp;gt; square(2)
+=&amp;gt; 4
+irb(main):021:0&amp;gt; square(4)
+=&amp;gt; 16
+irb(main):022:0&amp;gt; def sum(num1, num2)
+irb(main):023:1&amp;gt;   num1 + num2
+irb(main):024:1&amp;gt; end
+=&amp;gt; nil
+irb(main):025:0&amp;gt; sum(1, 2)
+=&amp;gt; 3&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+You can exit IRB by using the &#39;quit&#39; command, and will be returned to your regular command prompt.
+
+``` irb Exiting IRB
+irb(main):026:0&amp;gt; quit
+$
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Congratulation! You have just gotten your feet wet using Ruby and the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:13a4833975b30c7ec5267d72bdd63db4&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

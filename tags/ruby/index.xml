@@ -1,0 +1,2113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ruby on Nathanial L. McConnell</title>
+    <link>http://www.nmcconnell.com/tags/ruby/</link>
+    <description>Recent content in Ruby on Nathanial L. McConnell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 07 Jul 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.nmcconnell.com/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A Ruby Primer, Part 14 -- Logical operators</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-14-logical-operators/</link>
+      <pubDate>Mon, 07 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-14-logical-operators/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;p&gt;If you are unfamiliar with using the Ruby Interactive Shell, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;logic-in-ruby:2336848c71f70babb58568cf7b3ec16e&#34;&gt;Logic in Ruby&lt;/h3&gt;
+
+&lt;p&gt;Ruby provides the standard logic operators of &amp;lsquo;and&amp;rsquo;, &amp;lsquo;or&amp;rsquo;, and &amp;lsquo;not&amp;rsquo; through the logical operators &amp;lsquo;and&amp;rsquo;, &amp;lsquo;or&amp;rsquo;, and &amp;lsquo;not&amp;rsquo; (or if you prefer C-style, &amp;lsquo;&amp;amp;&amp;amp;&amp;lsquo;, &amp;lsquo;||&amp;rsquo;, and &amp;lsquo;!&amp;rsquo;), respectively.&lt;/p&gt;
+
+&lt;p&gt;The logical operator &amp;lsquo;and&amp;rsquo; is true if, and only if, both relational (comparison) operators are true. Any other combination is false.&lt;/p&gt;
+
+&lt;p&gt;The logical operator &amp;lsquo;or&amp;rsquo; is false if, and only if, both relational (comparison) operators are false. Any other combination is true.&lt;/p&gt;
+
+&lt;p&gt;The logical operator &amp;lsquo;not&amp;rsquo; negates the truth value of a relational (comparison) operator (e.g. not true is false, and not false is true).&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see the logical operators in action. (Note: We will set up some variables for use in our example.)&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;irb Logical operators
+irb(main):001&amp;gt; wage = 10
+=&amp;gt; 10
+irb(main):002&amp;gt; hours = 40
+=&amp;gt; 40
+irb(main):003&amp;gt; wage == 10 and hours == 40
+=&amp;gt; true
+irb(main):004&amp;gt; wage &amp;lt; 10 and hours == 40
+=&amp;gt; false
+irb(main):005&amp;gt; wage == 10 &amp;amp;&amp;amp; hours == 40
+=&amp;gt; true
+irb(main):006&amp;gt; wage == 10 or hours &amp;lt; 40
+=&amp;gt; true
+irb(main):007&amp;gt; wage &amp;lt; 10 or hours == 40
+=&amp;gt; true
+irb(main):008&amp;gt; wage &amp;lt; 10 || hours == 40
+=&amp;gt; true
+irb(main):009&amp;gt; not true
+=&amp;gt; false
+irb(main):010&amp;gt; not false
+=&amp;gt; true
+irb(main):011&amp;gt; not wage == 10
+=&amp;gt; false
+irb(main):012&amp;gt; !wage == 10
+=&amp;gt; false
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You have learned about relational operators.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:2336848c71f70babb58568cf7b3ec16e&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Ruby Primer, Part 13 -- Relational operators</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-13-relational-operators/</link>
+      <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-13-relational-operators/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;p&gt;If you are unfamiliar with using the Ruby Interactive Shell, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;comparisons-in-ruby:19699eb97c2d8e0aa8c97e90270db481&#34;&gt;Comparisons in Ruby&lt;/h3&gt;
+
+&lt;p&gt;As discussed in &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, Ruby provides the standard boolean values of &amp;lsquo;true&amp;rsquo; and &amp;lsquo;false, and the standard relational (comparison) operations of is equal to, is not equal to, is greater than, is less than, is greater than or equal to, is less than or equal to through the relational operators &amp;lsquo;==&amp;rsquo;, &amp;lsquo;!=&amp;rsquo;, &amp;lsquo;&amp;gt;&amp;rsquo;, &amp;lsquo;&amp;lt;&amp;lsquo;, &amp;lsquo;&amp;gt;=&amp;rsquo;, and &amp;lsquo;&amp;lt;=&amp;lsquo;, respectively. Ruby also provides a combined (or general) comparison operator, &amp;lsquo;&amp;lt;=&amp;gt;&amp;lsquo;, which returns a 0 if the first operand is equal to the second, 1 if the first operand is greater than the second, or -1 if the first operand is less than the second.&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see the relational (comparison) operators in action.&lt;/p&gt;
+
+&lt;p&gt;``` irb Relational (comparison) operators
+irb(main):001&amp;gt; 1 == 1
+=&amp;gt; true
+irb(main):002&amp;gt; 2 == 1
+=&amp;gt; false
+irb(main):003&amp;gt; 1 != 1
+=&amp;gt; false
+irb(main):004&amp;gt; 2 != 1
+=&amp;gt; true
+irb(main):005&amp;gt; 1 &amp;gt; 2
+=&amp;gt; false
+irb(main):006&amp;gt; 2 &amp;gt; 2
+=&amp;gt; false
+irb(main):007&amp;gt; 3 &amp;gt; 2
+=&amp;gt; true
+irb(main):008&amp;gt; 1 &amp;lt; 2
+=&amp;gt; true
+irb(main):009&amp;gt; 2 &amp;lt; 2
+=&amp;gt; false
+irb(main):010&amp;gt; 3 &amp;lt; 2
+=&amp;gt; false
+irb(main):011&amp;gt; 1 &amp;gt;= 2
+=&amp;gt; false
+irb(main):012&amp;gt; 2 &amp;gt;= 2
+=&amp;gt; true
+irb(main):013&amp;gt; 3 &amp;gt;= 2
+=&amp;gt; true
+irb(main):014&amp;gt; 1 &amp;lt;= 2
+=&amp;gt; true
+irb(main):015&amp;gt; 2 &amp;lt;= 2
+=&amp;gt; true
+irb(main):016&amp;gt; 3 &amp;lt;= 2
+=&amp;gt; false
+irb(main):017&amp;gt; 1 &amp;lt;=&amp;gt; 2
+=&amp;gt; -1
+irb(main):018&amp;gt; 2 &amp;lt;=&amp;gt; 2
+=&amp;gt; 0
+irb(main):019&amp;gt; 3 &amp;lt;=&amp;gt; 2
+=&amp;gt; 1&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+Ruby allows us to use the relational (comparison) operators on strings. Keep in mind that string comparisons are case-sensitive, and that letters that come alphabetically before or after their case-sensitive counterpart (e.g. &#39;a&#39; compared to &#39;b&#39;, or &#39;B&#39; compared to &#39;A&#39;) are less than or greater than, respectively.
+
+From IRB, let&#39;s see the relational (comparison) operators in action on strings.
+
+``` irb Relational (comparison) operators
+irb(main):020&amp;gt; &amp;quot;ant&amp;quot; == &amp;quot;ant&amp;quot;
+=&amp;gt; true
+irb(main):021&amp;gt; &amp;quot;Ant&amp;quot; == &amp;quot;ant&amp;quot;
+=&amp;gt; false
+irb(main):022&amp;gt; &amp;quot;bear&amp;quot; &amp;lt; &amp;quot;bear&amp;quot;
+=&amp;gt; false
+irb(main):023&amp;gt; &amp;quot;bear&amp;quot; &amp;lt; &amp;quot;beaver&amp;quot;
+=&amp;gt; true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Congratulations! You have learned about relational operators.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:19699eb97c2d8e0aa8c97e90270db481&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Ruby Primer, Part 12 -- Arithmetic operators</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-12-arithmetic-operators/</link>
+      <pubDate>Sat, 28 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-12-arithmetic-operators/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;p&gt;If you are unfamiliar with using the Ruby Interactive Shell, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;arithmetic-in-ruby:2b074086389f7e598cbba904fd5322fc&#34;&gt;Arithmetic in Ruby&lt;/h3&gt;
+
+&lt;p&gt;As discussed in &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, Ruby provides the standard arithmetic operations of addition, subtraction, multiplication, division, remainder (modulo), and exponention through the binary operators &amp;lsquo;+&amp;rsquo;, &amp;lsquo;-&amp;rsquo;, &amp;lsquo;*&amp;rsquo;, &amp;lsquo;/&amp;rsquo;, &amp;lsquo;%&amp;rsquo;, &amp;lsquo;**&amp;rsquo;, respectively.&lt;/p&gt;
+
+&lt;p&gt;Ruby orders the arithmetic operations just like you would expect. Parentheses can be used to override the standard order of operations.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Exponentiation (&amp;rsquo;**&amp;rsquo;)&lt;/li&gt;
+&lt;li&gt;Unary plus (&amp;lsquo;+&amp;rsquo;) and minus (&amp;lsquo;-&amp;rsquo;)&lt;/li&gt;
+&lt;li&gt;Multiplication (&amp;rsquo;*&amp;rsquo;), division (&amp;lsquo;/&amp;rsquo;), and modulo (&amp;lsquo;%&amp;rsquo;)&lt;/li&gt;
+&lt;li&gt;Addition (&amp;lsquo;+&amp;rsquo;) and subtraction (&amp;lsquo;-&amp;rsquo;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see the arithmetic operators in action.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;irb Arithmetic operators
+irb(main):001:0&amp;gt; 1 + 2
+=&amp;gt; 3
+irb(main):002:0&amp;gt; 12.3 - 4.5
+=&amp;gt; 7.8
+irb(main):003:0&amp;gt; 123 * 6.28319
+=&amp;gt; 772.83237
+irb(main):004:0&amp;gt; 42 / 4
+=&amp;gt; 10
+irb(main):005:0&amp;gt; 42 % 4
+=&amp;gt; 2
+irb(main):006:0&amp;gt; 2 ** 10
+=&amp;gt; 1024
+irb(main):007:0&amp;gt; 1 + 2 * 3
+=&amp;gt; 7
+irb(main):008:0&amp;gt; 1 + 2 ** 3
+=&amp;gt; 9
+irb(main):009:0&amp;gt; (1 + 2) ** 3
+=&amp;gt; 27
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You have learned about arithmetic operators.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:2b074086389f7e598cbba904fd5322fc&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Ruby Primer, Part 10 -- Hashes</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-10-hashes/</link>
+      <pubDate>Thu, 03 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-10-hashes/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;p&gt;If you are unfamiliar with using the Ruby Interactive Shell, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;terms:de746e5f1862cf2b72ec656cda7c5fa6&#34;&gt;Terms&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hash:&lt;/strong&gt; &lt;em&gt;A hash is an associative collection of unique keys and their values.&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Hash.html&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;hashes-in-ruby:de746e5f1862cf2b72ec656cda7c5fa6&#34;&gt;Hashes in Ruby&lt;/h3&gt;
+
+&lt;p&gt;Ruby allows us to create dictionary-like objects, called hashes, which are associative collections of unique key-value pairs. Hashes are similar to arrays, but can use any object as an index, as opposed to the integer index that arrays use.&lt;/p&gt;
+
+&lt;p&gt;In Ruby, we define a hash using curly braces ({}) and a colon (&amp;rsquo;:&amp;lsquo;) after the key (if the key is a &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Symbol.html&#34;&gt;Ruby symbol&lt;/a&gt;), or a hash rocket (&amp;lsquo;=&amp;gt;&amp;rsquo;) after the key (if the key is a string). (*Note that we will be discussing Ruby symbols later in this primer, but for now, keep in mind that after creating a symbol using a colon &lt;strong&gt;after&lt;/strong&gt; the symbol name, you can access the symbol by putting a colon &lt;strong&gt;before&lt;/strong&gt; the symbol name.*) Like other literals, we can assign hashes to variables.&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see hashes in action.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;irb Hash literals
+irb(main):001:0&amp;gt; secret_id = {&amp;quot;Superman&amp;quot; =&amp;gt; &amp;quot;Clark Kent&amp;quot;, &amp;quot;Wonder Woman&amp;quot; =&amp;gt; &amp;quot;Diana Prince&amp;quot;, &amp;quot;Batman&amp;quot; =&amp;gt; &amp;quot;Bruce Wayne&amp;quot;, &amp;quot;Green Lantern&amp;quot; =&amp;gt; &amp;quot;Alan Scott&amp;quot;, &amp;quot;The Flash&amp;quot; =&amp;gt; &amp;quot;Jay Garrick&amp;quot;}
+=&amp;gt; {&amp;quot;Superman&amp;quot;=&amp;gt;&amp;quot;Clark Kent&amp;quot;, &amp;quot;Wonder Woman&amp;quot;=&amp;gt;&amp;quot;Diana Prince&amp;quot;, &amp;quot;Batman&amp;quot;=&amp;gt;&amp;quot;Bruce Wayne&amp;quot;, &amp;quot;Green Lantern&amp;quot;=&amp;gt;&amp;quot;Alan Scott&amp;quot;, &amp;quot;The Flash&amp;quot;=&amp;gt;&amp;quot;Jay Garrick&amp;quot;}
+irb(main):002:0&amp;gt; secret_id[&amp;quot;Superman&amp;quot;]
+=&amp;gt; &amp;quot;Clark Kent&amp;quot;
+irb(main):003:0&amp;gt; secret_id[&amp;quot;Green Lantern&amp;quot;]
+=&amp;gt; &amp;quot;Alan Scott&amp;quot;
+irb(main):004:0&amp;gt; first_appearance = {superman: 1938, wonder_woman: 1941, batman: 1939, green_lantern: 1940, the_flash: 1940}
+irb(main):005:0&amp;gt; first_appearance[:wonder_woman]
+=&amp;gt; 1941
+irb(main):006:0&amp;gt; first_appearance[:the_flash]
+=&amp;gt; 1940
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Ruby provides many useful hash methods. We recommend exploring the &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Hash.html&#34;&gt;Ruby documentation&lt;/a&gt; and trying out some of these on your own to gain a better understanding. We will be using various hash methods throughout the rest of this primer.&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You have learned about some of the basic ways to use the hash data type.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:de746e5f1862cf2b72ec656cda7c5fa6&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Ruby Primer, Part 11 -- Variables and constants</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-11-variables-and-constants/</link>
+      <pubDate>Thu, 03 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-11-variables-and-constants/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;p&gt;If you are unfamiliar with using the Ruby Interactive Shell, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;terms:9a039d157e06c473def69a4197e0f32b&#34;&gt;Terms&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Variable:&lt;/strong&gt; &lt;em&gt;A variable is a symbolic name associated with some value, whether known or unknown.&lt;/em&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Variable_(computer_science&#34;&gt;Wikipedia article&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Constant:&lt;/strong&gt; &lt;em&gt;A constant is a symbolic name associated with some known value, that is not intended to change.&lt;/em&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Constant_(programming&#34;&gt;Wikipedia article&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;variables-in-ruby:9a039d157e06c473def69a4197e0f32b&#34;&gt;Variables in Ruby&lt;/h3&gt;
+
+&lt;p&gt;Ruby allows us to create variables to store any object available in Ruby. We can name our variable &lt;strong&gt;almost&lt;/strong&gt; anything we want, but there are a few rules that we must follow:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;All variables must begin with either a lowercase letter or an underscore (&amp;rsquo;_&amp;lsquo;).&lt;/li&gt;
+&lt;li&gt;After the first letter (or underscore) of a variable, the variable name can only contain letters, numbers, or underscores.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When naming variables, the &lt;strong&gt;proper&lt;/strong&gt; standard practice is to use meaningful variable names (e.g. rate instead of r, or publication_date instead of date) that reduce abiguity and confusion for anyone reading your code (yourself included). For complex variable names (e.g. positive_numbers_under_ten), the Ruby convention is to use underscore to separate the words in the complex variable name. (&lt;em&gt;Note that in other languages, &lt;a href=&#34;http://en.wikipedia.org/wiki/CamelCase&#34;&gt;CamelCase&lt;/a&gt; is often used. This is purely a convention and stylistic choice of many Ruby programmers. You are free to use either in your own Ruby code.&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;In Ruby, we create a variable through an assignment operation, using the binary operator &amp;lsquo;=&amp;rsquo;. Ruby is smart enough to figure out what data type the variable should be, so that we do not have to specify a data type when creating a variable.&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see variable creation and assignment in action.&lt;/p&gt;
+
+&lt;p&gt;``` irb Variable creation and assignment
+irb(main):001:0&amp;gt; letter = &amp;ldquo;a&amp;rdquo;
+=&amp;gt; &amp;ldquo;a&amp;rdquo;
+irb(main):002:0&amp;gt; letter
+=&amp;gt; &amp;ldquo;a&amp;rdquo;
+irb(main):003:0&amp;gt; _number = 42
+=&amp;gt; 42
+irb(main):004:0&amp;gt; _number
+=&amp;gt; 42
+irb(main):005:0&amp;gt; first_name = &amp;ldquo;Clark&amp;rdquo;
+=&amp;gt; &amp;ldquo;Clark&amp;rdquo;
+irb(main):006:0&amp;gt; lastName = &amp;ldquo;Kent&amp;rdquo;
+=&amp;gt; &amp;ldquo;Kent&amp;rdquo;
+irb(main):007:0&amp;gt; date_of_first_appearance_of_superman = 1938
+=&amp;gt; 1938&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+### Constants in Ruby
+
+Ruby allows us to create constants, by using **all** uppercase letters in the name of our constant (e.g. TAU = 6.28319). (*Note that in Ruby, a constant isn&#39;t really constant, and can be changed at a later point in your program. However, the convention in Ruby is that constants should **not** be changed. Ruby will give you a warning when you try to reassign a constant, but will go ahead and do the reassignment anyway.*)
+
+From IRB, let&#39;s see constant creation and assignment in action.
+
+``` irb Constant creation and assignment
+irb(main):008:0&amp;gt; TAU = 6.28319
+=&amp;gt; 6.28319
+irb(main):009:0&amp;gt; TAU
+=&amp;gt; 6.28319
+irb(main):010:0&amp;gt; SITE_NAME = &amp;quot;Disciples of Code&amp;quot;
+=&amp;gt; &amp;quot;Disciples of Code&amp;quot;
+irb(main):011:0&amp;gt; SITE_NAME
+=&amp;gt; &amp;quot;Disciples of Code&amp;quot;
+irb(main):012:0&amp;gt; SITE_NAME = &amp;quot;Your Really Awesome Site&amp;quot;
+(irb):12: warning: already initializaed constant SITE_NAME
+(irb):11: warning: previous definition of SITE_NAME was here
+=&amp;gt; &amp;quot;Your Really Awesome Site&amp;quot;
+irb(main):013:0&amp;gt; SITE_NAME
+=&amp;gt; &amp;quot;Your Really Awesome Site&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We will be using variables and constant throughout the rest of this primer.&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You have learned about some of the basic ways to create and assign values to variables and constants.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:9a039d157e06c473def69a4197e0f32b&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Ruby Primer, Part 9 -- Arrays</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-9-arrays/</link>
+      <pubDate>Thu, 03 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-9-arrays/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;p&gt;If you are unfamiliar with using the Ruby Interactive Shell, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;terms:6f46e6aca10fb9fab875fb0477dffa7d&#34;&gt;Terms&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Array:&lt;/strong&gt; &lt;em&gt;An array is an ordered, indexed collection of objects.&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Array.html&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;arrays-in-ruby:6f46e6aca10fb9fab875fb0477dffa7d&#34;&gt;Arrays in Ruby&lt;/h3&gt;
+
+&lt;p&gt;Ruby allows us to create ordered (but not necessarily sequenced) collections of objects, called arrays. An array contains some number of elements (objects) which are indexed using integers. The first element of an array is at index 0. (e.g. An array containing 5 elements would have indices 0, 1, 2, 3, and 4, representing the first, second, third, fourth, and fifth elements of the array, respectively.)&lt;/p&gt;
+
+&lt;p&gt;In Ruby, we define an array using square brackets ([]). Like other literals, we can assign arrays to variables.&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see arrays in action.&lt;/p&gt;
+
+&lt;p&gt;``` irb Array literals
+irb(main):001:0&amp;gt; [24, 30, 28, 42, 38]
+=&amp;gt; [24, 30, 28, 42, 38]
+irb(main):002:0&amp;gt; [&amp;ldquo;Disciples&amp;rdquo;, &amp;ldquo;Code&amp;rdquo;, &amp;ldquo;of&amp;rdquo;]
+=&amp;gt; [&amp;ldquo;Disciples&amp;rdquo;, &amp;ldquo;Code&amp;rdquo;, &amp;ldquo;of&amp;rdquo;]
+irb(main):003:0&amp;gt; postive_even_numbers_under_ten = [2, 4, 6, 8]
+=&amp;gt; [2, 4, 6, 8]
+irb(main):004:0&amp;gt; heroes = [&amp;ldquo;Superman&amp;rdquo;, &amp;ldquo;Wonder Woman&amp;rdquo;, &amp;ldquo;Batman&amp;rdquo;, &amp;ldquo;Green Lantern&amp;rdquo;, &amp;ldquo;The Flash&amp;rdquo;]
+=&amp;gt; [&amp;ldquo;Superman&amp;rdquo;, &amp;ldquo;Wonder Woman&amp;rdquo;, &amp;ldquo;Batman&amp;rdquo;, &amp;ldquo;Green Lantern&amp;rdquo;, &amp;ldquo;The Flash&amp;rdquo;]&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+We can access an element of an array by using the square brackets to reference that element&#39;s index.
+
+``` irb Referencing elements of an array
+irb(main):005:0&amp;gt; positive_even_numbers_under_ten[0]
+=&amp;gt; 2
+irb(main):006:0&amp;gt; positive_even_numbers_under_ten[3]
+=&amp;gt; 8
+irb(main):007:0&amp;gt; heroes[1]
+=&amp;gt; &amp;quot;Wonder Woman&amp;quot;
+irb(main):008:0&amp;gt; heroes[3]
+=&amp;gt; &amp;quot;Green Lantern&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We can use elements of an array in statements and expressions.&lt;/p&gt;
+
+&lt;p&gt;``` irb Array elements in statements and expressions
+irb(main):009:0&amp;gt; sum = positive_even_numbers_under_ten[0] + positive_even_numbers_under_ten[1] + positive_even_numbers_under_ten[2] + positive_even_numbers_under_ten[3]
+=&amp;gt; 20
+irb(main):010:0&amp;gt; puts &amp;ldquo;My favorite heroes are &amp;rdquo; + heroes[0] + &amp;ldquo; and &amp;rdquo; + heroes[3]
+=&amp;gt; nil
+My favorite heroes are Superman and Green Lantern&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+Ruby gives us much more efficient methods to work with arrays, which we will be discussing later in this primer.
+
+#### The to_a Method
+&amp;gt; **Method Signatures:**
+&amp;gt;
+&amp;gt; - *to_a -&amp;gt; ary* [Ruby documentation](http://www.ruby-doc.org/core-2.1.1/Array.html#method-i-to_a)
+
+In Ruby, the `to_a` method allows us to convert a range into an array.
+
+From IRB, let&#39;s see the `to_a` method in action.
+
+``` irb The to_a method
+irb(main):011:0&amp;gt; (24..42).to_a
+=&amp;gt; [24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42]
+irb(main):012:0&amp;gt; whole_numbers_under_ten = 0...10
+=&amp;gt; 0...10
+irb(main):013:0&amp;gt; whole_numbers_under_ten.to_a
+=&amp;gt; [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+irb(main):014:0&amp;gt; whole_numbers_under_ten.to_a[4]
+=&amp;gt; 4
+irb(main):015:0&amp;gt; letters = &#39;a&#39;..&#39;z&#39;
+=&amp;gt; &amp;quot;a&amp;quot;..&amp;quot;z&amp;quot;
+irb(main):016:0&amp;gt; letters.to_a
+=&amp;gt; [&amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;, &amp;quot;d&amp;quot;, &amp;quot;e&amp;quot;, &amp;quot;f&amp;quot;, &amp;quot;g&amp;quot;, &amp;quot;h&amp;quot;, &amp;quot;i&amp;quot;, &amp;quot;j&amp;quot;, &amp;quot;k&amp;quot;, &amp;quot;l&amp;quot;, &amp;quot;m&amp;quot;, &amp;quot;n&amp;quot;, &amp;quot;o&amp;quot;, &amp;quot;p&amp;quot;, &amp;quot;q&amp;quot;, &amp;quot;r&amp;quot;, &amp;quot;s&amp;quot;, &amp;quot;t&amp;quot;, &amp;quot;u&amp;quot;, &amp;quot;v&amp;quot;, &amp;quot;w&amp;quot;, &amp;quot;y&amp;quot;, &amp;quot;x&amp;quot;, &amp;quot;z&amp;quot;]
+irb(main):017:0&amp;gt; letters.to_a[4]
+=&amp;gt; &amp;quot;e&amp;quot;
+irb(main):018:0&amp;gt; letters.to_a[25]
+=&amp;gt; &amp;quot;z&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ruby provides many useful array methods. We recommend exploring the &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Array.html&#34;&gt;Ruby documentation&lt;/a&gt; and trying out some of these on your own to gain a better understanding. We will be using various array methods throughout the rest of this primer.&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You have learned about some of the basic ways to use the array data type.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:6f46e6aca10fb9fab875fb0477dffa7d&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Ruby Primer: Exercise 1 -- A random number min-max detector</title>
+      <link>http://www.nmcconnell.com/assignment/a-ruby-primer-exercise-2-a-random-number-min-max-detector/</link>
+      <pubDate>Thu, 03 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/assignment/a-ruby-primer-exercise-2-a-random-number-min-max-detector/</guid>
+      <description>
+
+&lt;p&gt;In this exercise, you will create a Ruby script to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;h3 id=&#34;specification:ad7459bb2fde040ae85c94aed473709a&#34;&gt;Specification&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;File Name:&lt;/strong&gt; &lt;em&gt;random-min-max.rb&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Input:&lt;/strong&gt; &lt;em&gt;Several numbers representing the minimum possible randomly generated number, the maximum possible randomly generated number, and the number of random numbers to generate.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Output:&lt;/strong&gt; &lt;em&gt;Several strings containing various prompts, the results of the minimum and maximum detected values from the randomly generated numbers, and all of the randomly generated numbers for verification purposes.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Methods Used:&lt;/strong&gt; &lt;em&gt;puts, print, gets, chomp, to_i, to_s (for integers), min, max, each&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Classes Used:&lt;/strong&gt; &lt;em&gt;Random&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Random.html&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;additional-notes:ad7459bb2fde040ae85c94aed473709a&#34;&gt;Additional Notes&lt;/h3&gt;
+
+&lt;p&gt;One of the best ways to learn a new programming language is to explore the language reference and specification for yourself. Even experienced coders will often find hidden gems in a language&amp;rsquo;s documentation.&lt;/p&gt;
+
+&lt;p&gt;In this exercise, you will be using the Random class from the Ruby core specification. You will also be using a loop. As we have not yet covered loops in this primer, here is some code that you will want to include in your Ruby script to accomplish the generation of random numbers.&lt;/p&gt;
+
+&lt;p&gt;``` ruby Generating random numbers
+while i &amp;lt; number_of_random_numbers.to_i
+  random_numbers[i] = Random.random(minimum_possible_random_number).to_i..maximum_possible_random_number.to_i)
+  i += 1
+end&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+### Sample Output
+``` text
+Welcome to the Random Number Min-Max Detector by Disciples of Code
+
+What is the lowest random number you would like to possibly generate? 24
+What is the highest random number you would like to possibly generate? 42
+How many random numbers (between 24 and 42 ) would you like to generate? 12
+
+The maximum value of the random numbers generated is: 39
+The minimum value of the random numbers generated is: 24
+
+For verification, here are all of the randon numbers generated:
+38 39 28 32 30 30 30 34 24 31 35 26
+
+Thank you for using my program!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Give this exercise a try. A solution will be posted soon.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:ad7459bb2fde040ae85c94aed473709a&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Ruby Primer, Part 6 -- Numbers</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-6-numbers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-6-numbers/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;p&gt;If you are unfamiliar with using the Ruby Interactive Shell, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;terms:e187389743e8f048f4fab6fb26282989&#34;&gt;Terms&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Numeric:&lt;/strong&gt; &lt;em&gt;A Ruby class representing a numeric data type.&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Numeric.html&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Integer:&lt;/strong&gt; &lt;em&gt;A Ruby class representing whole number data types.&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Integer.html&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Float:&lt;/strong&gt; &lt;em&gt;A Ruby class representing floating point number data types.&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Float.html&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Binary:&lt;/strong&gt; &lt;em&gt;A base-2 number system.&lt;/em&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Binary_number&#34;&gt;Wikipedia article&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dedimal:&lt;/strong&gt; &lt;em&gt;A base-10 number system.&lt;/em&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Decimal&#34;&gt;Wikipedia article&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hexadecimal:&lt;/strong&gt; &lt;em&gt;A base-16 number system.&lt;/em&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Hexadecimal&#34;&gt;Wikipedia article&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operator:&lt;/strong&gt; &lt;em&gt;A programming language construct that works like a function, but have syntactic or semantic differences.&lt;/em&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Operator_(computer_programming&#34;&gt;Wikipedia article&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;numbers-in-ruby:e187389743e8f048f4fab6fb26282989&#34;&gt;Numbers in Ruby&lt;/h3&gt;
+
+&lt;p&gt;Ruby allows us to work with a variety of number systems, including decimal (integers and floats), binary, hexadecimal, and others. Integers can be any whole number. Floats can be any floating point number (containing a decimal), but &lt;em&gt;cannot&lt;/em&gt; begin with a decimal - you must use a leading zero (e.g. 0.1234, not .1234). Binary numbers must begin with 0b (e.g. 0b1010) and hexadecimal numbers must begin with 0x (e.g. 0x10AF). We can create negative numbers by using the unary negative &amp;lsquo;-&amp;rsquo; operator (a positive value is always assumed, but you can specify the unary positive &amp;lsquo;+&amp;rsquo; operator, if you wish). &lt;a href=&#34;http://en.wikipedia.org/wiki/Unary_operation&#34;&gt;Wikipedia article on unary operations&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see number literals in action.&lt;/p&gt;
+
+&lt;p&gt;``` irb Number literals in different number systems
+irb(main):001:0&amp;gt; 42
+=&amp;gt; 42
+irb(main):002:0&amp;gt; 4321
+=&amp;gt; 4321
+irb(main):003:0&amp;gt; 6.28319
+=&amp;gt; 6.28319
+irb(main):004:0&amp;gt; 0b101010
+=&amp;gt; 42
+irb(main):005:0&amp;gt; 0x10E1
+=&amp;gt; 4321
+irb(main):006:0&amp;gt; .28319
+SyntaxError: (irb):6: no .&lt;digit&gt; floating literal anymore; put 0 before dot
+.28319
+ ^
+(irb):6: syntax error, unexpected &amp;lsquo;.&amp;rsquo;
+.28319
+ ^
+        from &lt;your IRB path here&gt;:12:in &amp;lsquo;&lt;main&gt;&amp;lsquo;
+irb(main):007:0&amp;gt; 0.28319
+=&amp;gt; 0.28319
+irb(main):008:0&amp;gt; -42
+=&amp;gt; -42
+irb(main):009:0&amp;gt; +42
+=&amp;gt; 42
+irb(main):010:0&amp;gt; -4321
+=&amp;gt; -4321
+irb(main):011:0&amp;gt; -6.28319
+=&amp;gt; -6.28319
+irb(main):012:0&amp;gt; -0b101010
+=&amp;gt; -42
+irb(main):013:0&amp;gt; -0x10E1
+=&amp;gt; -4321&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+#### Arithmetic Operators
+
+Ruby provides the standard arithmetic operations of addition, subtraction, multiplication, division, remainder (modulo), and exponention through the binary operators &#39;+&#39;, &#39;-&#39;, &#39;\*&#39;, &#39;/&#39;, &#39;%&#39;, &#39;\*\*&#39;, respectively.
+
+From IRB, let&#39;s see the arithmetic operators in action.
+
+``` irb Arithmetic operators
+irb(main):014:0&amp;gt; 24 + 18
+=&amp;gt; 42
+irb(main):015:0&amp;gt; 4321 - 1234
+=&amp;gt; 3087
+irb(main):016:0&amp;gt; -42 + 6.28319
+=&amp;gt; -35.71681
+irb(main):017:0&amp;gt; 0b101010 * 2
+=&amp;gt; 84
+irb(main):018:0&amp;gt; 0x10E1 / -2
+=&amp;gt; -2161
+irb(main):019:0&amp;gt; 42.0 / 4
+=&amp;gt; 10.5
+irb(main):020:0&amp;gt; 42 / 4
+=&amp;gt; 10
+irb(main):021:0&amp;gt; 42 % 4
+=&amp;gt; 2
+irb(main):022:0&amp;gt; 2 ** 2
+=&amp;gt; 4
+irb(main):023:0&amp;gt; 2 ** 3
+=&amp;gt; 8
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As you can see, Ruby is smart enough to the data type of a given number (integer, float, etc.) and allows you to combine different number systems within the same arithmetic operation.&lt;/p&gt;
+
+&lt;h4 id=&#34;converting-numbers-to-strings:e187389743e8f048f4fab6fb26282989&#34;&gt;Converting Numbers to Strings&lt;/h4&gt;
+
+&lt;p&gt;As covered in &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, we can use the &lt;code&gt;to_s&lt;/code&gt; method to convert any number to a string. We can also use parenthesis to group operations and convert the result into a string. Part 4 also covers the &lt;code&gt;to_i&lt;/code&gt; and &lt;code&gt;to_f&lt;/code&gt; methods, which we won&amp;rsquo;t rehash here.&lt;/p&gt;
+
+&lt;p&gt;``` irb Converting numbers to strings
+irb(main):024:0&amp;gt; 42.to_s
+=&amp;gt; &amp;ldquo;42&amp;rdquo;
+irb(main):025:0&amp;gt; 4321.to_s
+=&amp;gt; &amp;ldquo;4321&amp;rdquo;
+irb(main):026:0&amp;gt; 6.28319.to_s
+=&amp;gt; &amp;ldquo;6.28319&amp;rdquo;
+irb(main):027:0&amp;gt; 0b101010.to_s
+=&amp;gt; &amp;ldquo;42&amp;rdquo;
+irb(main):028:0&amp;gt; 0x10E1.to_s
+=&amp;gt; &amp;ldquo;4321&amp;rdquo;
+irb(main):029:0&amp;gt; (-0b101010 * 2).to_s
+=&amp;gt; &amp;ldquo;-84&amp;rdquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+#### Order of Operations
+
+Ruby orders the arithmetic operations just like you would expect. Parentheses can be used to override the standard order of operations.
+
+- Exponentiation (&#39;\*\*&#39;)
+- Unary plus (&#39;+&#39;) and minus (&#39;-&#39;)
+- Multiplication (&#39;\*&#39;), division (&#39;/&#39;), and modulo (&#39;%&#39;)
+- Addition (&#39;+&#39;) and subtraction (&#39;-&#39;)
+
+Below, we are raising 2 to the 4th power (exponentiation), then multiplying -42 by 0x10E1 (hexadecimal 4321), then dividing by -0b101010 (binary -42), and adding all of that to the result of the initial exponentiation.
+
+``` irb Order of operations
+irb(main):030:0&amp;gt; 2 ** 4 + -42 * 0x10E1 / -0b101010
+=&amp;gt; 4337
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Let&amp;rsquo;s override the order of operations with parentheses, and see what happens.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;irb Overring order of operations with parentheses
+irb(main):031:0&amp;gt; 2 ** ((4 + -42) * 0x10E1 / -0b101010)
+=&amp;gt; 5324183932979082217173830423788624448232377020200871925044363740978552645617392603963657332653293294921533487382005730205842492472324978256389524698133274982954316968418759621851827737904061947651709998777768764044640777451180488447019488349748492015288249539865325121412715328770419801502841515154181645054344997871537357625278584389884882092167456117235962842412534832325361798374338229786121498548414734430752922733207597283706654956923362549302114482188128786150568960200298842155354973238386993145987063220515184400346894462278601827604890618760154083905012744638294036976331341289696738323216673862314043949607110345453655000393965492565350543837806500159501747398630390119445689566142598744356783963943236839177990311764712795015435453751014259414011381595061542051363110034101037226883045394977492273858105094107413813083844023881750262194931436484929958736179968990507461243553811446562638876287908064004870619573393903638752010524471027366924289557008444655821060975285285523655000932375240137129357855653393565053617024444743584021979644805497476255820320767466042088222845247236339159742784704106913314432388396580367715094914656526338930045950563418904868276928512
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s a really large number!!&lt;/p&gt;
+
+&lt;p&gt;Ruby provides many other useful numeric methods. We recommend exploring the Ruby documentation and trying out some of these on your own to gain a better understanding. We will be using various numeric methods throughout the rest of this primer.&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You have learned about some of the basic ways to use the numeric data types, and perform basic arithmetic operations.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:e187389743e8f048f4fab6fb26282989&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Ruby Primer, Part 7 -- Booleans</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-7-booleans/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-7-booleans/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;p&gt;If you are unfamiliar with using the Ruby Interactive Shell, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;terms:5a8cd1bef50f73d5f181de054234a378&#34;&gt;Terms&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Boolean:&lt;/strong&gt; &lt;em&gt;A boolean is a data type intended to represent logical truth values.&lt;/em&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Boolean_data_type&#34;&gt;Wikipedia article&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Comparison:&lt;/strong&gt; &lt;em&gt;A comparison is an operation that is used to test the inequality of values.&lt;/em&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Inequality_(mathematics&#34;&gt;Wikipedia article&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;booleans-in-ruby:5a8cd1bef50f73d5f181de054234a378&#34;&gt;Booleans in Ruby&lt;/h3&gt;
+
+&lt;p&gt;Ruby provides three &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/doc/syntax/literals_rdoc.html&#34;&gt;boolean literals&lt;/a&gt; that we can use when making comparisons or in conditional expressions: &lt;code&gt;true&lt;/code&gt;, &lt;code&gt;false&lt;/code&gt;, and &lt;code&gt;nil&lt;/code&gt;. (&lt;em&gt;Note that we will discuss conditional expressions later in this primer.&lt;/em&gt;)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;true&lt;/code&gt; is a true value&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;false&lt;/code&gt; is a false value&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nil&lt;/code&gt; is a false value and is also used to indicate the absence of data or that the truth value of the data is unknown.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We can assign boolean values to variables, just as we have with &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;numeric&lt;/a&gt; and &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;string&lt;/a&gt; values. We can use the unary negation (&amp;lsquo;!&amp;rsquo;) operator to reverse the truth value of a boolean.&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see booleans in action.&lt;/p&gt;
+
+&lt;p&gt;``` irb Boolean literals
+irb(main):001:0&amp;gt; true
+=&amp;gt; true
+irb(main):002:0&amp;gt; false
+=&amp;gt; false
+irb(main):003:0&amp;gt; nil
+=&amp;gt; nil
+irb(main):004:0&amp;gt; !true
+=&amp;gt; false
+irb(main):005:0&amp;gt; !false
+=&amp;gt; true
+irb(main):006:0&amp;gt; !nil
+=&amp;gt; true
+irb(main):007:0&amp;gt; flag = true
+=&amp;gt; true
+irb(main):008:0&amp;gt; flag
+=&amp;gt; true
+irb(main):009:0&amp;gt; !flag
+=&amp;gt; false&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+#### Comparison Operators
+
+Ruby provides the standard comparison operations of &#39;is equal to&#39;, &#39;is not equal to&#39;, &#39;is greater than&#39;, &#39;is less than&#39;, &#39;is greater than or equal to&#39;, and &#39;is less than or equal to&#39;, through the binary operators &#39;==&#39;, &#39;!=&#39;, &#39;\&amp;gt;&#39;, &#39;&amp;lt;&#39;, &#39;\&amp;gt;=&#39;, and &#39;&amp;lt;=&#39;, respectively. There are a few others which we will discuss in later parts of this primer.
+
+From IRB, let&#39;s see the comparison operators in action.
+
+``` irb Comparison operators
+irb(main):010:0&amp;gt; true == true
+=&amp;gt; true
+irb(main):011:0&amp;gt; true == false
+=&amp;gt; false
+irb(main):012:0&amp;gt; true == nil
+=&amp;gt; false
+irb(main):013:0&amp;gt; false == nil
+=&amp;gt; false
+irb(main):014:0&amp;gt; true != true
+=&amp;gt; false
+irb(main):015:0&amp;gt; true != false
+=&amp;gt; true
+irb(main):016:0&amp;gt; true != nil
+=&amp;gt; true
+irb(main):017:0&amp;gt; false != nil
+=&amp;gt; true
+irb(main):018:0&amp;gt; 24 == 42
+=&amp;gt; false
+irb(main):019:0&amp;gt; 24 != 42
+=&amp;gt; true
+irb(main):020:0&amp;gt; 24 &amp;gt; 42
+=&amp;gt; false
+irb(main):021:0&amp;gt; 24 &amp;gt;= 42
+=&amp;gt; false
+irb(main):022:0&amp;gt; 24 &amp;lt; 42
+=&amp;gt; true
+irb(main):023:0&amp;gt; 24 &amp;lt;= 42
+=&amp;gt; true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We recommend trying out some of these comparison operations on your own to gain a better understanding. We will be using various boolean literals and comparison operations throughout the rest of this primer.&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You have learned about some of the basic ways to use the boolean data types, and perform basic comparison operations.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:5a8cd1bef50f73d5f181de054234a378&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Ruby Primer, Part 8 -- Ranges</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-8-ranges/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-8-ranges/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;p&gt;If you are unfamiliar with using the Ruby Interactive Shell, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;terms:9f2a4904fbbfdf016d50c8acea0d53f5&#34;&gt;Terms&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Range:&lt;/strong&gt; &lt;em&gt;A range is a sequenced interval of data.&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Range.html&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;ranges-in-ruby:9f2a4904fbbfdf016d50c8acea0d53f5&#34;&gt;Ranges in Ruby&lt;/h3&gt;
+
+&lt;p&gt;Ruby allows us to create sequenced intervals of data (e.g. the integers 1 through 10) as a range object. We can create a range of any type of object in Ruby, as well as create our own custom ranges.&lt;/p&gt;
+
+&lt;p&gt;In Ruby, ranges can be either inclusive of the end value, or exclusive of the end value, and use the binary operators &amp;lsquo;..&amp;rsquo;, or &amp;lsquo;&amp;hellip;&amp;rsquo;, respectively. Like other literals, we can assign ranges to variables.&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see ranges in action.&lt;/p&gt;
+
+&lt;p&gt;``` irb Range literals
+irb(main):001:0&amp;gt; 24..42
+=&amp;gt; 24..42
+irb(main):002:0&amp;gt; &amp;lsquo;a&amp;rsquo;..&amp;lsquo;z&amp;rsquo;
+=&amp;gt; &amp;ldquo;a&amp;rdquo;..&amp;ldquo;z&amp;rdquo;
+irb(main):003:0&amp;gt; &amp;lsquo;aabb&amp;rsquo;..&amp;lsquo;aacc&amp;rsquo;
+=&amp;gt; &amp;ldquo;aabb&amp;rdquo;..&amp;ldquo;aacc&amp;rdquo;
+irb(main):004:0&amp;gt; positive_numbers_under_ten = 1&amp;hellip;10
+=&amp;gt; 1&amp;hellip;10
+irb(main):005:0&amp;gt; letters = &amp;lsquo;a&amp;rsquo;..&amp;lsquo;z&amp;rsquo;
+=&amp;gt; &amp;ldquo;a&amp;rdquo;..&amp;ldquo;z&amp;rdquo;
+irb(main):006:0&amp;gt; custom_range = &amp;lsquo;aabb&amp;rsquo;..&amp;lsquo;aacc&amp;rsquo;
+=&amp;gt; &amp;ldquo;aabb&amp;rdquo;..&amp;ldquo;aacc&amp;rdquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+What does the range &#39;aabb&#39;..&#39;aacc&#39; do? It creates a custom range containing the words &#39;aabb&#39;, &#39;aabc&#39;, &#39;aabd&#39;, ..., &#39;aaca&#39;, &#39;aacb&#39;, &#39;aacc&#39;.
+
+#### The include? Method
+&amp;gt; **Method Signatures:**
+&amp;gt;
+&amp;gt; - *include?(obj) -&amp;gt; true or false* [Ruby documentation](http://www.ruby-doc.org/core-2.1.1/Range.html#method-i-include-3F)
+
+In Ruby, the `include?` method will compare the specified object to determine if it exists within a range. (*Note that if we want to use the `include?` method on a range literal, we need to enclose the range literal in parentheses.*)
+
+From IRB, let&#39;s see the `include?` method in action.
+
+``` irb The include? method
+irb(main):007:0&amp;gt; (24...42).include? 42
+=&amp;gt; false
+irb(main):008:0&amp;gt; (&#39;a&#39;..&#39;z&#39;).include?(&#39;r&#39;)
+=&amp;gt; true
+irb(main):009:0&amp;gt; letters.include? &#39;y&#39;
+=&amp;gt; true
+irb(main):010:0&amp;gt; positive_numbers_under_ten.include? 0
+=&amp;gt; false
+irb(main):011:0&amp;gt; custom_range.include? &#39;aabz&#39;
+=&amp;gt; true
+irb(main):010:0&amp;gt; custom_range.include? &#39;abcd&#39;
+=&amp;gt; false
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;the-min-method:9f2a4904fbbfdf016d50c8acea0d53f5&#34;&gt;The min Method&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Method Signatures:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;min -&amp;gt; obj&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Range.html#method-i-min&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;min {| a, b | block } -&amp;gt; obj&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Range.html#method-i-min&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In Ruby, the &lt;code&gt;min&lt;/code&gt; method returns the minimum value in a range.&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see the &lt;code&gt;min&lt;/code&gt; method in action.&lt;/p&gt;
+
+&lt;p&gt;``` irb The min method
+irb(main):011:0&amp;gt; (24..42).min
+=&amp;gt; 24
+irb(main):012:0&amp;gt; (24&amp;hellip;42).min
+=&amp;gt; 24
+irb(main):013:0&amp;gt; letters.min
+=&amp;gt; &amp;ldquo;a&amp;rdquo;
+irb(main):014:0&amp;gt; positive_numbers_under_ten.min
+=&amp;gt; 1
+irb(main):015:0&amp;gt; custom_range.min
+=&amp;gt; &amp;ldquo;aabb&amp;rdquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+#### The max Method
+&amp;gt; **Method Signatures:**
+&amp;gt; - *max -&amp;gt; obj* [Ruby documentation](http://www.ruby-doc.org/core-2.1.1/Range.html#method-i-max)
+&amp;gt;
+&amp;gt; - *max \{\| a, b \| block \} -&amp;gt; obj* [Ruby documentation](http://www.ruby-doc.org/core-2.1.1/Range.html#method-i-max)
+
+In Ruby, the `max` method returns the maximum value in a range.
+
+From IRB, let&#39;s see the `max` method in action.
+
+``` irb The max method
+irb(main):016:0&amp;gt; (24..42).max
+=&amp;gt; 42
+irb(main):017:0&amp;gt; (24...42).max
+=&amp;gt; 41
+irb(main):018:0&amp;gt; letters.max
+=&amp;gt; &amp;quot;z&amp;quot;
+irb(main):019:0&amp;gt; positive_numbers_under_ten.max
+=&amp;gt; 9
+irb(main):020:0&amp;gt; custom_range.max
+=&amp;gt; &amp;quot;aacc&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;the-each-method:9f2a4904fbbfdf016d50c8acea0d53f5&#34;&gt;The each Method&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Method Signatures:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;each {| i | block } -&amp;gt; rng&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Range.html#method-i-each&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;each -&amp;gt; an_enumerator&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Range.html#method-i-each&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In Ruby, the &lt;code&gt;each&lt;/code&gt; method will iterate over the elements of a range, sending each element, i, to the block (a block of code, containing one or more statements or expressions).&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see the &lt;code&gt;each&lt;/code&gt; method in action.&lt;/p&gt;
+
+&lt;p&gt;``` irb The each method
+irb(main):021:0&amp;gt; (24..42).each {| n | print n }
+24252627282930313233343536373839404142=&amp;gt; 24..42
+irb(main):022:0&amp;gt; letters.each {| letter | print letter, &amp;lsquo; &amp;rsquo; }
+a b c d e f g h i j k l m n o p q r s t u v w x y z =&amp;gt; &amp;ldquo;a&amp;rdquo;..&amp;ldquo;z&amp;rdquo;
+irb(main):023:0&amp;gt; positive_number_under_ten.each {| number | number * 2 }
+2 4 6 8 10 12 14 16 18 =&amp;gt; 1&amp;hellip;10
+irb(main):024:0&amp;gt; custom_range.each {| word | puts word }
+aabb
+aabc
+aabd
+aabe
+aabf
+aabg
+aabh
+aabi
+aabj
+aabk
+aabl
+aabm
+aabn
+aabo
+aabp
+aabq
+aabr
+aabs
+aabt
+aabu
+aabv
+aabw
+aabx
+aaby
+aabz
+aaca
+aacb
+aacc
+=&amp;gt; &amp;ldquo;aabb&amp;rdquo;..&amp;ldquo;aacc&amp;rdquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+#### Another Comparison Operator
+
+When using ranges, Ruby gives us another comparison operation, &#39;is a case of&#39; (or &#39;is an element of&#39;), through the binary operator &#39;===&#39;.
+
+From IRB, let&#39;s see this new comparison operator in action.
+
+``` irb New comparison operator
+irb(main):025:0&amp;gt; (24..42) === 30
+=&amp;gt; true
+irb(main):026:0&amp;gt; (&#39;a&#39;..&#39;z&#39;) === 5
+=&amp;gt; false
+irb(main):027:0&amp;gt; letters === &#39;q&#39;
+=&amp;gt; true
+irb(main):028:0&amp;gt; positive_numbers_under_ten === 10
+=&amp;gt; false
+irb(main):029:0&amp;gt; custom_range === &#39;aabr&#39;
+=&amp;gt; true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ruby provides many other useful range methods. We recommend exploring the &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Range.html&#34;&gt;Ruby documentation&lt;/a&gt; and trying out some of these on your own to gain a better understanding. We will be using various range methods throughout the rest of this primer.&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You have learned about some of the basic ways to use the range data type.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:9f2a4904fbbfdf016d50c8acea0d53f5&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Ruby Primer, Part 5 -- Strings</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-5-strings/</link>
+      <pubDate>Tue, 01 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-5-strings/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;p&gt;If you are unfamiliar with using the Ruby Interactive Shell, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;terms:5116464ff9ef46e51a52a6f6a6b1fc23&#34;&gt;Terms&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Data Type:&lt;/strong&gt; &lt;em&gt;A data type is a classification identifying a type of data.&lt;/em&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Data_type&#34;&gt;Wikipedia article&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Literal:&lt;/strong&gt; &lt;em&gt;A literal creates objects in Ruby.&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Float.html&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Class:&lt;/strong&gt; &lt;em&gt;A class is a template for creating objects, and for providing initial values for state (member variables, or properties) and implementations of behavior (member fuctions, or methods).&lt;/em&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Class_(computer_programming&#34;&gt;Wikipedia article&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;String:&lt;/strong&gt; &lt;em&gt;A Ruby class representing a sequence of characters.&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.0/String.html&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Escape Character:&lt;/strong&gt; &lt;em&gt;An escape character is a special character (usually preceded by a backslash that evaluates to a special character, e.g. tab, newline, etc.).&lt;/em&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Escape_character&#34;&gt;Wikipedia article&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;strings-in-ruby:5116464ff9ef46e51a52a6f6a6b1fc23&#34;&gt;Strings in Ruby&lt;/h3&gt;
+
+&lt;p&gt;String literals in Ruby can be created using either single or double quotes (e.g. &amp;ldquo;Clark&amp;rdquo; or &amp;lsquo;Kent&amp;rsquo;). Any characters that are encompassed withing single or double quotes is considered a string. In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, we also saw that we can use the &lt;code&gt;gets&lt;/code&gt; method to get a data from the standard input as a string. (&lt;em&gt;Remember, the &lt;code&gt;gets&lt;/code&gt; method appends a newline character to each string input.&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see string literals in action.&lt;/p&gt;
+
+&lt;p&gt;``` irb Strings with single or double quotes
+irb(main):001:0&amp;gt; name = &amp;lsquo;Clark&amp;rsquo;
+=&amp;gt; &amp;ldquo;Clark&amp;rdquo;
+irb(main):002:0&amp;gt; name = &amp;ldquo;Clark&amp;rdquo;
+=&amp;gt; &amp;ldquo;Clark&amp;rdquo;
+irb(main):003:0&amp;gt; name = gets
+Clark
+=&amp;gt; &amp;ldquo;Clark\n&amp;rdquo;
+irb(main):004:0&amp;gt; print name
+Clark
+=&amp;gt; nil&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+While the `gets` method appends a newline escape character to each string input, we can also specify escape characters when we create strings in Ruby. In the following example, we are embedding a tab (\t) escape character and a space (\s) character in our strings.
+
+``` irb Escape characters in strings
+irb(main):005:0&amp;gt; name = &amp;quot;Clark\tKent&amp;quot;
+=&amp;gt; &amp;quot;Clark\tKent&amp;quot;
+irb(main):006:0&amp;gt; print name
+Clark    Kent=&amp;gt; nil
+irb(main):007:0&amp;gt; name = &amp;quot;Clark\sKent&amp;quot;
+=&amp;gt; &amp;quot;Clark Kent&amp;quot;
+irb(main):008:0&amp;gt; print name
+=&amp;gt; Clark Kent=&amp;gt; nil
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;One of the advantages of using double quotes over single quotes is that you can embed a single quote as an apostrophe (without using an escape character). (*Note that the following example will put IRB into an error mode. Simple CTRL-C to get out of the error mode. Technically, this isn&amp;rsquo;t an &lt;strong&gt;error&lt;/strong&gt; mode, IRB is simply waiting for us to complete the unfinished, additional, single-quoted string, as indicated by the trailing single quote on our prompt.*)&lt;/p&gt;
+
+&lt;p&gt;``` irb Embedding single quotes inside double quotes
+irb(main):009:0&amp;gt; possession = &amp;ldquo;Clark&amp;rsquo;s&amp;rdquo;
+=&amp;gt; &amp;ldquo;Clark&amp;rsquo;s&amp;rdquo;
+irb(main):010:0&amp;gt; print possession
+Clark&amp;rsquo;s=&amp;gt; nil
+irb(main):011:0&amp;gt; possession = &amp;lsquo;Clark&amp;rsquo;s&amp;rsquo;
+irb(main):012:0&amp;rsquo; print possession
+irb(main):013:0&amp;rsquo; ^C&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+We can avoid this issue (and embed apostrophes inside single-quoted strings) by using an escape character. Or, we can simply use double quotes around around strings. (*Note that we can embed a double quote inside a double-quoted string using an escape character, also.*)
+
+``` irb Using an escape character for an apostrophe
+irb(main):014:0&amp;gt; possession = &#39;Clark\&#39;s&#39;
+=&amp;gt; &amp;quot;Clark&#39;s&amp;quot;
+irb(main):015:0&amp;gt; print possession
+Clark&#39;s=&amp;gt; nil
+irb(main):016:0&amp;gt; a_qoute = &#39;He said, &amp;quot;This is a job for Superman!&amp;quot;&#39;
+=&amp;gt; &amp;quot;He said, \&amp;quot;This is a job for Superman!\&amp;quot;&amp;quot;
+irb(main):017:0&amp;gt; print a_quote
+He said, &amp;quot;This is a job for Superman!&amp;quot;=&amp;gt; nil
+irb(main):018:0&amp;gt; a_quote = &amp;quot;Zod yelled, \&amp;quot;Kneel before Zod!\&amp;quot;&amp;quot;
+=&amp;gt; &amp;quot;Zod yelled, \&amp;quot;Kneed before Zod!\&amp;quot;&amp;quot;
+irb(main):019:0&amp;gt; print a_quote
+Zod yelled, &amp;quot;Kneel before Zod!&amp;quot;=&amp;gt; nil
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Another difference between using single and double quotes for strings, is that you cannot use certain escape characters (e.g. newline, tab, space, etc.) inside single-quoted strings.&lt;/p&gt;
+
+&lt;p&gt;We can also create &amp;lsquo;Here&amp;rsquo; documents (or a fancy, multiline string). To do this, we are going to create a Ruby script. We can create a multiline string inside a Ruby script using &amp;lsquo;&amp;lt;&amp;lt;&amp;rsquo; followed by an text identifier. Anything encountered by the Ruby script, up to the next instance of the text identifier, is considered a part of the string.&lt;/p&gt;
+
+&lt;p&gt;``` ruby Example here.rb
+words = &amp;lt;&amp;lt;HERE
+    One small step
+    for man.
+    One giant leap
+    for mankind.
+HERE
+print words&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+Run this Ruby script from your command line (in the appropriate directory).
+
+``` bash Running here.rb
+$ ruby here.rb
+   One small step
+   for man.
+   One giant leap
+   for mankind.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;the-split-method:5116464ff9ef46e51a52a6f6a6b1fc23&#34;&gt;The split Method&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Method Signatures:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;split(pattern=$;, [limit]) -&amp;gt; anArray&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.0/String.html#method-i-split&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In Ruby, the &lt;code&gt;split&lt;/code&gt; method will divide a string into substrings based on a delimiter, and return an array (indicated by square brackets, []) of these substrings. (&lt;em&gt;Note that we will be discussing arrays in a later part of this primer.&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;Ruby also allows us to create and assign multiple variables at the same time by using a comma (,) to separate the variables.&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see the &lt;code&gt;split&lt;/code&gt; method in action.&lt;/p&gt;
+
+&lt;p&gt;``` irb The split method
+irb(main):001:0&amp;gt; first, last = &amp;ldquo;Clark,Kent&amp;rdquo;.split(&amp;lsquo;,&amp;rsquo;)
+=&amp;gt; [&amp;ldquo;Clark&amp;rdquo;, &amp;ldquo;Kent&amp;rdquo;]
+irb(main):002:0&amp;gt; print first
+Clark=&amp;gt; nil
+irb(main):003:0&amp;gt; print last
+Kent=&amp;gt; nil
+irb(main):004:0&amp;gt; puts first + &amp;ldquo; &amp;rdquo; + last
+Clark Kent
+=&amp;gt; nil&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+#### The squeeze Method
+&amp;gt; **Method Signatures:**
+&amp;gt;
+&amp;gt; - *squeeze([other_str\*]) -&amp;gt; new_str* [Ruby documentation](http://www.ruby-doc.org/core-2.1.0/String.html#method-i-squeeze)
+
+In Ruby, the `squeeze` method will take a string and replace any runs (multiples of the same character) of a character with a single instance of that character. (*Note that a space character is the default character for replacement.*)
+
+From IRB, let&#39;s see the `squeeze` method in action.
+
+``` irb The squeeze method
+irb(main):005:0&amp;gt; first = &amp;quot;Clark          &amp;quot;
+=&amp;gt; &amp;quot;Clark          &amp;quot;
+irb(main):006:0&amp;gt; last = &amp;quot;Kent&amp;quot;
+=&amp;gt; &amp;quot;Kent&amp;quot;
+irb(main):007:0&amp;gt; print first + last
+Clark          Kent=&amp;gt; nil
+irb(main):008:0&amp;gt; print first.squeeze + last
+Clark Kent=&amp;gt; nil
+irb(main):009:0&amp;gt; first = &amp;quot;Clarrrrrk&amp;quot;
+=&amp;gt; &amp;quot;Clarrrrrk&amp;quot;
+irb(main):010:0&amp;gt; last = &amp;quot;     Kennnttttt&amp;quot;
+=&amp;gt; &amp;quot;     Kennnttttt&amp;quot;
+irb(main):011:0&amp;gt; print first + last
+Clarrrrrk     Kennnttttt=&amp;gt; nil
+irb(main):012:0&amp;gt; print first.squeeze(&amp;quot;r&amp;quot;) + last.squeeze(&amp;quot; n-t&amp;quot;)
+Clark Kent=&amp;gt; nil
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ruby provides many other useful string methods. We recommend exploring the &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.0/String.html&#34;&gt;Ruby documentation&lt;/a&gt; and trying out some of these on your own to gain a better understanding. We will be using various string methods throughout the rest of this primer.&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You have learned about some of the basic ways to use the string data type.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:5116464ff9ef46e51a52a6f6a6b1fc23&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Ruby Primer, Part 4 -- Outputting and inputting data</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-4-outputting-and-inputting-data/</link>
+      <pubDate>Mon, 31 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-4-outputting-and-inputting-data/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;p&gt;If you are unfamiliar with using the Ruby Interactive Shell, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;terms:bf48968c71c9d3bc5a589135ca61473a&#34;&gt;Terms&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; &lt;em&gt;A method is a member function (collection of code statements or expressions) associated with an object, and which has access to its data and its member variables.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Method Signature:&lt;/strong&gt; &lt;em&gt;A method signature is a specification for how to use a method and is given in the format method_name([arguments]) -&amp;gt; return_value, where [arguments] is a potentially empty array (collection) of objects to be given as parameters for the method.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;nil:&lt;/strong&gt; *A null class. nil &lt;strong&gt;does not&lt;/strong&gt; equal the number 0. nil represents the absense of data.*&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;outputting-displaying-data:bf48968c71c9d3bc5a589135ca61473a&#34;&gt;Outputting (Displaying) Data&lt;/h3&gt;
+
+&lt;p&gt;Ruby gives us a variety of options for outputting data. We are going to look at the &lt;code&gt;puts&lt;/code&gt; and &lt;code&gt;print&lt;/code&gt; methods.&lt;/p&gt;
+
+&lt;h4 id=&#34;the-puts-method:bf48968c71c9d3bc5a589135ca61473a&#34;&gt;The puts Method&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Method Signatures:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;puts(obj, &amp;hellip;) -&amp;gt; nil&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/IO.html#method-i-puts&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In Ruby, the &lt;code&gt;puts&lt;/code&gt; method will write (display) a given object (or array of objects) to the standard output (e.g. the console).&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see the &lt;code&gt;puts&lt;/code&gt; method in action.&lt;/p&gt;
+
+&lt;p&gt;``` irb Displaying &amp;ldquo;Hello, world!&amp;rdquo; with the puts method
+irb(main):001:0&amp;gt; puts(&amp;ldquo;Hello, world!&amp;rdquo;)
+Hello, world!
+=&amp;gt; nil&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+We told IRB to evaluate the `puts` method with the string &amp;quot;Hello, world!&amp;quot; as a single argument given as a parameter. &amp;quot;Hello, world!&amp;quot; was displayed to the standard output, and a nil was retuned.
+
+The `puts` method does not require the use of parentheses. The following example will yield the exact same result as the previous example.
+
+``` irb Displaying &amp;quot;Hello, world!&amp;quot; with the puts method without parentheses
+irb(main):002:0&amp;gt; puts &amp;quot;Hello, world!&amp;quot;
+Hello, world!
+=&amp;gt; nil
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;puts&lt;/code&gt; method appends a newline character after each of the given parameters, which is why the returned result (=&amp;gt; nil) is on a new line. We can see this in action, more specifically, by providing multiple arguments.&lt;/p&gt;
+
+&lt;p&gt;``` irb Multiple arguments
+irb(main):003:0&amp;gt; puts(&amp;ldquo;Hello, world!&amp;rdquo;, &amp;ldquo;Goodbye, world!&amp;rdquo;)
+Hello, world!
+Goodbye, world!
+=&amp;gt; nil
+irb(main):004:0&amp;gt; puts &amp;ldquo;Hello, world!&amp;rdquo;, &amp;ldquo;Goodbye, world!&amp;rdquo;
+Hello, world!
+Goodbye, world!
+=&amp;gt; nil
+irb(main):005:0&amp;gt; puts(&amp;ldquo;One&amp;rdquo;, &amp;ldquo;small&amp;rdquo;, &amp;ldquo;step&amp;rdquo;, &amp;ldquo;for&amp;rdquo;, &amp;ldquo;man&amp;rdquo;)
+One
+small
+step
+for
+man
+=&amp;gt; nil
+irb(main):006:0&amp;gt; puts &amp;ldquo;One&amp;rdquo;, &amp;ldquo;small&amp;rdquo;, &amp;ldquo;step&amp;rdquo;, &amp;ldquo;for&amp;rdquo;, &amp;ldquo;man&amp;rdquo;
+One
+small
+step
+for
+man
+=&amp;gt; nil&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+#### The print Method
+&amp;gt; **Method Signatures:**
+&amp;gt;
+&amp;gt; - *print() -&amp;gt; nil* [Ruby documentation](http://www.ruby-doc.org/core-2.1.1/IO.html#method-i-print)
+&amp;gt;
+&amp;gt; - *print(obj, ...) -&amp;gt; nil* [Ruby documentation](http://www.ruby-doc.org/core-2.1.1/IO.html#method-i-print)
+
+The `print` method works similarly to the `puts` method, but a newline character is not appended to each argument.
+
+From IRB, let&#39;s see the `puts` method in action.
+
+``` irb The print method
+irb(main):007:0&amp;gt; print(&amp;quot;Hello, world!&amp;quot;)
+Hello, world!=&amp;gt; nil
+irb(main):008:0&amp;gt; print &amp;quot;Hello, world!&amp;quot;
+Hello, world!=&amp;gt; nil
+irb(main):009:0&amp;gt; print(&amp;quot;Hello, world!&amp;quot;, &amp;quot;Goodbye, world!&amp;quot;)
+Hello, world!Goodbye, world!=&amp;gt; nil
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We can see that the returned result (=&amp;gt; nil) is not on a new line. To append a newline character to an argument when using the &lt;code&gt;print&lt;/code&gt; method, use the newline (\n) escape character. We can see that if a new line is desired, it is much simpler to use the &lt;code&gt;puts&lt;/code&gt; method.&lt;/p&gt;
+
+&lt;p&gt;``` irb The print method with the newline (\n) escape character
+irb(main):010:0&amp;gt; print(&amp;ldquo;Hello, world!\n&amp;rdquo;)
+Hello, world!
+=&amp;gt; nil
+irb(main):011:0&amp;gt; print &amp;ldquo;Hello, world!\n&amp;rdquo;
+Hello, world!
+=&amp;gt; nil
+irb(main):012:0&amp;gt; print(&amp;ldquo;Hello, world!\n&amp;rdquo;, &amp;ldquo;Goodbye, world!\n&amp;rdquo;)
+Hello, world!
+Goodbye, world!
+=&amp;gt; nil
+irb(main):013:0&amp;gt; print &amp;ldquo;One\n&amp;rdquo;, &amp;ldquo;small\n&amp;rdquo;, &amp;ldquo;step\n&amp;rdquo;, &amp;ldquo;for\n&amp;rdquo;, &amp;ldquo;man\n&amp;rdquo;
+One
+small
+step
+for
+man
+=&amp;gt; nil&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+#### Displaying Other Data
+
+The `puts` and `print` methods can also be used to display numbers or to evaluate expressions.
+
+``` irb Displaying numbers and expressions
+irb(main):014:0&amp;gt; puts(1)
+1
+=&amp;gt; nil
+irb(main):015:0&amp;gt; print(2 + 2)
+4=&amp;gt; nil
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;inputting-data:bf48968c71c9d3bc5a589135ca61473a&#34;&gt;Inputting Data&lt;/h3&gt;
+
+&lt;p&gt;Ruby gives us a variety of options for outputting data. We are going to look at the &lt;code&gt;gets&lt;/code&gt; method.&lt;/p&gt;
+
+&lt;h4 id=&#34;the-gets-method:bf48968c71c9d3bc5a589135ca61473a&#34;&gt;The gets Method&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;(&lt;strong&gt;Method Signatures:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;gets(sep=$/ -&amp;gt; string or nil)&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/IO.html#method-i-gets&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;gets(limit) -&amp;gt; string or nil&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/IO.html#method-i-gets&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;gets(sep, limit) -&amp;gt; string or nil&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/IO.html#method-i-gets&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The &lt;code&gt;gets&lt;/code&gt; method will read (input) an object from the standard input (e.g. the keyboard). The &lt;code&gt;gets&lt;/code&gt; method will append (or concatenate) a newline character to the data read from the standard input.&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see the &lt;code&gt;gets&lt;/code&gt; method in action. (&lt;em&gt;Note that after entering the &lt;code&gt;gets&lt;/code&gt; method, the cursor is waiting to read data from the standard input. We will type some data and press &lt;RETURN&gt; or &lt;ENTER&gt; on the keyboard to indicate that we are done entering data.&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;``` irb The gets method
+irb(main):016:0&amp;gt; name = gets
+Superman
+=&amp;gt; &amp;ldquo;Superman\n&amp;rdquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+If we evaluate the name variable, we will see that a newline character has been appended for us. We can then output the data stored in the name variable.
+
+``` irb Evaluating and outputting input
+irb(main):017:0&amp;gt; name
+=&amp;gt; &amp;quot;Superman\n&amp;quot;
+irb(main):018:0&amp;gt; puts(name)
+Superman
+=&amp;gt; nil
+irb(main):019:0&amp;gt; print name
+Superman
+=&amp;gt; nil
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;the-chomp-method:bf48968c71c9d3bc5a589135ca61473a&#34;&gt;The chomp Method&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Method Signatures:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;chomp(separator=$/) -&amp;gt; new_str&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/String.html#method-i-chomp&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If we don&amp;rsquo;t want to display the appended newline character, we can use the &lt;code&gt;chomp&lt;/code&gt; method.&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see the &lt;code&gt;chomp&lt;/code&gt; method in action.&lt;/p&gt;
+
+&lt;p&gt;``` irb The chomp method
+irb(main):020:0&amp;gt; print name.chomp
+Superman=&amp;gt; nil&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+If we don&#39;t want to store the data in a variable, we can get input and output the data with one statement. (*Note that this works because the statements evaluate from right to left.*)
+
+``` irb Input and output without storing the data in a variable
+irb(main):021:0&amp;gt; puts gets
+Batman
+Batman
+=&amp;gt; nil
+irb(main):022:0&amp;gt; print(gets)
+Batman
+Batman
+=&amp;gt; nil
+irb(main):023:0&amp;gt; print gets.chomp
+Batman
+Batman=&amp;gt; nil
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;inputting-other-data:bf48968c71c9d3bc5a589135ca61473a&#34;&gt;Inputting Other Data&lt;/h4&gt;
+
+&lt;p&gt;The &lt;code&gt;gets&lt;/code&gt; method reads data from the standard input as a string object. Let&amp;rsquo;s see what happens when we try to input numbers and then evaluate an expression using those numbers. We can see that the numbers were read from standard input as string objects, and then the evaluation of &lt;code&gt;number1 + number2&lt;/code&gt; resulted in a concatenation of the two strings stored in the variables.&lt;/p&gt;
+
+&lt;p&gt;``` irb Inputting numbers with the gets method
+irb(main):024:0&amp;gt; number1 = gets
+1
+=&amp;gt; &amp;ldquo;1\n&amp;rdquo;
+irb(main):025:0&amp;gt; number2 = gets
+2
+=&amp;gt; &amp;ldquo;2\n&amp;rdquo;
+irb(main):026:0&amp;gt; numberTau = gets
+6.28319
+=&amp;gt; &amp;ldquo;6.28319\n&amp;rdquo;
+irb(main):027:0&amp;gt; number1 + number2
+=&amp;gt; &amp;ldquo;1\n2\n&amp;rdquo;
+irb(main):028:0&amp;gt; number1 + numberTau
+=&amp;gt; &amp;ldquo;1\n6.28319\n&amp;rdquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+#### The Integer, Float, to_i, and to_f Methods
+&amp;gt; **Method Signatures:**
+&amp;gt;
+&amp;gt; - *Integer(obj) -&amp;gt; integer* [Ruby documentation](http://www.ruby-doc.org/core-2.1.1/Integer.html)
+&amp;gt;
+&amp;gt; - *Float(obj) -&amp;gt; float* [Ruby codumentation](http://www.ruby-doc.org/core-2.1.1/Float.html)
+&amp;gt;
+&amp;gt; - *to_i -&amp;gt; integer* [Ruby documentation](http://www.ruby-doc.org/core-2.1.1/Integer.html#method-i-to_i)
+&amp;gt;
+&amp;gt; - *to_f -&amp;gt; float* [Ruby documentation](http://www.ruby-doc.org/core-2.1.1/Float.html#method-i-to_f)
+
+If we want to perform mathematical calculations on integers or floating point numbers input using the `gets` command, we need to convert the string that is returned from the `gets` command. We can do this by using the `Integer` and `Float` methods. Alternatively, we can use the `to_i` and `to_f` methods.
+
+From IRB, let&#39;s see the `Integer`, `Float1`, `to_i`, and `to_s` methods in action.
+
+``` irb Converting and using numeric data input with the gets method
+irb(main):029:0&amp;gt; Integer(number1)
+=&amp;gt; 1
+irb(main):030:0&amp;gt; number2.to_i
+=&amp;gt; 2
+irb(main):031:0&amp;gt; number1.to_i + Integer(number2)
+=&amp;gt; 3
+irb(main):032:0&amp;gt; Float(numberTau)
+=&amp;gt; 6.28319
+irb(main):033:0&amp;gt; numberTau.to_f + number2.to_i
+=&amp;gt; 8.28319
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;the-to-s-method-for-floats:bf48968c71c9d3bc5a589135ca61473a&#34;&gt;The to_s Method (for floats)&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Method Signatures:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;to_s -&amp;gt; string&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Float.html#method-i-to_s&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ruby doesn&amp;rsquo;t know how to implicitly convert a float into a string. However, Ruby does provide us with the &lt;code&gt;to_s&lt;/code&gt; method to accomplish this.&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see the &lt;code&gt;to_s&lt;/code&gt; method in action.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;irb Outputting floats using the to_s method
+irb(main):034:0&amp;gt; result = numberTau.to_f + number2.to_i
+=&amp;gt; 8.28319
+irb(main):035:0&amp;gt; result.to_s
+=&amp;gt; &amp;quot;8.28319&amp;quot;
+irb(main):036:0&amp;gt; puts result.to_s
+8.28319
+=&amp;gt; nil
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You have learned how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:bf48968c71c9d3bc5a589135ca61473a&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Ruby Primer: Exercise 1 -- A simple command line calculator</title>
+      <link>http://www.nmcconnell.com/assignment/a-ruby-primer-exercise-1-a-simple-command-line-calculator/</link>
+      <pubDate>Mon, 31 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/assignment/a-ruby-primer-exercise-1-a-simple-command-line-calculator/</guid>
+      <description>
+
+&lt;p&gt;In this exercise, you will create a Ruby script for a simple command line calculator.&lt;/p&gt;
+
+&lt;h3 id=&#34;specification:368c30966dfb1a110f74e1ea6c4b2f3c&#34;&gt;Specification&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;File Name:&lt;/strong&gt; &lt;em&gt;simple-calculator.rb&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Input:&lt;/strong&gt; &lt;em&gt;Several strings containing your name, the user&amp;rsquo;s name, integers, and floats.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Output:&lt;/strong&gt; &lt;em&gt;Several strings containing various prompts and the results of various arithmetic calculations.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Methods Used:&lt;/strong&gt; &lt;em&gt;puts, print, gets, to_i, to_f, to_s (for floats)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;sample-output:368c30966dfb1a110f74e1ea6c4b2f3c&#34;&gt;Sample Output&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;Welcome to the Simple Calculator by Disciples of Code
+Please enter your name: Clark Kent
+Hello, Clark Kent
+Let&#39;s try some addition!
+Please enter a number to add: 1.55
+Please enter another number to add: 4
+The result of adding 1.55 plus 4 is: 5.55
+Let&#39;s try some subtraction!
+Please enter a number to subtract: 7.33
+Please enter another number to subtract: 2.33
+The result of subtracting 2.33 from 7.33 is: 5.0
+Let&#39;s try some multiplication!
+Please enter a number to multiply: 2
+Please enter another number to multiply: 5.12
+The result of multiplying 2 times 5.12 is: 10.24
+Let&#39;s try some division!
+Please enter a number to divide: 8.78
+Please enter another number to divide: 2.2
+The result of dividing 8.78 by 2.2 is: 3.9909090909090903
+Thank you for using the Simple Calculator!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Give this exercise a try. A solution will be posted soon.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:368c30966dfb1a110f74e1ea6c4b2f3c&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Ruby Primer, Part 3 -- Ruby scripts</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-3-ruby-scripts/</link>
+      <pubDate>Sun, 30 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-3-ruby-scripts/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;scripts:0dbcdba024d44072fbdbe0ed0197b821&#34;&gt;Scripts?&lt;/h3&gt;
+
+&lt;p&gt;While using the Ruby Interactive Shell (IRB) to evaluate your Ruby code can be very useful for learning, debugging, and executing short statements or expressions, to create larger (and persistent) Ruby programs, you will need to store all of your Ruby code in scripts.&lt;/p&gt;
+
+&lt;p&gt;A script is simply a plain-text file that contains your code. In our case, we will be creating Ruby scripts (containing Ruby code). All Ruby scripts should have a Ruby filename extension (e.g filename.rb).&lt;/p&gt;
+
+&lt;h3 id=&#34;creating-scripts:0dbcdba024d44072fbdbe0ed0197b821&#34;&gt;Creating Scripts&lt;/h3&gt;
+
+&lt;p&gt;To create a script, you will use a text editor. There are many different text editors available. Here are a few that we recommend.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Notepad (Windows; Included with operating system)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sublimetext.com/&#34;&gt;Sublime Text&lt;/a&gt; (Windows, OS X, Linux; Free to evaluate - $70 license)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://notepad-plus-plus.org/&#34;&gt;Notepad++&lt;/a&gt; (Windows; Free)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.nano-editor.org/&#34;&gt;GNU nano&lt;/a&gt; (OS X, Linux; Free)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.vim.org/&#34;&gt;vim&lt;/a&gt; (Windows, OS X, Linux; Free)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We will not be covering installation or usage of your chosen text editor. Please refer to the relevant documentation for the application of your choice.&lt;/p&gt;
+
+&lt;h3 id=&#34;creating-and-executing-ruby-scripts:0dbcdba024d44072fbdbe0ed0197b821&#34;&gt;Creating and Executing Ruby Scripts&lt;/h3&gt;
+
+&lt;p&gt;Using your chosen text editor, create a file called &lt;code&gt;helloworld.rb&lt;/code&gt;. While it isn&amp;rsquo;t necessary, it is recommended that you store all of your Ruby scripts in an appropriate directory on your filesystem (e.g. a directory called &amp;ldquo;ruby-primer&amp;rdquo;). Open the file, add the following Ruby code, and then save the file.&lt;/p&gt;
+
+&lt;p&gt;``` ruby helloworld.rb
+puts(&amp;ldquo;Hello, world!&amp;rdquo;)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+To execute the `helloworld.rb` Ruby script, open a Terminal window (OS X or Linux) or a Command Prompt (Windows), navigate to the directory where you saved the file, and execute the following command.
+
+``` bash Executing helloworld.rb
+$ ruby helloworld.rb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You should see the text &amp;ldquo;Hello, world!&amp;rdquo; output after executing your &lt;code&gt;helloworld.rb&lt;/code&gt; Ruby script, as such:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash Executing helloworld.rb (with output)
+$ ruby helloworld.rb
+Hello, world!
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;We will be executing many Ruby scripts throughout the remainder of this primer.&lt;/p&gt;
+
+&lt;p&gt;Congratulation! You have learned how to create and execute Ruby scripts.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:0dbcdba024d44072fbdbe0ed0197b821&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Ruby Primer, Part 2 -- Using the Ruby interactive shell IRB</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/</link>
+      <pubDate>Tue, 25 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;using-irb:13a4833975b30c7ec5267d72bdd63db4&#34;&gt;Using IRB&lt;/h3&gt;
+
+&lt;p&gt;The Ruby Interactive Shell, or IRB, provides a command line with which we can immediately evaluate a Ruby statement or expression. To load IRB, open a Terminal window (OS X or Linux) or a Command Prompt (Windows), and execute the following command.&lt;/p&gt;
+
+&lt;p&gt;``` bash Loading IRB
+$ irb&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+You should now be inside IRB, and should have a command prompt similar to the following.
+
+``` irb IRB command prompt
+irb(main):001:0&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In Ruby, a literal number evaluates to itself. (&lt;em&gt;Note that each line beginning with &amp;lsquo;irb(main)&amp;rsquo; is a command prompt, and each line beginning with &amp;lsquo;=&amp;gt;&amp;rsquo; is the resultant evaluation of the statement or expression to be evaluated.&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;``` irb Evaluation of a literal number
+irb(main):001:0&amp;gt; 1
+=&amp;gt; 1&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+An arithmetic expression evaluates to the result of the expression, taking into account order of precedence of arithmetic operators (more on this in future parts of the Ruby primer).
+
+``` irb Evaluation of an arithmetic expression
+irb(main):002:0&amp;gt; 1 + 2
+=&amp;gt; 3
+irb(main):003:0&amp;gt; 3 * 3
+=&amp;gt; 9
+irb(main):004:0&amp;gt; 1 + 2 * 3
+=&amp;gt; 7
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Strings evaluate to themselves, and can be concatenated (using the &amp;lsquo;+&amp;rsquo; operator).&lt;/p&gt;
+
+&lt;p&gt;``` irb Evaluation of a string
+irb(main):005:0&amp;gt; &amp;ldquo;hello, world&amp;rdquo;
+=&amp;gt; &amp;ldquo;hello, world&amp;rdquo;
+irb(main):006:0&amp;gt; &amp;ldquo;hello, &amp;rdquo; + &amp;ldquo;world&amp;rdquo;
+=&amp;gt; &amp;ldquo;hello, world&amp;rdquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+Data can be stored in variables (using the &#39;=&#39; operator, and the variable will evaluate to the contents of the variable.
+
+``` irb Storing data in and evaluating variables
+irb(main):007:0&amp;gt; greeting = &amp;quot;hello&amp;quot;
+=&amp;gt; &amp;quot;hello&amp;quot;
+irb(main):008:0&amp;gt; greeting
+=&amp;gt; &amp;quot;hello&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Variables can be concatenated (again, using the &amp;lsquo;+&amp;rsquo; operator).&lt;/p&gt;
+
+&lt;p&gt;``` irb Concatenating and evaluating variables
+irb(main):009:0&amp;gt; greeting + &amp;ldquo;, world&amp;rdquo;
+=&amp;gt; &amp;ldquo;hello, world&amp;rdquo;
+irb(main):010:0&amp;gt; subject = &amp;ldquo;world&amp;rdquo;
+=&amp;gt; &amp;ldquo;world&amp;rdquo;
+irb(main):011:0&amp;gt; greeting + &amp;ldquo;, &amp;rdquo; + subject
+=&amp;gt; &amp;ldquo;hello, world&amp;rdquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+Complex expressions can be evaluated. (Don&#39;t worry too much about what exactly is happening here, as it will be covered in-depth in future parts of this Ruby primer.)
+
+``` irb Evaluating a complex expression
+irb(main):012:0&amp;gt; i = 1
+=&amp;gt; 1
+irb(main):013:0&amp;gt; while i &amp;lt; 100
+irb(main):014:1&amp;gt;   print i
+irb(main):015:1&amp;gt;   i += 1
+irb(main):016:1&amp;gt; end
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899=&amp;gt; nil
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Functions can be defined and evaluated. (&lt;em&gt;Note that in Ruby, functions do not require a &amp;lsquo;return&amp;rsquo; statement, you can just have an expression. If that expression is the last statement, that is what will be returned.&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;``` irb Defining and evaluating functions
+irb(main):017:0&amp;gt; def square(n)
+irb(main):018:1&amp;gt;   return n * n
+irb(main):019:1&amp;gt; end
+=&amp;gt; nil
+irb(main):020:0&amp;gt; square(2)
+=&amp;gt; 4
+irb(main):021:0&amp;gt; square(4)
+=&amp;gt; 16
+irb(main):022:0&amp;gt; def sum(num1, num2)
+irb(main):023:1&amp;gt;   num1 + num2
+irb(main):024:1&amp;gt; end
+=&amp;gt; nil
+irb(main):025:0&amp;gt; sum(1, 2)
+=&amp;gt; 3&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+You can exit IRB by using the &#39;quit&#39; command, and will be returned to your regular command prompt.
+
+``` irb Exiting IRB
+irb(main):026:0&amp;gt; quit
+$
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Congratulation! You have just gotten your feet wet using Ruby and the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:13a4833975b30c7ec5267d72bdd63db4&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

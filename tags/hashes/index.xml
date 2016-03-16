@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hashes on Nathanial L. McConnell</title>
+    <link>http://www.nmcconnell.com/tags/hashes/</link>
+    <description>Recent content in Hashes on Nathanial L. McConnell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Thu, 03 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.nmcconnell.com/tags/hashes/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A Ruby Primer, Part 10 -- Hashes</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-10-hashes/</link>
+      <pubDate>Thu, 03 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-10-hashes/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;p&gt;If you are unfamiliar with using the Ruby Interactive Shell, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;terms:de746e5f1862cf2b72ec656cda7c5fa6&#34;&gt;Terms&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Hash:&lt;/strong&gt; &lt;em&gt;A hash is an associative collection of unique keys and their values.&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Hash.html&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;hashes-in-ruby:de746e5f1862cf2b72ec656cda7c5fa6&#34;&gt;Hashes in Ruby&lt;/h3&gt;
+
+&lt;p&gt;Ruby allows us to create dictionary-like objects, called hashes, which are associative collections of unique key-value pairs. Hashes are similar to arrays, but can use any object as an index, as opposed to the integer index that arrays use.&lt;/p&gt;
+
+&lt;p&gt;In Ruby, we define a hash using curly braces ({}) and a colon (&amp;rsquo;:&amp;lsquo;) after the key (if the key is a &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Symbol.html&#34;&gt;Ruby symbol&lt;/a&gt;), or a hash rocket (&amp;lsquo;=&amp;gt;&amp;rsquo;) after the key (if the key is a string). (*Note that we will be discussing Ruby symbols later in this primer, but for now, keep in mind that after creating a symbol using a colon &lt;strong&gt;after&lt;/strong&gt; the symbol name, you can access the symbol by putting a colon &lt;strong&gt;before&lt;/strong&gt; the symbol name.*) Like other literals, we can assign hashes to variables.&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see hashes in action.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;irb Hash literals
+irb(main):001:0&amp;gt; secret_id = {&amp;quot;Superman&amp;quot; =&amp;gt; &amp;quot;Clark Kent&amp;quot;, &amp;quot;Wonder Woman&amp;quot; =&amp;gt; &amp;quot;Diana Prince&amp;quot;, &amp;quot;Batman&amp;quot; =&amp;gt; &amp;quot;Bruce Wayne&amp;quot;, &amp;quot;Green Lantern&amp;quot; =&amp;gt; &amp;quot;Alan Scott&amp;quot;, &amp;quot;The Flash&amp;quot; =&amp;gt; &amp;quot;Jay Garrick&amp;quot;}
+=&amp;gt; {&amp;quot;Superman&amp;quot;=&amp;gt;&amp;quot;Clark Kent&amp;quot;, &amp;quot;Wonder Woman&amp;quot;=&amp;gt;&amp;quot;Diana Prince&amp;quot;, &amp;quot;Batman&amp;quot;=&amp;gt;&amp;quot;Bruce Wayne&amp;quot;, &amp;quot;Green Lantern&amp;quot;=&amp;gt;&amp;quot;Alan Scott&amp;quot;, &amp;quot;The Flash&amp;quot;=&amp;gt;&amp;quot;Jay Garrick&amp;quot;}
+irb(main):002:0&amp;gt; secret_id[&amp;quot;Superman&amp;quot;]
+=&amp;gt; &amp;quot;Clark Kent&amp;quot;
+irb(main):003:0&amp;gt; secret_id[&amp;quot;Green Lantern&amp;quot;]
+=&amp;gt; &amp;quot;Alan Scott&amp;quot;
+irb(main):004:0&amp;gt; first_appearance = {superman: 1938, wonder_woman: 1941, batman: 1939, green_lantern: 1940, the_flash: 1940}
+irb(main):005:0&amp;gt; first_appearance[:wonder_woman]
+=&amp;gt; 1941
+irb(main):006:0&amp;gt; first_appearance[:the_flash]
+=&amp;gt; 1940
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Ruby provides many useful hash methods. We recommend exploring the &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Hash.html&#34;&gt;Ruby documentation&lt;/a&gt; and trying out some of these on your own to gain a better understanding. We will be using various hash methods throughout the rest of this primer.&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You have learned about some of the basic ways to use the hash data type.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:de746e5f1862cf2b72ec656cda7c5fa6&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
