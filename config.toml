@@ -45,15 +45,15 @@ pygmentsStyle = "monokai"
 pygmentsStyleUseClasses = false
 sitemap = ""
 stepAnalysis = false
-verbose = false
-verboseLog = false
+verbose = true
+verboseLog = true
 
 ignoreFiles = []
 
 editor = "atom"
 newContentEditor = "atom"
 log = true
-logFile = "json"
+logFile = "log.json"
 
 permalinks = ""
 

@@ -4,15 +4,35 @@
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 # Clear project directory
-git rm -rf public
+rm -rf public
 
 # Build the project
 hugo # if using a theme, use `hugo -t <themename>`
 
-# Add static files
-# cp -R static/* public
+# Add changes to git
+cd public
+git add .
 
-# Add other files
-cp -R .well-known public
-cp CNAME public
-cp keybase.txt public
+# Commit changes to git
+msg="Rebuilding site `date`"
+if [ $# -eq 1 ]
+  then msg="$1"
+fi
+git commit -a -S -m "$msg"
+
+# Push source and build repos
+git push origin master
+
+cd ..
+
+git add .
+
+# Commit changes to git
+msg="Rebuilding site `date`"
+if [ $# -eq 1 ]
+  then msg="$1"
+fi
+git commit -a -S -m "$msg"
+
+# Push source and build repos
+git push origin master
