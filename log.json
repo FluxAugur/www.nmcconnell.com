@@ -64,3 +64,12 @@ LOG:   2016/03/19 08:57:12 thatswhyyoualwaysleaveanote.go:183: 1 series created
 LOG:   2016/03/19 08:57:12 thatswhyyoualwaysleaveanote.go:183: 34 tags created
 LOG:   2016/03/19 08:57:12 thatswhyyoualwaysleaveanote.go:183: 4 topics created
 LOG:   2016/03/19 08:57:12 thatswhyyoualwaysleaveanote.go:183: in 422 ms
+LOG:   2016/03/19 08:58:14 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 08:58:14 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 08:58:14 thatswhyyoualwaysleaveanote.go:183: 27 pages created
+LOG:   2016/03/19 08:58:14 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 08:58:14 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 08:58:14 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 08:58:14 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 08:58:14 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 08:58:14 thatswhyyoualwaysleaveanote.go:183: in 317 ms
