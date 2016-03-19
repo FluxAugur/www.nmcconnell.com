@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Numbers on Nathanial L. McConnell</title>
+    <link>http://www.nmcconnell.com/tags/numbers/</link>
+    <description>Recent content in Numbers on Nathanial L. McConnell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.nmcconnell.com/tags/numbers/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A Ruby Primer, Part 6 -- Numbers</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-6-numbers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-6-numbers/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;p&gt;If you are unfamiliar with using the Ruby Interactive Shell, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;terms:e187389743e8f048f4fab6fb26282989&#34;&gt;Terms&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Numeric:&lt;/strong&gt; &lt;em&gt;A Ruby class representing a numeric data type.&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Numeric.html&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Integer:&lt;/strong&gt; &lt;em&gt;A Ruby class representing whole number data types.&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Integer.html&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Float:&lt;/strong&gt; &lt;em&gt;A Ruby class representing floating point number data types.&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Float.html&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Binary:&lt;/strong&gt; &lt;em&gt;A base-2 number system.&lt;/em&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Binary_number&#34;&gt;Wikipedia article&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dedimal:&lt;/strong&gt; &lt;em&gt;A base-10 number system.&lt;/em&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Decimal&#34;&gt;Wikipedia article&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hexadecimal:&lt;/strong&gt; &lt;em&gt;A base-16 number system.&lt;/em&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Hexadecimal&#34;&gt;Wikipedia article&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Operator:&lt;/strong&gt; &lt;em&gt;A programming language construct that works like a function, but have syntactic or semantic differences.&lt;/em&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Operator_(computer_programming&#34;&gt;Wikipedia article&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;numbers-in-ruby:e187389743e8f048f4fab6fb26282989&#34;&gt;Numbers in Ruby&lt;/h3&gt;
+
+&lt;p&gt;Ruby allows us to work with a variety of number systems, including decimal (integers and floats), binary, hexadecimal, and others. Integers can be any whole number. Floats can be any floating point number (containing a decimal), but &lt;em&gt;cannot&lt;/em&gt; begin with a decimal - you must use a leading zero (e.g. 0.1234, not .1234). Binary numbers must begin with 0b (e.g. 0b1010) and hexadecimal numbers must begin with 0x (e.g. 0x10AF). We can create negative numbers by using the unary negative &amp;lsquo;-&amp;rsquo; operator (a positive value is always assumed, but you can specify the unary positive &amp;lsquo;+&amp;rsquo; operator, if you wish). &lt;a href=&#34;http://en.wikipedia.org/wiki/Unary_operation&#34;&gt;Wikipedia article on unary operations&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see number literals in action.&lt;/p&gt;
+
+&lt;p&gt;``` irb Number literals in different number systems
+irb(main):001:0&amp;gt; 42
+=&amp;gt; 42
+irb(main):002:0&amp;gt; 4321
+=&amp;gt; 4321
+irb(main):003:0&amp;gt; 6.28319
+=&amp;gt; 6.28319
+irb(main):004:0&amp;gt; 0b101010
+=&amp;gt; 42
+irb(main):005:0&amp;gt; 0x10E1
+=&amp;gt; 4321
+irb(main):006:0&amp;gt; .28319
+SyntaxError: (irb):6: no .&lt;digit&gt; floating literal anymore; put 0 before dot
+.28319
+ ^
+(irb):6: syntax error, unexpected &amp;lsquo;.&amp;rsquo;
+.28319
+ ^
+        from &lt;your IRB path here&gt;:12:in &amp;lsquo;&lt;main&gt;&amp;lsquo;
+irb(main):007:0&amp;gt; 0.28319
+=&amp;gt; 0.28319
+irb(main):008:0&amp;gt; -42
+=&amp;gt; -42
+irb(main):009:0&amp;gt; +42
+=&amp;gt; 42
+irb(main):010:0&amp;gt; -4321
+=&amp;gt; -4321
+irb(main):011:0&amp;gt; -6.28319
+=&amp;gt; -6.28319
+irb(main):012:0&amp;gt; -0b101010
+=&amp;gt; -42
+irb(main):013:0&amp;gt; -0x10E1
+=&amp;gt; -4321&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+#### Arithmetic Operators
+
+Ruby provides the standard arithmetic operations of addition, subtraction, multiplication, division, remainder (modulo), and exponention through the binary operators &#39;+&#39;, &#39;-&#39;, &#39;\*&#39;, &#39;/&#39;, &#39;%&#39;, &#39;\*\*&#39;, respectively.
+
+From IRB, let&#39;s see the arithmetic operators in action.
+
+``` irb Arithmetic operators
+irb(main):014:0&amp;gt; 24 + 18
+=&amp;gt; 42
+irb(main):015:0&amp;gt; 4321 - 1234
+=&amp;gt; 3087
+irb(main):016:0&amp;gt; -42 + 6.28319
+=&amp;gt; -35.71681
+irb(main):017:0&amp;gt; 0b101010 * 2
+=&amp;gt; 84
+irb(main):018:0&amp;gt; 0x10E1 / -2
+=&amp;gt; -2161
+irb(main):019:0&amp;gt; 42.0 / 4
+=&amp;gt; 10.5
+irb(main):020:0&amp;gt; 42 / 4
+=&amp;gt; 10
+irb(main):021:0&amp;gt; 42 % 4
+=&amp;gt; 2
+irb(main):022:0&amp;gt; 2 ** 2
+=&amp;gt; 4
+irb(main):023:0&amp;gt; 2 ** 3
+=&amp;gt; 8
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As you can see, Ruby is smart enough to the data type of a given number (integer, float, etc.) and allows you to combine different number systems within the same arithmetic operation.&lt;/p&gt;
+
+&lt;h4 id=&#34;converting-numbers-to-strings:e187389743e8f048f4fab6fb26282989&#34;&gt;Converting Numbers to Strings&lt;/h4&gt;
+
+&lt;p&gt;As covered in &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, we can use the &lt;code&gt;to_s&lt;/code&gt; method to convert any number to a string. We can also use parenthesis to group operations and convert the result into a string. Part 4 also covers the &lt;code&gt;to_i&lt;/code&gt; and &lt;code&gt;to_f&lt;/code&gt; methods, which we won&amp;rsquo;t rehash here.&lt;/p&gt;
+
+&lt;p&gt;``` irb Converting numbers to strings
+irb(main):024:0&amp;gt; 42.to_s
+=&amp;gt; &amp;ldquo;42&amp;rdquo;
+irb(main):025:0&amp;gt; 4321.to_s
+=&amp;gt; &amp;ldquo;4321&amp;rdquo;
+irb(main):026:0&amp;gt; 6.28319.to_s
+=&amp;gt; &amp;ldquo;6.28319&amp;rdquo;
+irb(main):027:0&amp;gt; 0b101010.to_s
+=&amp;gt; &amp;ldquo;42&amp;rdquo;
+irb(main):028:0&amp;gt; 0x10E1.to_s
+=&amp;gt; &amp;ldquo;4321&amp;rdquo;
+irb(main):029:0&amp;gt; (-0b101010 * 2).to_s
+=&amp;gt; &amp;ldquo;-84&amp;rdquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+#### Order of Operations
+
+Ruby orders the arithmetic operations just like you would expect. Parentheses can be used to override the standard order of operations.
+
+- Exponentiation (&#39;\*\*&#39;)
+- Unary plus (&#39;+&#39;) and minus (&#39;-&#39;)
+- Multiplication (&#39;\*&#39;), division (&#39;/&#39;), and modulo (&#39;%&#39;)
+- Addition (&#39;+&#39;) and subtraction (&#39;-&#39;)
+
+Below, we are raising 2 to the 4th power (exponentiation), then multiplying -42 by 0x10E1 (hexadecimal 4321), then dividing by -0b101010 (binary -42), and adding all of that to the result of the initial exponentiation.
+
+``` irb Order of operations
+irb(main):030:0&amp;gt; 2 ** 4 + -42 * 0x10E1 / -0b101010
+=&amp;gt; 4337
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Let&amp;rsquo;s override the order of operations with parentheses, and see what happens.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;irb Overring order of operations with parentheses
+irb(main):031:0&amp;gt; 2 ** ((4 + -42) * 0x10E1 / -0b101010)
+=&amp;gt; 5324183932979082217173830423788624448232377020200871925044363740978552645617392603963657332653293294921533487382005730205842492472324978256389524698133274982954316968418759621851827737904061947651709998777768764044640777451180488447019488349748492015288249539865325121412715328770419801502841515154181645054344997871537357625278584389884882092167456117235962842412534832325361798374338229786121498548414734430752922733207597283706654956923362549302114482188128786150568960200298842155354973238386993145987063220515184400346894462278601827604890618760154083905012744638294036976331341289696738323216673862314043949607110345453655000393965492565350543837806500159501747398630390119445689566142598744356783963943236839177990311764712795015435453751014259414011381595061542051363110034101037226883045394977492273858105094107413813083844023881750262194931436484929958736179968990507461243553811446562638876287908064004870619573393903638752010524471027366924289557008444655821060975285285523655000932375240137129357855653393565053617024444743584021979644805497476255820320767466042088222845247236339159742784704106913314432388396580367715094914656526338930045950563418904868276928512
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s a really large number!!&lt;/p&gt;
+
+&lt;p&gt;Ruby provides many other useful numeric methods. We recommend exploring the Ruby documentation and trying out some of these on your own to gain a better understanding. We will be using various numeric methods throughout the rest of this primer.&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You have learned about some of the basic ways to use the numeric data types, and perform basic arithmetic operations.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:e187389743e8f048f4fab6fb26282989&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

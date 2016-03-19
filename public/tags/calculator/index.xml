@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Calculator on Nathanial L. McConnell</title>
+    <link>http://www.nmcconnell.com/tags/calculator/</link>
+    <description>Recent content in Calculator on Nathanial L. McConnell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 31 Mar 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.nmcconnell.com/tags/calculator/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A Ruby Primer: Exercise 1 -- A simple command line calculator</title>
+      <link>http://www.nmcconnell.com/assignment/a-ruby-primer-exercise-1-a-simple-command-line-calculator/</link>
+      <pubDate>Mon, 31 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/assignment/a-ruby-primer-exercise-1-a-simple-command-line-calculator/</guid>
+      <description>
+
+&lt;p&gt;In this exercise, you will create a Ruby script for a simple command line calculator.&lt;/p&gt;
+
+&lt;h3 id=&#34;specification:368c30966dfb1a110f74e1ea6c4b2f3c&#34;&gt;Specification&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;File Name:&lt;/strong&gt; &lt;em&gt;simple-calculator.rb&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Input:&lt;/strong&gt; &lt;em&gt;Several strings containing your name, the user&amp;rsquo;s name, integers, and floats.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Output:&lt;/strong&gt; &lt;em&gt;Several strings containing various prompts and the results of various arithmetic calculations.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Methods Used:&lt;/strong&gt; &lt;em&gt;puts, print, gets, to_i, to_f, to_s (for floats)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;sample-output:368c30966dfb1a110f74e1ea6c4b2f3c&#34;&gt;Sample Output&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;Welcome to the Simple Calculator by Disciples of Code
+Please enter your name: Clark Kent
+Hello, Clark Kent
+Let&#39;s try some addition!
+Please enter a number to add: 1.55
+Please enter another number to add: 4
+The result of adding 1.55 plus 4 is: 5.55
+Let&#39;s try some subtraction!
+Please enter a number to subtract: 7.33
+Please enter another number to subtract: 2.33
+The result of subtracting 2.33 from 7.33 is: 5.0
+Let&#39;s try some multiplication!
+Please enter a number to multiply: 2
+Please enter another number to multiply: 5.12
+The result of multiplying 2 times 5.12 is: 10.24
+Let&#39;s try some division!
+Please enter a number to divide: 8.78
+Please enter another number to divide: 2.2
+The result of dividing 8.78 by 2.2 is: 3.9909090909090903
+Thank you for using the Simple Calculator!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Give this exercise a try. A solution will be posted soon.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:368c30966dfb1a110f74e1ea6c4b2f3c&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

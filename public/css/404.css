@@ -1,0 +1,9 @@
+.four-oh-four {
+}
+
+canvas {
+  background-image: url('img/bg-404-debugging.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

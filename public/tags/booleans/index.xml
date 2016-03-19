@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Booleans on Nathanial L. McConnell</title>
+    <link>http://www.nmcconnell.com/tags/booleans/</link>
+    <description>Recent content in Booleans on Nathanial L. McConnell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.nmcconnell.com/tags/booleans/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A Ruby Primer, Part 7 -- Booleans</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-7-booleans/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-7-booleans/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;p&gt;If you are unfamiliar with using the Ruby Interactive Shell, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;terms:5a8cd1bef50f73d5f181de054234a378&#34;&gt;Terms&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Boolean:&lt;/strong&gt; &lt;em&gt;A boolean is a data type intended to represent logical truth values.&lt;/em&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Boolean_data_type&#34;&gt;Wikipedia article&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Comparison:&lt;/strong&gt; &lt;em&gt;A comparison is an operation that is used to test the inequality of values.&lt;/em&gt; &lt;a href=&#34;http://en.wikipedia.org/wiki/Inequality_(mathematics&#34;&gt;Wikipedia article&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;booleans-in-ruby:5a8cd1bef50f73d5f181de054234a378&#34;&gt;Booleans in Ruby&lt;/h3&gt;
+
+&lt;p&gt;Ruby provides three &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/doc/syntax/literals_rdoc.html&#34;&gt;boolean literals&lt;/a&gt; that we can use when making comparisons or in conditional expressions: &lt;code&gt;true&lt;/code&gt;, &lt;code&gt;false&lt;/code&gt;, and &lt;code&gt;nil&lt;/code&gt;. (&lt;em&gt;Note that we will discuss conditional expressions later in this primer.&lt;/em&gt;)&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;true&lt;/code&gt; is a true value&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;false&lt;/code&gt; is a false value&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nil&lt;/code&gt; is a false value and is also used to indicate the absence of data or that the truth value of the data is unknown.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We can assign boolean values to variables, just as we have with &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;numeric&lt;/a&gt; and &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;string&lt;/a&gt; values. We can use the unary negation (&amp;lsquo;!&amp;rsquo;) operator to reverse the truth value of a boolean.&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see booleans in action.&lt;/p&gt;
+
+&lt;p&gt;``` irb Boolean literals
+irb(main):001:0&amp;gt; true
+=&amp;gt; true
+irb(main):002:0&amp;gt; false
+=&amp;gt; false
+irb(main):003:0&amp;gt; nil
+=&amp;gt; nil
+irb(main):004:0&amp;gt; !true
+=&amp;gt; false
+irb(main):005:0&amp;gt; !false
+=&amp;gt; true
+irb(main):006:0&amp;gt; !nil
+=&amp;gt; true
+irb(main):007:0&amp;gt; flag = true
+=&amp;gt; true
+irb(main):008:0&amp;gt; flag
+=&amp;gt; true
+irb(main):009:0&amp;gt; !flag
+=&amp;gt; false&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+#### Comparison Operators
+
+Ruby provides the standard comparison operations of &#39;is equal to&#39;, &#39;is not equal to&#39;, &#39;is greater than&#39;, &#39;is less than&#39;, &#39;is greater than or equal to&#39;, and &#39;is less than or equal to&#39;, through the binary operators &#39;==&#39;, &#39;!=&#39;, &#39;\&amp;gt;&#39;, &#39;&amp;lt;&#39;, &#39;\&amp;gt;=&#39;, and &#39;&amp;lt;=&#39;, respectively. There are a few others which we will discuss in later parts of this primer.
+
+From IRB, let&#39;s see the comparison operators in action.
+
+``` irb Comparison operators
+irb(main):010:0&amp;gt; true == true
+=&amp;gt; true
+irb(main):011:0&amp;gt; true == false
+=&amp;gt; false
+irb(main):012:0&amp;gt; true == nil
+=&amp;gt; false
+irb(main):013:0&amp;gt; false == nil
+=&amp;gt; false
+irb(main):014:0&amp;gt; true != true
+=&amp;gt; false
+irb(main):015:0&amp;gt; true != false
+=&amp;gt; true
+irb(main):016:0&amp;gt; true != nil
+=&amp;gt; true
+irb(main):017:0&amp;gt; false != nil
+=&amp;gt; true
+irb(main):018:0&amp;gt; 24 == 42
+=&amp;gt; false
+irb(main):019:0&amp;gt; 24 != 42
+=&amp;gt; true
+irb(main):020:0&amp;gt; 24 &amp;gt; 42
+=&amp;gt; false
+irb(main):021:0&amp;gt; 24 &amp;gt;= 42
+=&amp;gt; false
+irb(main):022:0&amp;gt; 24 &amp;lt; 42
+=&amp;gt; true
+irb(main):023:0&amp;gt; 24 &amp;lt;= 42
+=&amp;gt; true
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We recommend trying out some of these comparison operations on your own to gain a better understanding. We will be using various boolean literals and comparison operations throughout the rest of this primer.&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You have learned about some of the basic ways to use the boolean data types, and perform basic comparison operations.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:5a8cd1bef50f73d5f181de054234a378&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

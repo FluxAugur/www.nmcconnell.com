@@ -1,0 +1,182 @@
+.color-light {
+  color: #c9a6ff;
+}
+.color-stable {
+  color: #ae8ee0;
+}
+.color-positive {
+  color: #5298cf;
+}
+.color-calm {
+  color: #8dbada;
+}
+.color-balanced {
+  color: #96e594;
+}
+.color-energized {
+  color: #faf2a2;
+}
+.color-assertive {
+  color: #8f5d6c;
+}
+.color-royal {
+  color: #635b96;
+}
+.color-dark {
+  color: #2b2437;
+}
+.color-absent {
+  color: #1B1723;
+}
+
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.header {
+  font-family: 'Audiowide', cursive;
+}
+
+a {
+  color: #8dbada;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+a:visited {
+  color: #5298cf;
+}
+
+.small-print {
+  font-size: 0.8em;
+  margin: 0.6em;
+}
+
+.post-meta {
+  font-size: 90%;
+}
+
+article > footer {
+  text-align: right;
+}
+
+.prev-next-post {
+  margin-top: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-top: 1px solid #8dbada;
+  border-bottom: 1px solid #8dbada;
+}
+
+.prev-next-post .prev {
+  float: left;
+  text-align: left;
+  overflow: hidden;
+}
+
+.prev-next-post .next {
+  float: right;
+  text-align: right;
+  overflow: hidden;
+}
+
+.pullquote {
+  background: url(../img/quotes-balloons.png) top left no-repeat;
+  background-size: 30%;
+  color: #96e594;
+  margin: 0;
+  padding: 1rem 0rem 0.5rem 0rem;
+  width: 35%;
+}
+.pullquote-right-textbox {
+  border-bottom: 2px solid #96e594;
+  border-right: 2px solid #96e594;
+  box-shadow: 5px 5px #635b96;
+  padding: 0.5rem;
+}
+.pullquote-text {
+  color: #faf2a2;
+  font-size: .85rem;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: bold;
+  line-height: 1rem;
+  padding-top: 10%;
+}
+.first-word {
+  color: #96e594;
+  font-size: 1.25rem;
+  margin: 0;
+  padding-top: 1.5rem;
+  text-shadow: 1px 1px 2px #635b96, 0 0 25px #faf2a2, 0 0 5px #5298cf;
+}
+.first-word:first-letter {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.remaining-words {
+  margin: 0;
+}
+.by {
+  color: #96e594;
+  margin: 0;
+}
+
+#menu .brand {
+  font-family: 'Audiowide', cursive;
+  font-weight: bold;
+  font-size: 1.25em;
+  letter-spacing: 0.1em;
+  text-transform: none;
+  background: transparent;
+  text-decoration: none;
+  margin: 0.5em 0;
+}
+
+#menu .pure-menu {
+  font-size: 0.9em;
+}
+
+i {
+  display: inline-block;
+  margin-right: 0.2em;
+}
+
+.pagination {
+  text-align: center;
+}
+
+time {
+  color: #96e594;
+}
+
+blockquote {
+  margin: 0;
+}
+
+p {
+  font-size: 1.25rem;
+  text-shadow: 0 1px 10px #635b96;
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+}

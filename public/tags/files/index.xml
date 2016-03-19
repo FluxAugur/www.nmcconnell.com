@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Files on Nathanial L. McConnell</title>
+    <link>http://www.nmcconnell.com/tags/files/</link>
+    <description>Recent content in Files on Nathanial L. McConnell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Sun, 30 Mar 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.nmcconnell.com/tags/files/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A Ruby Primer, Part 3 -- Ruby scripts</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-3-ruby-scripts/</link>
+      <pubDate>Sun, 30 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-3-ruby-scripts/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;scripts:0dbcdba024d44072fbdbe0ed0197b821&#34;&gt;Scripts?&lt;/h3&gt;
+
+&lt;p&gt;While using the Ruby Interactive Shell (IRB) to evaluate your Ruby code can be very useful for learning, debugging, and executing short statements or expressions, to create larger (and persistent) Ruby programs, you will need to store all of your Ruby code in scripts.&lt;/p&gt;
+
+&lt;p&gt;A script is simply a plain-text file that contains your code. In our case, we will be creating Ruby scripts (containing Ruby code). All Ruby scripts should have a Ruby filename extension (e.g filename.rb).&lt;/p&gt;
+
+&lt;h3 id=&#34;creating-scripts:0dbcdba024d44072fbdbe0ed0197b821&#34;&gt;Creating Scripts&lt;/h3&gt;
+
+&lt;p&gt;To create a script, you will use a text editor. There are many different text editors available. Here are a few that we recommend.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Notepad (Windows; Included with operating system)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sublimetext.com/&#34;&gt;Sublime Text&lt;/a&gt; (Windows, OS X, Linux; Free to evaluate - $70 license)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://notepad-plus-plus.org/&#34;&gt;Notepad++&lt;/a&gt; (Windows; Free)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.nano-editor.org/&#34;&gt;GNU nano&lt;/a&gt; (OS X, Linux; Free)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.vim.org/&#34;&gt;vim&lt;/a&gt; (Windows, OS X, Linux; Free)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We will not be covering installation or usage of your chosen text editor. Please refer to the relevant documentation for the application of your choice.&lt;/p&gt;
+
+&lt;h3 id=&#34;creating-and-executing-ruby-scripts:0dbcdba024d44072fbdbe0ed0197b821&#34;&gt;Creating and Executing Ruby Scripts&lt;/h3&gt;
+
+&lt;p&gt;Using your chosen text editor, create a file called &lt;code&gt;helloworld.rb&lt;/code&gt;. While it isn&amp;rsquo;t necessary, it is recommended that you store all of your Ruby scripts in an appropriate directory on your filesystem (e.g. a directory called &amp;ldquo;ruby-primer&amp;rdquo;). Open the file, add the following Ruby code, and then save the file.&lt;/p&gt;
+
+&lt;p&gt;``` ruby helloworld.rb
+puts(&amp;ldquo;Hello, world!&amp;rdquo;)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+To execute the `helloworld.rb` Ruby script, open a Terminal window (OS X or Linux) or a Command Prompt (Windows), navigate to the directory where you saved the file, and execute the following command.
+
+``` bash Executing helloworld.rb
+$ ruby helloworld.rb
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You should see the text &amp;ldquo;Hello, world!&amp;rdquo; output after executing your &lt;code&gt;helloworld.rb&lt;/code&gt; Ruby script, as such:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;bash Executing helloworld.rb (with output)
+$ ruby helloworld.rb
+Hello, world!
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;We will be executing many Ruby scripts throughout the remainder of this primer.&lt;/p&gt;
+
+&lt;p&gt;Congratulation! You have learned how to create and execute Ruby scripts.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:0dbcdba024d44072fbdbe0ed0197b821&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

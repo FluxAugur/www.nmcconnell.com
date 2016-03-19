@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Input/Output on Nathanial L. McConnell</title>
+    <link>http://www.nmcconnell.com/tags/input/output/</link>
+    <description>Recent content in Input/Output on Nathanial L. McConnell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 31 Mar 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.nmcconnell.com/tags/input/output/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A Ruby Primer, Part 4 -- Outputting and inputting data</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-4-outputting-and-inputting-data/</link>
+      <pubDate>Mon, 31 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-4-outputting-and-inputting-data/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;p&gt;If you are unfamiliar with using the Ruby Interactive Shell, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;terms:bf48968c71c9d3bc5a589135ca61473a&#34;&gt;Terms&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Method:&lt;/strong&gt; &lt;em&gt;A method is a member function (collection of code statements or expressions) associated with an object, and which has access to its data and its member variables.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Method Signature:&lt;/strong&gt; &lt;em&gt;A method signature is a specification for how to use a method and is given in the format method_name([arguments]) -&amp;gt; return_value, where [arguments] is a potentially empty array (collection) of objects to be given as parameters for the method.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;nil:&lt;/strong&gt; *A null class. nil &lt;strong&gt;does not&lt;/strong&gt; equal the number 0. nil represents the absense of data.*&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;outputting-displaying-data:bf48968c71c9d3bc5a589135ca61473a&#34;&gt;Outputting (Displaying) Data&lt;/h3&gt;
+
+&lt;p&gt;Ruby gives us a variety of options for outputting data. We are going to look at the &lt;code&gt;puts&lt;/code&gt; and &lt;code&gt;print&lt;/code&gt; methods.&lt;/p&gt;
+
+&lt;h4 id=&#34;the-puts-method:bf48968c71c9d3bc5a589135ca61473a&#34;&gt;The puts Method&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Method Signatures:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;puts(obj, &amp;hellip;) -&amp;gt; nil&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/IO.html#method-i-puts&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In Ruby, the &lt;code&gt;puts&lt;/code&gt; method will write (display) a given object (or array of objects) to the standard output (e.g. the console).&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see the &lt;code&gt;puts&lt;/code&gt; method in action.&lt;/p&gt;
+
+&lt;p&gt;``` irb Displaying &amp;ldquo;Hello, world!&amp;rdquo; with the puts method
+irb(main):001:0&amp;gt; puts(&amp;ldquo;Hello, world!&amp;rdquo;)
+Hello, world!
+=&amp;gt; nil&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+We told IRB to evaluate the `puts` method with the string &amp;quot;Hello, world!&amp;quot; as a single argument given as a parameter. &amp;quot;Hello, world!&amp;quot; was displayed to the standard output, and a nil was retuned.
+
+The `puts` method does not require the use of parentheses. The following example will yield the exact same result as the previous example.
+
+``` irb Displaying &amp;quot;Hello, world!&amp;quot; with the puts method without parentheses
+irb(main):002:0&amp;gt; puts &amp;quot;Hello, world!&amp;quot;
+Hello, world!
+=&amp;gt; nil
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;puts&lt;/code&gt; method appends a newline character after each of the given parameters, which is why the returned result (=&amp;gt; nil) is on a new line. We can see this in action, more specifically, by providing multiple arguments.&lt;/p&gt;
+
+&lt;p&gt;``` irb Multiple arguments
+irb(main):003:0&amp;gt; puts(&amp;ldquo;Hello, world!&amp;rdquo;, &amp;ldquo;Goodbye, world!&amp;rdquo;)
+Hello, world!
+Goodbye, world!
+=&amp;gt; nil
+irb(main):004:0&amp;gt; puts &amp;ldquo;Hello, world!&amp;rdquo;, &amp;ldquo;Goodbye, world!&amp;rdquo;
+Hello, world!
+Goodbye, world!
+=&amp;gt; nil
+irb(main):005:0&amp;gt; puts(&amp;ldquo;One&amp;rdquo;, &amp;ldquo;small&amp;rdquo;, &amp;ldquo;step&amp;rdquo;, &amp;ldquo;for&amp;rdquo;, &amp;ldquo;man&amp;rdquo;)
+One
+small
+step
+for
+man
+=&amp;gt; nil
+irb(main):006:0&amp;gt; puts &amp;ldquo;One&amp;rdquo;, &amp;ldquo;small&amp;rdquo;, &amp;ldquo;step&amp;rdquo;, &amp;ldquo;for&amp;rdquo;, &amp;ldquo;man&amp;rdquo;
+One
+small
+step
+for
+man
+=&amp;gt; nil&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+#### The print Method
+&amp;gt; **Method Signatures:**
+&amp;gt;
+&amp;gt; - *print() -&amp;gt; nil* [Ruby documentation](http://www.ruby-doc.org/core-2.1.1/IO.html#method-i-print)
+&amp;gt;
+&amp;gt; - *print(obj, ...) -&amp;gt; nil* [Ruby documentation](http://www.ruby-doc.org/core-2.1.1/IO.html#method-i-print)
+
+The `print` method works similarly to the `puts` method, but a newline character is not appended to each argument.
+
+From IRB, let&#39;s see the `puts` method in action.
+
+``` irb The print method
+irb(main):007:0&amp;gt; print(&amp;quot;Hello, world!&amp;quot;)
+Hello, world!=&amp;gt; nil
+irb(main):008:0&amp;gt; print &amp;quot;Hello, world!&amp;quot;
+Hello, world!=&amp;gt; nil
+irb(main):009:0&amp;gt; print(&amp;quot;Hello, world!&amp;quot;, &amp;quot;Goodbye, world!&amp;quot;)
+Hello, world!Goodbye, world!=&amp;gt; nil
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We can see that the returned result (=&amp;gt; nil) is not on a new line. To append a newline character to an argument when using the &lt;code&gt;print&lt;/code&gt; method, use the newline (\n) escape character. We can see that if a new line is desired, it is much simpler to use the &lt;code&gt;puts&lt;/code&gt; method.&lt;/p&gt;
+
+&lt;p&gt;``` irb The print method with the newline (\n) escape character
+irb(main):010:0&amp;gt; print(&amp;ldquo;Hello, world!\n&amp;rdquo;)
+Hello, world!
+=&amp;gt; nil
+irb(main):011:0&amp;gt; print &amp;ldquo;Hello, world!\n&amp;rdquo;
+Hello, world!
+=&amp;gt; nil
+irb(main):012:0&amp;gt; print(&amp;ldquo;Hello, world!\n&amp;rdquo;, &amp;ldquo;Goodbye, world!\n&amp;rdquo;)
+Hello, world!
+Goodbye, world!
+=&amp;gt; nil
+irb(main):013:0&amp;gt; print &amp;ldquo;One\n&amp;rdquo;, &amp;ldquo;small\n&amp;rdquo;, &amp;ldquo;step\n&amp;rdquo;, &amp;ldquo;for\n&amp;rdquo;, &amp;ldquo;man\n&amp;rdquo;
+One
+small
+step
+for
+man
+=&amp;gt; nil&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+#### Displaying Other Data
+
+The `puts` and `print` methods can also be used to display numbers or to evaluate expressions.
+
+``` irb Displaying numbers and expressions
+irb(main):014:0&amp;gt; puts(1)
+1
+=&amp;gt; nil
+irb(main):015:0&amp;gt; print(2 + 2)
+4=&amp;gt; nil
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;inputting-data:bf48968c71c9d3bc5a589135ca61473a&#34;&gt;Inputting Data&lt;/h3&gt;
+
+&lt;p&gt;Ruby gives us a variety of options for outputting data. We are going to look at the &lt;code&gt;gets&lt;/code&gt; method.&lt;/p&gt;
+
+&lt;h4 id=&#34;the-gets-method:bf48968c71c9d3bc5a589135ca61473a&#34;&gt;The gets Method&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;(&lt;strong&gt;Method Signatures:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;gets(sep=$/ -&amp;gt; string or nil)&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/IO.html#method-i-gets&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;gets(limit) -&amp;gt; string or nil&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/IO.html#method-i-gets&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;gets(sep, limit) -&amp;gt; string or nil&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/IO.html#method-i-gets&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The &lt;code&gt;gets&lt;/code&gt; method will read (input) an object from the standard input (e.g. the keyboard). The &lt;code&gt;gets&lt;/code&gt; method will append (or concatenate) a newline character to the data read from the standard input.&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see the &lt;code&gt;gets&lt;/code&gt; method in action. (&lt;em&gt;Note that after entering the &lt;code&gt;gets&lt;/code&gt; method, the cursor is waiting to read data from the standard input. We will type some data and press &lt;RETURN&gt; or &lt;ENTER&gt; on the keyboard to indicate that we are done entering data.&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;``` irb The gets method
+irb(main):016:0&amp;gt; name = gets
+Superman
+=&amp;gt; &amp;ldquo;Superman\n&amp;rdquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+If we evaluate the name variable, we will see that a newline character has been appended for us. We can then output the data stored in the name variable.
+
+``` irb Evaluating and outputting input
+irb(main):017:0&amp;gt; name
+=&amp;gt; &amp;quot;Superman\n&amp;quot;
+irb(main):018:0&amp;gt; puts(name)
+Superman
+=&amp;gt; nil
+irb(main):019:0&amp;gt; print name
+Superman
+=&amp;gt; nil
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;the-chomp-method:bf48968c71c9d3bc5a589135ca61473a&#34;&gt;The chomp Method&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Method Signatures:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;chomp(separator=$/) -&amp;gt; new_str&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/String.html#method-i-chomp&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If we don&amp;rsquo;t want to display the appended newline character, we can use the &lt;code&gt;chomp&lt;/code&gt; method.&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see the &lt;code&gt;chomp&lt;/code&gt; method in action.&lt;/p&gt;
+
+&lt;p&gt;``` irb The chomp method
+irb(main):020:0&amp;gt; print name.chomp
+Superman=&amp;gt; nil&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+If we don&#39;t want to store the data in a variable, we can get input and output the data with one statement. (*Note that this works because the statements evaluate from right to left.*)
+
+``` irb Input and output without storing the data in a variable
+irb(main):021:0&amp;gt; puts gets
+Batman
+Batman
+=&amp;gt; nil
+irb(main):022:0&amp;gt; print(gets)
+Batman
+Batman
+=&amp;gt; nil
+irb(main):023:0&amp;gt; print gets.chomp
+Batman
+Batman=&amp;gt; nil
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;inputting-other-data:bf48968c71c9d3bc5a589135ca61473a&#34;&gt;Inputting Other Data&lt;/h4&gt;
+
+&lt;p&gt;The &lt;code&gt;gets&lt;/code&gt; method reads data from the standard input as a string object. Let&amp;rsquo;s see what happens when we try to input numbers and then evaluate an expression using those numbers. We can see that the numbers were read from standard input as string objects, and then the evaluation of &lt;code&gt;number1 + number2&lt;/code&gt; resulted in a concatenation of the two strings stored in the variables.&lt;/p&gt;
+
+&lt;p&gt;``` irb Inputting numbers with the gets method
+irb(main):024:0&amp;gt; number1 = gets
+1
+=&amp;gt; &amp;ldquo;1\n&amp;rdquo;
+irb(main):025:0&amp;gt; number2 = gets
+2
+=&amp;gt; &amp;ldquo;2\n&amp;rdquo;
+irb(main):026:0&amp;gt; numberTau = gets
+6.28319
+=&amp;gt; &amp;ldquo;6.28319\n&amp;rdquo;
+irb(main):027:0&amp;gt; number1 + number2
+=&amp;gt; &amp;ldquo;1\n2\n&amp;rdquo;
+irb(main):028:0&amp;gt; number1 + numberTau
+=&amp;gt; &amp;ldquo;1\n6.28319\n&amp;rdquo;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+#### The Integer, Float, to_i, and to_f Methods
+&amp;gt; **Method Signatures:**
+&amp;gt;
+&amp;gt; - *Integer(obj) -&amp;gt; integer* [Ruby documentation](http://www.ruby-doc.org/core-2.1.1/Integer.html)
+&amp;gt;
+&amp;gt; - *Float(obj) -&amp;gt; float* [Ruby codumentation](http://www.ruby-doc.org/core-2.1.1/Float.html)
+&amp;gt;
+&amp;gt; - *to_i -&amp;gt; integer* [Ruby documentation](http://www.ruby-doc.org/core-2.1.1/Integer.html#method-i-to_i)
+&amp;gt;
+&amp;gt; - *to_f -&amp;gt; float* [Ruby documentation](http://www.ruby-doc.org/core-2.1.1/Float.html#method-i-to_f)
+
+If we want to perform mathematical calculations on integers or floating point numbers input using the `gets` command, we need to convert the string that is returned from the `gets` command. We can do this by using the `Integer` and `Float` methods. Alternatively, we can use the `to_i` and `to_f` methods.
+
+From IRB, let&#39;s see the `Integer`, `Float1`, `to_i`, and `to_s` methods in action.
+
+``` irb Converting and using numeric data input with the gets method
+irb(main):029:0&amp;gt; Integer(number1)
+=&amp;gt; 1
+irb(main):030:0&amp;gt; number2.to_i
+=&amp;gt; 2
+irb(main):031:0&amp;gt; number1.to_i + Integer(number2)
+=&amp;gt; 3
+irb(main):032:0&amp;gt; Float(numberTau)
+=&amp;gt; 6.28319
+irb(main):033:0&amp;gt; numberTau.to_f + number2.to_i
+=&amp;gt; 8.28319
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;the-to-s-method-for-floats:bf48968c71c9d3bc5a589135ca61473a&#34;&gt;The to_s Method (for floats)&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Method Signatures:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;to_s -&amp;gt; string&lt;/em&gt; &lt;a href=&#34;http://www.ruby-doc.org/core-2.1.1/Float.html#method-i-to_s&#34;&gt;Ruby documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ruby doesn&amp;rsquo;t know how to implicitly convert a float into a string. However, Ruby does provide us with the &lt;code&gt;to_s&lt;/code&gt; method to accomplish this.&lt;/p&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see the &lt;code&gt;to_s&lt;/code&gt; method in action.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;irb Outputting floats using the to_s method
+irb(main):034:0&amp;gt; result = numberTau.to_f + number2.to_i
+=&amp;gt; 8.28319
+irb(main):035:0&amp;gt; result.to_s
+=&amp;gt; &amp;quot;8.28319&amp;quot;
+irb(main):036:0&amp;gt; puts result.to_s
+8.28319
+=&amp;gt; nil
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You have learned how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:bf48968c71c9d3bc5a589135ca61473a&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

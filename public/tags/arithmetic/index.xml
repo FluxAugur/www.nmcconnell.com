@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arithmetic on Nathanial L. McConnell</title>
+    <link>http://www.nmcconnell.com/tags/arithmetic/</link>
+    <description>Recent content in Arithmetic on Nathanial L. McConnell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Sat, 28 Jun 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.nmcconnell.com/tags/arithmetic/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A Ruby Primer, Part 12 -- Arithmetic operators</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-12-arithmetic-operators/</link>
+      <pubDate>Sat, 28 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-12-arithmetic-operators/</guid>
+      <description>
+
+&lt;p&gt;If you have not yet set up your development environment, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;p&gt;If you are unfamiliar with using the Ruby Interactive Shell, please refer to &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;arithmetic-in-ruby:2b074086389f7e598cbba904fd5322fc&#34;&gt;Arithmetic in Ruby&lt;/h3&gt;
+
+&lt;p&gt;As discussed in &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, Ruby provides the standard arithmetic operations of addition, subtraction, multiplication, division, remainder (modulo), and exponention through the binary operators &amp;lsquo;+&amp;rsquo;, &amp;lsquo;-&amp;rsquo;, &amp;lsquo;*&amp;rsquo;, &amp;lsquo;/&amp;rsquo;, &amp;lsquo;%&amp;rsquo;, &amp;lsquo;**&amp;rsquo;, respectively.&lt;/p&gt;
+
+&lt;p&gt;Ruby orders the arithmetic operations just like you would expect. Parentheses can be used to override the standard order of operations.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Exponentiation (&amp;rsquo;**&amp;rsquo;)&lt;/li&gt;
+&lt;li&gt;Unary plus (&amp;lsquo;+&amp;rsquo;) and minus (&amp;lsquo;-&amp;rsquo;)&lt;/li&gt;
+&lt;li&gt;Multiplication (&amp;rsquo;*&amp;rsquo;), division (&amp;lsquo;/&amp;rsquo;), and modulo (&amp;lsquo;%&amp;rsquo;)&lt;/li&gt;
+&lt;li&gt;Addition (&amp;lsquo;+&amp;rsquo;) and subtraction (&amp;lsquo;-&amp;rsquo;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;From IRB, let&amp;rsquo;s see the arithmetic operators in action.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;irb Arithmetic operators
+irb(main):001:0&amp;gt; 1 + 2
+=&amp;gt; 3
+irb(main):002:0&amp;gt; 12.3 - 4.5
+=&amp;gt; 7.8
+irb(main):003:0&amp;gt; 123 * 6.28319
+=&amp;gt; 772.83237
+irb(main):004:0&amp;gt; 42 / 4
+=&amp;gt; 10
+irb(main):005:0&amp;gt; 42 % 4
+=&amp;gt; 2
+irb(main):006:0&amp;gt; 2 ** 10
+=&amp;gt; 1024
+irb(main):007:0&amp;gt; 1 + 2 * 3
+=&amp;gt; 7
+irb(main):008:0&amp;gt; 1 + 2 ** 3
+=&amp;gt; 9
+irb(main):009:0&amp;gt; (1 + 2) ** 3
+=&amp;gt; 27
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Congratulations! You have learned about arithmetic operators.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:2b074086389f7e598cbba904fd5322fc&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

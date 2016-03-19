@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Environment on Nathanial L. McConnell</title>
+    <link>http://www.nmcconnell.com/tags/environment/</link>
+    <description>Recent content in Environment on Nathanial L. McConnell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 24 Mar 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://www.nmcconnell.com/tags/environment/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A Ruby Primer, Part 1 -- Setting up your development environment</title>
+      <link>http://www.nmcconnell.com/lesson/a-ruby-primer-part-1-setting-up-your-development-environment/</link>
+      <pubDate>Mon, 24 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.nmcconnell.com/lesson/a-ruby-primer-part-1-setting-up-your-development-environment/</guid>
+      <description>
+
+&lt;p&gt;The first step to learning Ruby (or any programming language) is to set up your development environment, so let&amp;rsquo;s dive right in.&lt;/p&gt;
+
+&lt;p&gt;The simplest method is to use a free, online development environment, such as those provided by &lt;a href=&#34;https://koding.com/R/nathanialmcconnell&#34;&gt;Koding.com&lt;/a&gt;. If you have already signed up for a &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt; account (which is highly recommended for source control and for sharing your code), you can sign up for Koding.com using your GitHub account credentials. As part of our goal of collaborative learning, we will be using both Koding.com and GitHub in the future, but neither are required to be able to complete this Ruby primer.&lt;/p&gt;
+
+&lt;h3 id=&#34;installing-ruby:800b85f81afa203f0da91299abf0d819&#34;&gt;Installing Ruby&lt;/h3&gt;
+
+&lt;p&gt;The alternative to using an online development environment is to install Ruby on your local development machine (e.g. your desktop or laptop computer).&lt;/p&gt;
+
+&lt;h4 id=&#34;installing-ruby-on-windows:800b85f81afa203f0da91299abf0d819&#34;&gt;Installing Ruby on Windows&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The easiest way to install Ruby on Windows is by using the &lt;a href=&#34;http://rubyinstaller.org/&#34;&gt;RubyInstaller&lt;/a&gt;. We will be using Ruby 2.0.0-p451 (patch level 451 of Ruby version 2.0.0). Simply download the &lt;a href=&#34;http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.0.0-p451.exe?direct&#34;&gt;32-bit&lt;/a&gt; or &lt;a href=&#34;http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.0.0-p451-x64.exe?direct&#34;&gt;64-bit&lt;/a&gt; versions of the RubyInstaller, and run the downloaded program. When presented with the Setup dialog box, please &lt;em&gt;select&lt;/em&gt; &lt;strong&gt;all&lt;/strong&gt; of the given options (as indicated in the following screenshot).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&#34;installing-ruby-on-os-x-or-linux:800b85f81afa203f0da91299abf0d819&#34;&gt;Installing Ruby on OS X or Linux&lt;/h4&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The easiest way to install Ruby on OS X or Linux is by using the &lt;a href=&#34;http://rvm.io/&#34;&gt;Ruby Version Manager (RVM)&lt;/a&gt;. To do so, open a Terminal window and execute the following command.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;``` bash Installing RVM and Ruby
+$ \curl -sSL &lt;a href=&#34;https://get.rvm.io&#34;&gt;https://get.rvm.io&lt;/a&gt; | bash -s stable &amp;ndash;ruby&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+### Verifying Your Ruby Installation
+Once you have Ruby installed, you can verify your installation (and check the Ruby version) by opening up a Terminal window (OS X or Linux) or a Command Prompt (Windows) and executing the following command on your command line.
+
+``` bash Checking your Ruby version
+$ ruby -v
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Congratulations! You have set up your development environment and are ready to get started with Ruby.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-ruby-primer:800b85f81afa203f0da91299abf0d819&#34;&gt;A Ruby Primer&lt;/h3&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-1-setting-up-your-development-environment/&#34;&gt;Part 1&lt;/a&gt; of this primer, you can learn how to set up your development environment.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-2-using-the-ruby-interactive-shell-irb/&#34;&gt;Part 2&lt;/a&gt; of this primer, you can explore using the Ruby Interactive Shell (IRB).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-3-ruby-scripts/&#34;&gt;Part 3&lt;/a&gt; of this primer, you can learn how to run Ruby programs (scripts).&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-part-4-outputting-and-inputting-data/&#34;&gt;Part 4&lt;/a&gt; of this primer, you can learn how to output and input data, as well as how to do simple conversion of strings into integers and floats.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/03/a-ruby-primer-exercise-1-a-simple-command-line-calculator/&#34;&gt;Exercise 1&lt;/a&gt; of this primer, you can learn how to create a simple command line calculator.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-5-strings/&#34;&gt;Part 5&lt;/a&gt; of this primer, you can learn about strings.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-6-numbers/&#34;&gt;Part 6&lt;/a&gt; of this primer, you can learn about numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-7-booleans/&#34;&gt;Part 7&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-8-ranges/&#34;&gt;Part 8&lt;/a&gt; of this primer, you can learn about booleans.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-9-arrays/&#34;&gt;Part 9&lt;/a&gt; of this primer, you can learn about arrays.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-10-hashes/&#34;&gt;Part 10&lt;/a&gt; of this primer, you can learn about hashes.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-part-11-variables-and-constants/&#34;&gt;Part 11&lt;/a&gt; of this primer, you can learn about variables and constants.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/04/a-ruby-primer-exercise-2-a-random-number-min-max-detector/&#34;&gt;Exercise 2&lt;/a&gt; of this primer, you can learn how to create a program to detect the minimum and maximum values from a collection of randomly generated numbers.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/06/a-ruby-primer-part-12-arithmetic-operators/&#34;&gt;Part 12&lt;/a&gt; of this primer, you can learn about arithmetic operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-13-relational-operators/&#34;&gt;Part 13&lt;/a&gt; of this primer, you can learn about relational operators.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;{{ root_url }}/2014/07/a-ruby-primer-part-14-logical-operators/&#34;&gt;Part 14&lt;/a&gt; of this primer, you can learn about logical operators.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
