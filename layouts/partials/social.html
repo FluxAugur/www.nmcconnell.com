@@ -183,6 +183,12 @@
     </li>
     {{ end }}
 
+    {{ with .Site.Social.pastebin }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://pastebin.com/u/{{ . }}" target="_blank"><i class="fa fa-file-code-o fa-fw"></i>Pastebin</a>
+    </li>
+    {{ end }}
+
     {{ with .Site.Social.keybase }}
     <li class="pure-menu-item">
       <a class="pure-menu-link" href="https://keybase.io/{{ . }}" target="_blank"><i class="fa fa-key fa-fw"></i>Keybase</a>
@@ -190,6 +196,12 @@
     {{ end }}
 
     <!-- SNS Payments -->
+
+    {{ with .Site.Social.flattr }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://flattr.com/submit/auto?fid=vkq1on&url=http%3A%2F%2Fwww.nmcconnell.com" target="_blank"><i class="fa fa-refresh fa-fw"></i>Flattr</a>
+    </li>
+    {{ end }}
 
     {{ with .Site.Social.bitcoin }}
     <li class="pure-menu-item">

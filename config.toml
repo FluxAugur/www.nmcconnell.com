@@ -1,13 +1,64 @@
-baseurl = "http://www.nmcconnell.com/"
+baseURL = "http://www.nmcconnell.com/"
+title = "Nathanial L. McConnell"
+author = "Nathanial L. McConnell"
+theme = "skelethorn"
+
+# General configuration
+config = "config.toml"
+source = ""
+archetypeDir = "archetype"
 contentDir = "content"
 dataDir = "data"
 layoutDir = "layouts"
 publishDir = "public"
-title = "Nathanial L. McConnell"
-author = "Nathanial L. McConnell"
+staticDir = "static"
+defaultExtension = "html"
+defaultLayout = "post"
+disablePathToLower = false
+hasCJKLanguage = false
+
+googleAnalytics = "UA-75154327-1"
+disqus = "nmcconnellcom"
+# CSS name for highlight.js
+highlightjs = "androidstudio"
+languageCode = "en-us"
+dateFormat = "02 Jan 2006, 15:04"
+footnoteAnchorPrefix = ""
+footnoteReturnLinkContents = ""
+
+buildDrafts = false
+buildFuture = false
+MetaDataFormat = "toml"
+canonifyURLs = true
+relativeURLs = false
+uglyURLs = false
+watch = true
+disableLiveReload = false
+disableRSS = false
+disableSitemap = false
+noTimes = false
+paginate = 10
+paginatePath = "page"
+pluralizeListtitles = true
+preserveTaxonomyNames = false
+pygmentsStyle = "monokai"
+pygmentsStyleUseClasses = false
+sitemap = ""
+stepAnalysis = false
+verbose = false
+verboseLog = false
+
+ignoreFiles = []
+
+editor = "atom"
+newContentEditor = "atom"
+log = true
+logFile = "json"
+
+permalinks = ""
+
 # Shown in the side menu
 copyright = "&copy; 2016. All rights reserved."
-canonifyurls = true
 
 [taxonomies]
   tag = "tags"
@@ -19,15 +70,6 @@ canonifyurls = true
   # Shown in the home page
   subtitle = "Braindumps, Diatribes, & Other Distractions"
   brand = "nmcconnell"
-  editor = "atom"
-  newContentEditor = "atom"
-  MetaDataFormat = "toml"
-  googleAnalytics = "UA-75154327-1"
-  disqus = "nmcconnellcom"
-  # CSS name for highlight.js
-  highlightjs = "androidstudio"
-  languageCode = "en-us"
-  dateFormat = "02 Jan 2006, 15:04"
 
 [menu]
   # Shown in the side menu.
@@ -98,8 +140,10 @@ canonifyurls = true
   github = "FluxAugur"
   bitbucket = "FluxAugur"
   stackoverflow = "2199507"
+  pastebin = "FluxAugur"
   keybase = "fluxaugur"
 
   # SNS Payments
+  flattr = "vkq1on"
   bitcoin = "fluxaugur"
   paypal = "fluxaugur"
