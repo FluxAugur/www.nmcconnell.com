@@ -1028,3 +1028,21 @@ LOG:   2016/03/19 14:34:45 thatswhyyoualwaysleaveanote.go:183: 1 courses created
 LOG:   2016/03/19 14:34:45 thatswhyyoualwaysleaveanote.go:183: 1 series created
 LOG:   2016/03/19 14:34:45 thatswhyyoualwaysleaveanote.go:183: 34 tags created
 LOG:   2016/03/19 14:34:45 thatswhyyoualwaysleaveanote.go:183: in 188 ms
+LOG:   2016/03/30 22:20:21 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/30 22:20:21 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/30 22:20:21 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/30 22:20:21 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/30 22:20:21 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/30 22:20:21 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/30 22:20:21 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/30 22:20:21 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/30 22:20:21 thatswhyyoualwaysleaveanote.go:183: in 3639 ms
+LOG:   2016/03/30 22:21:16 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/30 22:21:16 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/30 22:21:16 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/30 22:21:16 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/30 22:21:16 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/30 22:21:16 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/30 22:21:16 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/30 22:21:16 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/30 22:21:16 thatswhyyoualwaysleaveanote.go:183: in 189 ms
