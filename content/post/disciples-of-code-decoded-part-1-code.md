@@ -1,6 +1,6 @@
 +++
-title = "Disciples of Code: Decoded, Part 1 -- Code"
-date = "2014-02-17"
+title = "Disciples of Code: Decoded, Part 1 – Code"
+date = "2014-02-17T17:46:52-04:00"
 description = "Code is everywhere. Coding is an essential language."
 draft = false
 tags = ["Development", "Ruby", "Knowledge", "Learn", "Code"]

@@ -1,6 +1,6 @@
 +++
-title = "Disciples of Code: Decoded, Part 2 -- Decoding the why"
-date = "2014-02-17"
+title = "Disciples of Code: Decoded, Part 2 – Decoding the why"
+date = "2014-02-17T03:06:04-04:00"
 description = "Developers pursue coding for many reasons."
 draft = false
 tags = ["Development", "Ruby", "Knowledge", "Learn", "Causation", "Catalyst"]

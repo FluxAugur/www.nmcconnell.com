@@ -1,6 +1,6 @@
 +++
-title = "A Ruby Primer, Part 12 -- Arithmetic operators"
-date = "2014-06-28"
+title = "A Ruby Primer, Part 12 – Arithmetic operators"
+date = "2014-06-28T23:52:34-04:00"
 description = "Performing arithmetic with Ruby."
 draft = false
 tags = ["Development", "Ruby", "Arithmetic", "Operators", "Command Line"]

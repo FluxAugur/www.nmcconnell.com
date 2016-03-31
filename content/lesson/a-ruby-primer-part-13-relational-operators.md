@@ -1,6 +1,6 @@
 +++
-title = "A Ruby Primer, Part 13 -- Relational operators"
-date = "2014-07-01"
+title = "A Ruby Primer, Part 13 – Relational operators"
+date = "2014-07-01T21:24:43-04:00"
 description = "Performing comparisons with Ruby."
 draft = false
 tags = ["Development", "Ruby", "Relational", "Operators", "Command Line"]

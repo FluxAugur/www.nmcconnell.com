@@ -1,6 +1,6 @@
 +++
-title = "A Ruby Primer, Part 3 -- Ruby scripts"
-date = "2014-03-30"
+title = "A Ruby Primer, Part 3 – Ruby scripts"
+date = "2014-03-30T13:15:13-04:00"
 description = "Scripts are files containing Ruby code which can be executed to effect."
 draft = false
 tags = ["Development", "Ruby", "Scripts", "Command Line", "Files"]

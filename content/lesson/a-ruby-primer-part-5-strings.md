@@ -1,6 +1,6 @@
 +++
-title = "A Ruby Primer, Part 5 -- Strings"
-date = "2014-04-01"
+title = "A Ruby Primer, Part 5 – Strings"
+date = "2014-04-01T09:53:43-04:00"
 description = "Manipulating strings with Ruby."
 draft = false
 tags = ["Development", "Ruby", "Strings", "Command Line"]

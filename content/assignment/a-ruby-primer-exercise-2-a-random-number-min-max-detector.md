@@ -1,6 +1,6 @@
 +++
-title = "A Ruby Primer: Exercise 1 -- A random number min-max detector"
-date = "2014-04-03"
+title = "A Ruby Primer: Exercise 2 – A random number min-max detector"
+date = "2014-04-03T19:51:34-04:00"
 description = "An exercise in creating a random number min-max detector with Ruby."
 draft = false
 tags = ["Development", "Ruby", "Practice", "Learn", "Command Line", "Random", "Min-Max"]

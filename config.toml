@@ -25,6 +25,7 @@ languageCode = "en-us"
 dateFormat = "02 Jan 2006, 15:04"
 footnoteAnchorPrefix = ""
 footnoteReturnLinkContents = ""
+toc = false # set to true for table of contents in all content
 
 buildDrafts = false
 buildFuture = false
@@ -42,7 +43,8 @@ paginatePath = "page"
 pluralizeListtitles = true
 preserveTaxonomyNames = false
 pygmentsStyle = "monokai"
-pygmentsStyleUseClasses = false
+pygmentsStyleUseClasses = true
+syntaxHighlightTheme = "solarized_dark.min.css"
 sitemap = ""
 stepAnalysis = false
 verbose = true
@@ -55,7 +57,12 @@ newContentEditor = "atom"
 log = true
 logFile = "log.json"
 
-permalinks = ""
+[permalinks]
+  announcements = "/:section/:year/:month/:slug"
+  assignments = "/:section/:year/:month/:slug"
+  lessons = "/:section/:year/:month/:slug"
+  posts = "/:section/:year/:month/:slug"
+  quotes = "/:section/:year/:month/:filename"
 
 # Shown in the side menu
 copyright = "&copy; 2016. All rights reserved."
@@ -80,11 +87,35 @@ copyright = "&copy; 2016. All rights reserved."
     identifier = "home"
     url = "/"
   [[menu.main]]
+    name = "Announcements"
+    pre = "<i class='fa fa-bullhorn fa-fw'></i>"
+    weight = 1
+    identifier = "announcement"
+    url = "/announcement/"
+  [[menu.main]]
+    name = "Assignments"
+    pre = "<i class='fa fa-code fa-fw'></i>"
+    weight = 1
+    identifier = "assignment"
+    url = "/assignment/"
+  [[menu.main]]
+    name = "Lessons"
+    pre = "<i class='fa fa-graduation-cap fa-fw'></i>"
+    weight = 1
+    identifier = "lesson"
+    url = "/lesson/"
+  [[menu.main]]
     name = "Posts"
     pre = "<i class='fa fa-list fa-fw'></i>"
     weight = 1
     identifier = "post"
     url = "/post/"
+  [[menu.main]]
+    name = "Quotes"
+    pre = "<i class='fa fa-quote-left fa-fw'></i>"
+    weight = 1
+    identifier = "quote"
+    url = "/quote/"
   [[menu.main]]
     name = "About"
     pre = "<i class='fa fa-user fa-fw'></i>"

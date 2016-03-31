@@ -1,6 +1,6 @@
 +++
-title = "A Ruby Primer, Part 9 -- Arrays"
-date = "2014-04-03"
+title = "A Ruby Primer, Part 9 – Arrays"
+date = "2014-04-03T10:19:52-04:00"
 description = "Manipulating arrays with Ruby."
 draft = false
 tags = ["Development", "Ruby", "Arrays", "Command Line"]

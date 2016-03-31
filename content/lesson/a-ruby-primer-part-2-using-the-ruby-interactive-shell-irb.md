@@ -1,6 +1,6 @@
 +++
-title = "A Ruby Primer, Part 2 -- Using the Ruby interactive shell IRB"
-date = "2014-03-25"
+title = "A Ruby Primer, Part 2 – Using the Ruby interactive shell IRB"
+date = "2014-03-25T22:59:22-04:00"
 description = "Using IRB, the Ruby interactive shell."
 draft = false
 tags = ["Development", "Ruby", "Practice", "Learn", "Command Line", "IRB"]

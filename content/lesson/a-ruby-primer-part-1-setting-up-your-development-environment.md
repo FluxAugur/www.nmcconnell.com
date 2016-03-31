@@ -1,6 +1,6 @@
 +++
-title = "A Ruby Primer, Part 1 -- Setting up your development environment"
-date = "2014-03-24"
+title = "A Ruby Primer, Part 1 – Setting up your development environment"
+date = "2014-03-24T07:46:31-04:00"
 description = "Setting up a development environment for Ruby."
 draft = false
 tags = ["Development", "Ruby", "Practice", "Learn", "Command Line", "Environment"]
@@ -23,7 +23,7 @@ The alternative to using an online development environment is to install Ruby on
 > The easiest way to install Ruby on OS X or Linux is by using the [Ruby Version Manager (RVM)](http://rvm.io/). To do so, open a Terminal window and execute the following command.
 
 ``` bash Installing RVM and Ruby
-$ \curl -sSL https://get.rvm.io | bash -s stable --ruby
+$ \curl -sSL https://get.rvm.io | bash -s stable –ruby
 ```
 
 ### Verifying Your Ruby Installation

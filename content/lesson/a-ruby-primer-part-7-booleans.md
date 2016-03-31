@@ -1,6 +1,6 @@
 +++
-title = "A Ruby Primer, Part 7 -- Booleans"
-date = "2014-04-02"
+title = "A Ruby Primer, Part 7 – Booleans"
+date = "2014-04-02T23:31:43-04:00"
 description = "Manipulating booleans and exploring logic with Ruby."
 draft = false
 tags = ["Development", "Ruby", "Booleans", "Command Line"]

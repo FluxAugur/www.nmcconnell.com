@@ -1,6 +1,6 @@
 +++
-title = "A Ruby Primer, Part 4 -- Outputting and inputting data"
-date = "2014-03-31"
+title = "A Ruby Primer, Part 4 – Outputting and inputting data"
+date = "2014-03-31T01:45:31-04:00"
 description = "Exploring how to input and output data with Ruby."
 draft = false
 tags = ["Development", "Ruby", "Data", "Command Line", "Input/Output"]

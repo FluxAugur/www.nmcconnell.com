@@ -1,6 +1,6 @@
 +++
-title = "A Ruby Primer, Part 11 -- Variables and constants"
-date = "2014-04-03"
+title = "A Ruby Primer, Part 11 – Variables and constants"
+date = "2014-04-03T12:25:41-04:00"
 description = "Exploring variables and constants with Ruby."
 draft = false
 tags = ["Development", "Ruby", "Variables", "Constants", "Command Line"]

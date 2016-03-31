@@ -91,3 +91,940 @@ LOG:   2016/03/19 09:10:37 thatswhyyoualwaysleaveanote.go:183: 34 tags created
 LOG:   2016/03/19 09:10:37 thatswhyyoualwaysleaveanote.go:183: 4 topics created
 LOG:   2016/03/19 09:10:37 thatswhyyoualwaysleaveanote.go:183: 1 courses created
 LOG:   2016/03/19 09:10:37 thatswhyyoualwaysleaveanote.go:183: in 469 ms
+LOG:   2016/03/19 09:49:15 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 09:49:15 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 09:49:15 thatswhyyoualwaysleaveanote.go:183: 27 pages created
+LOG:   2016/03/19 09:49:15 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 09:49:15 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 09:49:15 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 09:49:15 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 09:49:15 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 09:49:15 thatswhyyoualwaysleaveanote.go:183: in 319 ms
+LOG:   2016/03/19 09:49:15 thatswhyyoualwaysleaveanote.go:183: Watching for changes in /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/{data,content,layouts,static,themes}
+LOG:   2016/03/19 09:49:15 thatswhyyoualwaysleaveanote.go:175: Serving pages from memory
+LOG:   2016/03/19 09:49:15 thatswhyyoualwaysleaveanote.go:183: Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+LOG:   2016/03/19 09:52:55 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 09:52:55 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 09:52:55 thatswhyyoualwaysleaveanote.go:183: 27 pages created
+LOG:   2016/03/19 09:52:55 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 09:52:55 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 09:52:55 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 09:52:55 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 09:52:55 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 09:52:55 thatswhyyoualwaysleaveanote.go:183: in 115 ms
+LOG:   2016/03/19 09:53:09 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 09:53:09 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 09:53:09 thatswhyyoualwaysleaveanote.go:183: 27 pages created
+LOG:   2016/03/19 09:53:09 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 09:53:09 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 09:53:09 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 09:53:09 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 09:53:09 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 09:53:09 thatswhyyoualwaysleaveanote.go:183: in 130 ms
+LOG:   2016/03/19 09:53:09 thatswhyyoualwaysleaveanote.go:183: Watching for changes in /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/{data,content,layouts,static,themes}
+LOG:   2016/03/19 09:53:09 thatswhyyoualwaysleaveanote.go:175: Serving pages from memory
+LOG:   2016/03/19 09:53:09 thatswhyyoualwaysleaveanote.go:183: Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+LOG:   2016/03/19 09:57:46 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 09:57:46 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 09:57:46 thatswhyyoualwaysleaveanote.go:183: 27 pages created
+LOG:   2016/03/19 09:57:46 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 09:57:46 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 09:57:46 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 09:57:46 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 09:57:46 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 09:57:46 thatswhyyoualwaysleaveanote.go:183: in 119 ms
+LOG:   2016/03/19 10:01:18 thatswhyyoualwaysleaveanote.go:183: Static file changed, syncing
+
+LOG:   2016/03/19 10:01:23 thatswhyyoualwaysleaveanote.go:183: Static file changed, syncing
+
+LOG:   2016/03/19 10:01:32 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 10:01:32 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 10:01:32 thatswhyyoualwaysleaveanote.go:183: 27 pages created
+LOG:   2016/03/19 10:01:32 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 10:01:32 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 10:01:32 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 10:01:32 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 10:01:32 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 10:01:32 thatswhyyoualwaysleaveanote.go:183: in 131 ms
+LOG:   2016/03/19 10:01:32 thatswhyyoualwaysleaveanote.go:183: Watching for changes in /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/{data,content,layouts,static,themes}
+LOG:   2016/03/19 10:01:32 thatswhyyoualwaysleaveanote.go:175: Serving pages from memory
+LOG:   2016/03/19 10:01:32 thatswhyyoualwaysleaveanote.go:183: Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+WARN: 2016/03/19 Unable to locate layout for section post: [section/post.html _default/section.html _default/list.html indexes/post.html _default/indexes.html]
+WARN: 2016/03/19 Unable to locate layout for section quote: [section/quote.html _default/section.html _default/list.html indexes/quote.html _default/indexes.html]
+WARN: 2016/03/19 Unable to locate layout for section lesson: [section/lesson.html _default/section.html _default/list.html indexes/lesson.html _default/indexes.html]
+WARN: 2016/03/19 Unable to locate layout for section assignment: [section/assignment.html _default/section.html _default/list.html indexes/assignment.html _default/indexes.html]
+WARN: 2016/03/19 Unable to locate layout for section announcement: [section/announcement.html _default/section.html _default/list.html indexes/announcement.html _default/indexes.html]
+LOG:   2016/03/19 10:04:00 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 10:04:00 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 10:04:00 thatswhyyoualwaysleaveanote.go:183: 27 pages created
+LOG:   2016/03/19 10:04:00 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 10:04:00 thatswhyyoualwaysleaveanote.go:183: 0 categories created
+LOG:   2016/03/19 10:04:00 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 10:04:00 thatswhyyoualwaysleaveanote.go:183: in 96 ms
+WARN: 2016/03/19 Unable to locate layout for section quote: [section/quote.html _default/section.html _default/list.html indexes/quote.html _default/indexes.html]
+WARN: 2016/03/19 Unable to locate layout for section lesson: [section/lesson.html _default/section.html _default/list.html indexes/lesson.html _default/indexes.html]
+WARN: 2016/03/19 Unable to locate layout for section assignment: [section/assignment.html _default/section.html _default/list.html indexes/assignment.html _default/indexes.html]
+WARN: 2016/03/19 Unable to locate layout for section announcement: [section/announcement.html _default/section.html _default/list.html indexes/announcement.html _default/indexes.html]
+WARN: 2016/03/19 Unable to locate layout for section post: [section/post.html _default/section.html _default/list.html indexes/post.html _default/indexes.html]
+LOG:   2016/03/19 10:07:39 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 10:07:39 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 10:07:39 thatswhyyoualwaysleaveanote.go:183: 27 pages created
+LOG:   2016/03/19 10:07:39 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 10:07:39 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 10:07:39 thatswhyyoualwaysleaveanote.go:183: 0 categories created
+LOG:   2016/03/19 10:07:39 thatswhyyoualwaysleaveanote.go:183: in 89 ms
+WARN: 2016/03/19 Unable to locate layout for section quote: [section/quote.html _default/section.html _default/list.html indexes/quote.html _default/indexes.html]
+WARN: 2016/03/19 Unable to locate layout for section lesson: [section/lesson.html _default/section.html _default/list.html indexes/lesson.html _default/indexes.html]
+WARN: 2016/03/19 Unable to locate layout for section assignment: [section/assignment.html _default/section.html _default/list.html indexes/assignment.html _default/indexes.html]
+WARN: 2016/03/19 Unable to locate layout for section announcement: [section/announcement.html _default/section.html _default/list.html indexes/announcement.html _default/indexes.html]
+WARN: 2016/03/19 Unable to locate layout for section post: [section/post.html _default/section.html _default/list.html indexes/post.html _default/indexes.html]
+LOG:   2016/03/19 10:08:37 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 10:08:37 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 10:08:37 thatswhyyoualwaysleaveanote.go:183: 27 pages created
+LOG:   2016/03/19 10:08:37 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 10:08:37 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 10:08:37 thatswhyyoualwaysleaveanote.go:183: 0 categories created
+LOG:   2016/03/19 10:08:37 thatswhyyoualwaysleaveanote.go:183: in 89 ms
+WARN: 2016/03/19 Unable to locate layout for section assignment: [section/assignment.html _default/section.html _default/list.html indexes/assignment.html _default/indexes.html]
+WARN: 2016/03/19 Unable to locate layout for section announcement: [section/announcement.html _default/section.html _default/list.html indexes/announcement.html _default/indexes.html]
+WARN: 2016/03/19 Unable to locate layout for section quote: [section/quote.html _default/section.html _default/list.html indexes/quote.html _default/indexes.html]
+WARN: 2016/03/19 Unable to locate layout for section lesson: [section/lesson.html _default/section.html _default/list.html indexes/lesson.html _default/indexes.html]
+LOG:   2016/03/19 10:08:56 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 10:08:56 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 10:08:56 thatswhyyoualwaysleaveanote.go:183: 27 pages created
+LOG:   2016/03/19 10:08:56 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 10:08:56 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 10:08:56 thatswhyyoualwaysleaveanote.go:183: 0 categories created
+LOG:   2016/03/19 10:08:56 thatswhyyoualwaysleaveanote.go:183: in 96 ms
+ERROR: 2016/03/19 Error while rendering section assignment: template: section/assignment.html:7:16: executing "section/assignment.html" at <.Data.Pages.GroupByP...>: error calling GroupByParam: There is no such a param
+LOG:   2016/03/19 12:35:40 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 12:35:40 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 12:35:40 thatswhyyoualwaysleaveanote.go:183: 27 pages created
+LOG:   2016/03/19 12:35:40 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 12:35:40 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 12:35:40 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 12:35:40 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 12:35:40 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 12:35:40 thatswhyyoualwaysleaveanote.go:183: in 200 ms
+LOG:   2016/03/19 12:35:40 thatswhyyoualwaysleaveanote.go:183: Watching for changes in /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/{data,content,layouts,static,themes}
+LOG:   2016/03/19 12:35:40 thatswhyyoualwaysleaveanote.go:175: Serving pages from memory
+LOG:   2016/03/19 12:35:40 thatswhyyoualwaysleaveanote.go:183: Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+LOG:   2016/03/19 12:36:06 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 12:36:06 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 12:36:06 thatswhyyoualwaysleaveanote.go:183: 27 pages created
+LOG:   2016/03/19 12:36:06 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 12:36:06 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 12:36:06 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 12:36:06 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 12:36:06 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 12:36:06 thatswhyyoualwaysleaveanote.go:183: in 143 ms
+ERROR: 2016/03/19 Error while rendering section lesson: template: section/lesson.html:7:16: executing "section/lesson.html" at <.Data.Pages.GroupBy>: error calling GroupBy: courses is neither a field nor a method of Page
+LOG:   2016/03/19 12:36:48 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 12:36:48 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 12:36:48 thatswhyyoualwaysleaveanote.go:183: 27 pages created
+LOG:   2016/03/19 12:36:48 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 12:36:48 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 12:36:48 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 12:36:48 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 12:36:48 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 12:36:48 thatswhyyoualwaysleaveanote.go:183: in 398 ms
+ERROR: 2016/03/19 Error while rendering section lesson: template: section/lesson.html:7:16: executing "section/lesson.html" at <.Data.Pages.GroupBy>: error calling GroupBy: .Params.courses is neither a field nor a method of Page
+LOG:   2016/03/19 12:37:02 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 12:37:02 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 12:37:02 thatswhyyoualwaysleaveanote.go:183: 27 pages created
+LOG:   2016/03/19 12:37:02 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 12:37:02 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 12:37:02 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 12:37:02 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 12:37:02 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 12:37:02 thatswhyyoualwaysleaveanote.go:183: in 138 ms
+ERROR: 2016/03/19 Error while rendering section lesson: template: section/lesson.html:7:38: executing "section/lesson.html" at <.Params.courses>: invalid value; expected string
+LOG:   2016/03/19 12:37:12 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 12:37:12 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 12:37:12 thatswhyyoualwaysleaveanote.go:183: 27 pages created
+LOG:   2016/03/19 12:37:12 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 12:37:12 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 12:37:12 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 12:37:12 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 12:37:12 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 12:37:12 thatswhyyoualwaysleaveanote.go:183: in 134 ms
+ERROR: 2016/03/19 Error while rendering section post: template: section/post.html:7:16: executing "section/post.html" at <.Data.Pages.GroupByP...>: error calling GroupByParam: There is no such a param
+LOG:   2016/03/19 12:38:57 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 12:38:57 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 12:38:57 thatswhyyoualwaysleaveanote.go:183: 27 pages created
+LOG:   2016/03/19 12:38:57 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 12:38:57 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 12:38:57 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 12:38:57 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 12:38:57 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 12:38:57 thatswhyyoualwaysleaveanote.go:183: in 127 ms
+LOG:   2016/03/19 12:44:24 thatswhyyoualwaysleaveanote.go:175: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/content/quote/richard-francis-burton-1.html created
+LOG:   2016/03/19 12:44:24 thatswhyyoualwaysleaveanote.go:183: Editing quote/richard-francis-burton-1.html in atom.
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+ERROR: 2016/03/19 Error while rendering section post: html/template: "section/post.html" is an incomplete template
+LOG:   2016/03/19 12:44:25 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 12:44:25 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 12:44:25 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 12:44:25 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 12:44:25 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 12:44:25 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 12:44:25 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 12:44:25 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 12:44:25 thatswhyyoualwaysleaveanote.go:183: in 235 ms
+LOG:   2016/03/19 12:45:01 thatswhyyoualwaysleaveanote.go:175: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/content/quote/richard-francis-burton-1.md created
+LOG:   2016/03/19 12:45:01 thatswhyyoualwaysleaveanote.go:183: Editing quote/richard-francis-burton-1.md in atom.
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 12:45:02 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 12:45:02 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 12:45:02 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 12:45:02 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 12:45:02 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 12:45:02 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 12:45:02 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 12:45:02 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 12:45:02 thatswhyyoualwaysleaveanote.go:183: in 232 ms
+LOG:   2016/03/19 12:45:26 thatswhyyoualwaysleaveanote.go:175: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/content/content/quote/richard-francis-burton-1.md created
+LOG:   2016/03/19 12:45:26 thatswhyyoualwaysleaveanote.go:183: Editing content/quote/richard-francis-burton-1.md in atom.
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 12:45:27 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 12:45:27 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 12:45:27 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 12:45:27 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 12:45:27 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 12:45:27 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 12:45:27 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 12:45:27 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 12:45:27 thatswhyyoualwaysleaveanote.go:183: in 160 ms
+ERROR: 2016/03/19 /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/content/quote already exists
+LOG:   2016/03/19 12:48:23 thatswhyyoualwaysleaveanote.go:175: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/content/quotes/richard-francis-burton-1.md created
+LOG:   2016/03/19 12:48:23 thatswhyyoualwaysleaveanote.go:183: Editing quotes/richard-francis-burton-1.md in atom.
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 12:48:24 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 12:48:24 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 12:48:24 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 12:48:24 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 12:48:24 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 12:48:24 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 12:48:24 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 12:48:24 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 12:48:24 thatswhyyoualwaysleaveanote.go:183: in 250 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 12:49:12 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 12:49:12 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 12:49:12 thatswhyyoualwaysleaveanote.go:183: 27 pages created
+LOG:   2016/03/19 12:49:12 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 12:49:12 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 12:49:12 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 12:49:12 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 12:49:12 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 12:49:12 thatswhyyoualwaysleaveanote.go:183: in 273 ms
+LOG:   2016/03/19 12:50:05 thatswhyyoualwaysleaveanote.go:175: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/content/quote/richard-francis-burton-1.md created
+LOG:   2016/03/19 12:50:05 thatswhyyoualwaysleaveanote.go:183: Editing quote/richard-francis-burton-1.md in atom.
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 12:50:06 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 12:50:06 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 12:50:06 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 12:50:06 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 12:50:06 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 12:50:06 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 12:50:06 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 12:50:06 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 12:50:06 thatswhyyoualwaysleaveanote.go:183: in 152 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 12:51:51 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 12:51:51 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 12:51:51 thatswhyyoualwaysleaveanote.go:183: 27 pages created
+LOG:   2016/03/19 12:51:51 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 12:51:51 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 12:51:51 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 12:51:51 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 12:51:51 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 12:51:51 thatswhyyoualwaysleaveanote.go:183: in 218 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 12:52:40 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 12:52:40 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 12:52:40 thatswhyyoualwaysleaveanote.go:183: 27 pages created
+LOG:   2016/03/19 12:52:40 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 12:52:40 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 12:52:40 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 12:52:40 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 12:52:40 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 12:52:40 thatswhyyoualwaysleaveanote.go:183: in 207 ms
+LOG:   2016/03/19 12:52:46 thatswhyyoualwaysleaveanote.go:175: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/content/quote/richard-francis-burton-1.md created
+LOG:   2016/03/19 12:52:46 thatswhyyoualwaysleaveanote.go:183: Editing quote/richard-francis-burton-1.md in atom.
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 12:52:47 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 12:52:47 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 12:52:47 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 12:52:47 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 12:52:47 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 12:52:47 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 12:52:47 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 12:52:47 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 12:52:47 thatswhyyoualwaysleaveanote.go:183: in 151 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 12:54:17 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 12:54:17 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 12:54:17 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 12:54:17 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 12:54:17 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 12:54:17 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 12:54:17 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 12:54:17 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 12:54:17 thatswhyyoualwaysleaveanote.go:183: in 283 ms
+LOG:   2016/03/19 12:54:42 thatswhyyoualwaysleaveanote.go:175: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/content/quote/honore-de-balzac-1 created
+LOG:   2016/03/19 12:54:42 thatswhyyoualwaysleaveanote.go:183: Editing quote/honore-de-balzac-1 in atom.
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 12:54:43 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 12:54:43 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 12:54:43 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 12:54:43 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 12:54:43 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 12:54:43 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 12:54:43 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 12:54:43 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 12:54:43 thatswhyyoualwaysleaveanote.go:183: in 205 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 12:59:10 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 12:59:10 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 12:59:10 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 12:59:10 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 12:59:10 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 12:59:10 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 12:59:10 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 12:59:10 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 12:59:10 thatswhyyoualwaysleaveanote.go:183: in 265 ms
+LOG:   2016/03/19 12:59:13 thatswhyyoualwaysleaveanote.go:175: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/content/quote/honore-de-balzac-1 created
+LOG:   2016/03/19 12:59:13 thatswhyyoualwaysleaveanote.go:183: Editing quote/honore-de-balzac-1 in atom.
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 12:59:14 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 12:59:14 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 12:59:14 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 12:59:14 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 12:59:14 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 12:59:14 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 12:59:14 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 12:59:14 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 12:59:14 thatswhyyoualwaysleaveanote.go:183: in 177 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 12:59:47 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 12:59:47 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 12:59:47 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 12:59:47 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 12:59:47 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 12:59:47 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 12:59:47 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 12:59:47 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 12:59:47 thatswhyyoualwaysleaveanote.go:183: in 196 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 12:59:48 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 12:59:48 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 12:59:48 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 12:59:48 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 12:59:48 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 12:59:48 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 12:59:48 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 12:59:48 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 12:59:48 thatswhyyoualwaysleaveanote.go:183: in 234 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:00:00 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 13:00:00 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:00:00 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 13:00:00 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:00:00 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:00:00 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:00:00 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:00:00 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:00:00 thatswhyyoualwaysleaveanote.go:183: in 144 ms
+LOG:   2016/03/19 13:00:02 thatswhyyoualwaysleaveanote.go:175: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/content/quote/honore-de-balzac-1 created
+LOG:   2016/03/19 13:00:02 thatswhyyoualwaysleaveanote.go:183: Editing quote/honore-de-balzac-1 in atom.
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:00:03 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 13:00:03 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:00:03 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 13:00:03 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:00:03 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:00:03 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:00:03 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:00:03 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:00:03 thatswhyyoualwaysleaveanote.go:183: in 273 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:02:14 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 13:02:14 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:02:14 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 13:02:14 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:02:14 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:02:14 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:02:14 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:02:14 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:02:14 thatswhyyoualwaysleaveanote.go:183: in 215 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:02:35 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 13:02:35 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:02:35 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 13:02:35 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:02:35 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:02:35 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:02:35 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:02:35 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:02:35 thatswhyyoualwaysleaveanote.go:183: in 333 ms
+LOG:   2016/03/19 13:02:40 thatswhyyoualwaysleaveanote.go:175: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/content/quote/honore-de-balzac-1 created
+LOG:   2016/03/19 13:02:40 thatswhyyoualwaysleaveanote.go:183: Editing quote/honore-de-balzac-1 in atom.
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:02:41 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 13:02:41 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:02:41 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 13:02:41 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:02:41 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:02:41 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:02:41 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:02:41 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:02:41 thatswhyyoualwaysleaveanote.go:183: in 171 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:11:23 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 13:11:23 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:11:23 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 13:11:23 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:11:23 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:11:23 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:11:23 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:11:23 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:11:23 thatswhyyoualwaysleaveanote.go:183: in 153 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:12:05 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 13:12:05 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:12:05 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 13:12:05 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:12:05 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:12:05 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:12:05 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:12:05 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:12:05 thatswhyyoualwaysleaveanote.go:183: in 145 ms
+ERROR: 2016/03/19 Error processing archetype file: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/themes/skelethorn/archetypes/quote.md
+ERROR: 2016/03/19 Unable to Cast <nil> to map[string]interface{}
+ERROR: 2016/03/19 Error processing archetype file: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/themes/skelethorn/archetypes/quote.md
+ERROR: 2016/03/19 Unable to Cast <nil> to map[string]interface{}
+ERROR: 2016/03/19 Error processing archetype file: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/themes/skelethorn/archetypes/quote.md
+ERROR: 2016/03/19 Unable to Cast <nil> to map[string]interface{}
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:13:19 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 13:13:19 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:13:19 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 13:13:19 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:13:19 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:13:19 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:13:19 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:13:19 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:13:19 thatswhyyoualwaysleaveanote.go:183: in 136 ms
+ERROR: 2016/03/19 Error processing archetype file: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/themes/skelethorn/archetypes/quote.md
+ERROR: 2016/03/19 Unable to Cast <nil> to map[string]interface{}
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:13:35 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 13:13:35 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:13:35 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 13:13:35 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:13:35 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:13:35 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:13:35 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:13:35 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:13:35 thatswhyyoualwaysleaveanote.go:183: in 139 ms
+ERROR: 2016/03/19 Error processing archetype file: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/themes/skelethorn/archetypes/quote.md
+ERROR: 2016/03/19 Unable to Cast <nil> to map[string]interface{}
+ERROR: 2016/03/19 Error processing archetype file: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/themes/skelethorn/archetypes/quote.md
+ERROR: 2016/03/19 Unable to Cast <nil> to map[string]interface{}
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:14:12 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 13:14:12 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:14:12 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 13:14:12 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:14:12 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:14:12 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:14:12 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:14:12 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:14:12 thatswhyyoualwaysleaveanote.go:183: in 146 ms
+ERROR: 2016/03/19 Error processing archetype file: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/themes/skelethorn/archetypes/quote.md
+ERROR: 2016/03/19 Unable to Cast <nil> to map[string]interface{}
+LOG:   2016/03/19 13:14:57 thatswhyyoualwaysleaveanote.go:175: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/content/quote/honore-de-balzac-1 created
+LOG:   2016/03/19 13:14:57 thatswhyyoualwaysleaveanote.go:183: Editing quote/honore-de-balzac-1 in atom.
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:14:58 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 13:14:58 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:14:58 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 13:14:58 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:14:58 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:14:58 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:14:58 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:14:58 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:14:58 thatswhyyoualwaysleaveanote.go:183: in 145 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:15:17 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 13:15:17 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:15:17 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 13:15:17 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:15:17 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:15:17 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:15:17 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:15:17 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:15:17 thatswhyyoualwaysleaveanote.go:183: in 147 ms
+LOG:   2016/03/19 13:15:17 thatswhyyoualwaysleaveanote.go:175: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/content/quote/honore-de-balzac-1 created
+LOG:   2016/03/19 13:15:17 thatswhyyoualwaysleaveanote.go:183: Editing quote/honore-de-balzac-1 in atom.
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:15:18 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 13:15:18 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:15:18 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 13:15:18 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:15:18 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:15:18 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:15:18 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:15:18 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:15:18 thatswhyyoualwaysleaveanote.go:183: in 154 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:15:31 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 13:15:31 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:15:31 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 13:15:31 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:15:31 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:15:31 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:15:31 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:15:31 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:15:31 thatswhyyoualwaysleaveanote.go:183: in 152 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:15:39 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 13:15:39 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:15:39 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 13:15:39 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:15:39 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:15:39 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:15:39 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:15:39 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:15:39 thatswhyyoualwaysleaveanote.go:183: in 144 ms
+ERROR: 2016/03/19 Near line 5 (last key parsed 'originator'): Expected value but found '{' instead.
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:15:57 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 13:15:57 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:15:57 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 13:15:57 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:15:57 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:15:57 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:15:57 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:15:57 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:15:57 thatswhyyoualwaysleaveanote.go:183: in 154 ms
+LOG:   2016/03/19 13:15:58 thatswhyyoualwaysleaveanote.go:175: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/content/quote/honore-de-balzac-1 created
+LOG:   2016/03/19 13:15:58 thatswhyyoualwaysleaveanote.go:183: Editing quote/honore-de-balzac-1 in atom.
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:15:59 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 13:15:59 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:15:59 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 13:15:59 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:15:59 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:15:59 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:15:59 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:15:59 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:15:59 thatswhyyoualwaysleaveanote.go:183: in 225 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:16:10 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 13:16:10 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:16:10 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 13:16:10 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:16:10 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:16:10 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:16:10 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:16:10 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:16:10 thatswhyyoualwaysleaveanote.go:183: in 133 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:16:15 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 13:16:15 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:16:15 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 13:16:15 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:16:15 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:16:15 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:16:15 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:16:15 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:16:15 thatswhyyoualwaysleaveanote.go:183: in 129 ms
+LOG:   2016/03/19 13:16:18 thatswhyyoualwaysleaveanote.go:175: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/content/quote/honore-de-balzac-1 created
+LOG:   2016/03/19 13:16:18 thatswhyyoualwaysleaveanote.go:183: Editing quote/honore-de-balzac-1 in atom.
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:16:19 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 13:16:19 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:16:19 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 13:16:19 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:16:19 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:16:19 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:16:19 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:16:19 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:16:19 thatswhyyoualwaysleaveanote.go:183: in 208 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:16:41 thatswhyyoualwaysleaveanote.go:175: 1 of 1 draft rendered
+LOG:   2016/03/19 13:16:41 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:16:41 thatswhyyoualwaysleaveanote.go:183: 28 pages created
+LOG:   2016/03/19 13:16:41 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:16:41 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:16:41 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:16:41 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:16:41 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:16:41 thatswhyyoualwaysleaveanote.go:183: in 120 ms
+LOG:   2016/03/19 13:16:44 thatswhyyoualwaysleaveanote.go:175: /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/content/quote/honore-de-balzac-1.md created
+LOG:   2016/03/19 13:16:44 thatswhyyoualwaysleaveanote.go:183: Editing quote/honore-de-balzac-1.md in atom.
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:16:45 thatswhyyoualwaysleaveanote.go:175: 2 of 2 drafts rendered
+LOG:   2016/03/19 13:16:45 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:16:45 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:16:45 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:16:45 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:16:45 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:16:45 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:16:45 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:16:45 thatswhyyoualwaysleaveanote.go:183: in 233 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:17:28 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:17:28 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:17:28 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:17:28 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:17:28 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:17:28 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:17:28 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:17:28 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:17:28 thatswhyyoualwaysleaveanote.go:183: in 150 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:22:06 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:22:06 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:22:06 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:22:06 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:22:06 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:22:06 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:22:06 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:22:06 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:22:06 thatswhyyoualwaysleaveanote.go:183: in 126 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:22:18 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:22:18 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:22:18 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:22:18 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:22:18 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:22:18 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:22:18 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:22:18 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:22:18 thatswhyyoualwaysleaveanote.go:183: in 133 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:22:47 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:22:47 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:22:47 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:22:47 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:22:47 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:22:47 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:22:47 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:22:47 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:22:47 thatswhyyoualwaysleaveanote.go:183: in 144 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:22:55 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:22:55 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:22:55 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:22:55 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:22:55 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:22:55 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:22:55 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:22:55 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:22:55 thatswhyyoualwaysleaveanote.go:183: in 169 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:23:49 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:23:49 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:23:49 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:23:49 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:23:49 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:23:49 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:23:49 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:23:49 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:23:49 thatswhyyoualwaysleaveanote.go:183: in 124 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:24:05 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:24:05 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:24:05 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:24:05 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:24:05 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:24:05 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:24:05 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:24:05 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:24:05 thatswhyyoualwaysleaveanote.go:183: in 137 ms
+ERROR: 2016/03/19 template: section/post.html:7: unexpected "#" in operand
+LOG:   2016/03/19 13:24:57 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:24:57 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:24:57 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:24:57 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:24:57 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:24:57 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:24:57 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:24:57 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:24:57 thatswhyyoualwaysleaveanote.go:183: in 138 ms
+ERROR: 2016/03/19 Error while rendering section post: template: section/post.html:7:16: executing "section/post.html" at <.Data.Pages.GroupByP...>: wrong number of args for GroupByParam: want at least 1 got 0
+LOG:   2016/03/19 13:26:14 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:26:14 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:26:14 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:26:14 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:26:14 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:26:14 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:26:14 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:26:14 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:26:14 thatswhyyoualwaysleaveanote.go:183: in 114 ms
+ERROR: 2016/03/19 Error while rendering section post: template: section/post.html:7:32: executing "section/post.html" at <$.Param.courses>: wrong number of args for Param: want 1 got 0
+LOG:   2016/03/19 13:26:25 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:26:25 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:26:25 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:26:25 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:26:25 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:26:25 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:26:25 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:26:25 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:26:25 thatswhyyoualwaysleaveanote.go:183: in 151 ms
+ERROR: 2016/03/19 Error while rendering section post: template: section/post.html:7:16: executing "section/post.html" at <.Data.Pages.GroupBy>: error calling GroupBy: Posts is neither a field nor a method of Page
+LOG:   2016/03/19 13:27:06 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:27:06 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:27:06 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:27:06 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:27:06 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:27:06 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:27:06 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:27:06 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:27:06 thatswhyyoualwaysleaveanote.go:183: in 142 ms
+ERROR: 2016/03/19 Error while rendering section lesson: template: section/lesson.html:7:38: executing "section/lesson.html" at <.Params.courses>: invalid value; expected string
+ERROR: 2016/03/19 Error while rendering section assignment: template: section/assignment.html:7:16: executing "section/assignment.html" at <.Data.Pages.GroupByP...>: error calling GroupByParam: There is no such a param
+LOG:   2016/03/19 13:27:26 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:27:26 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:27:26 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:27:26 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:27:26 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:27:26 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:27:26 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:27:26 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:27:26 thatswhyyoualwaysleaveanote.go:183: in 141 ms
+LOG:   2016/03/19 13:27:26 thatswhyyoualwaysleaveanote.go:183: Watching for changes in /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/{data,content,layouts,static,themes}
+LOG:   2016/03/19 13:27:26 thatswhyyoualwaysleaveanote.go:175: Serving pages from memory
+LOG:   2016/03/19 13:27:26 thatswhyyoualwaysleaveanote.go:183: Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+LOG:   2016/03/19 13:29:22 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:29:22 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:29:22 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:29:22 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:29:22 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:29:22 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:29:22 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:29:22 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:29:22 thatswhyyoualwaysleaveanote.go:183: in 151 ms
+ERROR: 2016/03/19 Error while rendering section lesson: template: section/lesson.html:7:38: executing "section/lesson.html" at <.Params.courses>: invalid value; expected string
+ERROR: 2016/03/19 Error while rendering section assignment: template: section/assignment.html:7:16: executing "section/assignment.html" at <.Data.Pages.GroupByP...>: error calling GroupByParam: There is no such a param
+LOG:   2016/03/19 13:29:53 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:29:53 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:29:53 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:29:53 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:29:53 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:29:53 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:29:53 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:29:53 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:29:53 thatswhyyoualwaysleaveanote.go:183: in 152 ms
+LOG:   2016/03/19 13:29:53 thatswhyyoualwaysleaveanote.go:183: Watching for changes in /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/{data,content,layouts,static,themes}
+LOG:   2016/03/19 13:29:53 thatswhyyoualwaysleaveanote.go:175: Serving pages from memory
+LOG:   2016/03/19 13:29:53 thatswhyyoualwaysleaveanote.go:183: Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+LOG:   2016/03/19 13:30:15 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:30:15 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:30:15 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:30:15 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:30:15 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:30:15 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:30:15 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:30:15 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:30:15 thatswhyyoualwaysleaveanote.go:183: in 132 ms
+ERROR: 2016/03/19 Error while rendering section lesson: template: section/lesson.html:7:38: executing "section/lesson.html" at <.Params.courses>: invalid value; expected string
+LOG:   2016/03/19 13:30:43 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:30:43 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:30:43 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:30:43 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:30:43 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:30:43 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:30:43 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:30:43 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:30:43 thatswhyyoualwaysleaveanote.go:183: in 136 ms
+LOG:   2016/03/19 13:30:43 thatswhyyoualwaysleaveanote.go:183: Watching for changes in /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/{data,content,layouts,static,themes}
+LOG:   2016/03/19 13:30:43 thatswhyyoualwaysleaveanote.go:175: Serving pages from memory
+LOG:   2016/03/19 13:30:43 thatswhyyoualwaysleaveanote.go:183: Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+LOG:   2016/03/19 13:31:16 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:31:16 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:31:16 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:31:16 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:31:16 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:31:16 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:31:16 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:31:16 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:31:16 thatswhyyoualwaysleaveanote.go:183: in 142 ms
+LOG:   2016/03/19 13:31:16 thatswhyyoualwaysleaveanote.go:183: Watching for changes in /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/{data,content,layouts,static,themes}
+LOG:   2016/03/19 13:31:16 thatswhyyoualwaysleaveanote.go:175: Serving pages from memory
+LOG:   2016/03/19 13:31:16 thatswhyyoualwaysleaveanote.go:183: Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+ERROR: 2016/03/19 Failed to parse date '2014-02-18T08:34:15-4:00' in page announcement/celebrating-launch-week-with-hello-world-code.md
+ERROR: 2016/03/19 Failed to parse date '2014-02-16T14:36:22-4:00' in page announcement/welcome-to-disciples-of-code.md
+LOG:   2016/03/19 13:32:49 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:32:49 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:32:49 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:32:49 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:32:49 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:32:49 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:32:49 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:32:49 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:32:49 thatswhyyoualwaysleaveanote.go:183: in 155 ms
+LOG:   2016/03/19 13:32:49 thatswhyyoualwaysleaveanote.go:183: Watching for changes in /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/{data,content,layouts,static,themes}
+LOG:   2016/03/19 13:32:49 thatswhyyoualwaysleaveanote.go:175: Serving pages from memory
+LOG:   2016/03/19 13:32:49 thatswhyyoualwaysleaveanote.go:183: Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+ERROR: 2016/03/19 Failed to parse date '2014-02-16T14:36:22-4:00' in page announcement/welcome-to-disciples-of-code.md
+LOG:   2016/03/19 13:33:30 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:33:30 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:33:30 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:33:30 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:33:30 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:33:30 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:33:30 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:33:30 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:33:30 thatswhyyoualwaysleaveanote.go:183: in 148 ms
+ERROR: 2016/03/19 Failed to parse date '2014-02-16T14:36:22-4:00' in page announcement/welcome-to-disciples-of-code.md
+LOG:   2016/03/19 13:34:34 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:34:34 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:34:34 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:34:34 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:34:34 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:34:34 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:34:34 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:34:34 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:34:34 thatswhyyoualwaysleaveanote.go:183: in 143 ms
+LOG:   2016/03/19 13:34:34 thatswhyyoualwaysleaveanote.go:183: Watching for changes in /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/{data,content,layouts,static,themes}
+LOG:   2016/03/19 13:34:34 thatswhyyoualwaysleaveanote.go:175: Serving pages from memory
+LOG:   2016/03/19 13:34:34 thatswhyyoualwaysleaveanote.go:183: Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+LOG:   2016/03/19 13:35:11 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:35:11 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:35:11 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:35:11 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:35:11 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:35:11 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:35:11 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:35:11 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:35:11 thatswhyyoualwaysleaveanote.go:183: in 163 ms
+LOG:   2016/03/19 13:35:11 thatswhyyoualwaysleaveanote.go:183: Watching for changes in /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/{data,content,layouts,static,themes}
+LOG:   2016/03/19 13:35:11 thatswhyyoualwaysleaveanote.go:175: Serving pages from memory
+LOG:   2016/03/19 13:35:11 thatswhyyoualwaysleaveanote.go:183: Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+LOG:   2016/03/19 13:35:38 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:35:38 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:35:38 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:35:38 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:35:38 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:35:38 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:35:38 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:35:38 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:35:38 thatswhyyoualwaysleaveanote.go:183: in 148 ms
+LOG:   2016/03/19 13:44:56 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:44:56 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:44:56 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:44:56 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:44:56 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:44:56 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:44:56 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:44:56 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:44:56 thatswhyyoualwaysleaveanote.go:183: in 125 ms
+LOG:   2016/03/19 13:46:02 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 13:46:02 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 13:46:02 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 13:46:02 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 13:46:02 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 13:46:02 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 13:46:02 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 13:46:02 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 13:46:02 thatswhyyoualwaysleaveanote.go:183: in 164 ms
+CRITICAL: 2016/03/19 Failed to read data from authors/nathanial-l-mcconnell.toml/nathanial-l-mcconnell.toml: Near line 0 (last key parsed ''): Bare keys cannot contain ':'.
+CRITICAL: 2016/03/19 Failed to read data from authors/nathanial-l-mcconnell.toml/nathanial-l-mcconnell.toml: Near line 0 (last key parsed ''): Bare keys cannot contain ':'.
+CRITICAL: 2016/03/19 Failed to read data from authors/nathanial-l-mcconnell.toml/nathanial-l-mcconnell.toml: Near line 0 (last key parsed ''): Bare keys cannot contain ':'.
+LOG:   2016/03/19 14:13:30 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 14:13:30 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 14:13:30 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 14:13:30 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 14:13:30 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 14:13:30 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 14:13:30 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 14:13:30 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 14:13:30 thatswhyyoualwaysleaveanote.go:183: in 162 ms
+LOG:   2016/03/19 14:13:30 thatswhyyoualwaysleaveanote.go:183: Watching for changes in /Users/nathanial/Developer/FluxAugur/www.nmcconnell.com/{data,content,layouts,static,themes}
+LOG:   2016/03/19 14:13:30 thatswhyyoualwaysleaveanote.go:175: Serving pages from memory
+LOG:   2016/03/19 14:13:30 thatswhyyoualwaysleaveanote.go:183: Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+LOG:   2016/03/19 14:22:36 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 14:22:36 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 14:22:36 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 14:22:36 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 14:22:36 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 14:22:36 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 14:22:36 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 14:22:36 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 14:22:36 thatswhyyoualwaysleaveanote.go:183: in 253 ms
+LOG:   2016/03/19 14:25:28 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 14:25:28 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 14:25:28 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 14:25:28 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 14:25:28 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 14:25:28 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 14:25:28 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 14:25:28 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 14:25:28 thatswhyyoualwaysleaveanote.go:183: in 208 ms
+LOG:   2016/03/19 14:25:44 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 14:25:44 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 14:25:44 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 14:25:44 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 14:25:44 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 14:25:44 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 14:25:44 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 14:25:44 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 14:25:44 thatswhyyoualwaysleaveanote.go:183: in 258 ms
+LOG:   2016/03/19 14:25:49 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 14:25:49 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 14:25:49 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 14:25:49 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 14:25:49 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 14:25:49 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 14:25:49 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 14:25:49 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 14:25:49 thatswhyyoualwaysleaveanote.go:183: in 165 ms
+LOG:   2016/03/19 14:29:49 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 14:29:49 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 14:29:49 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 14:29:49 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 14:29:49 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 14:29:49 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 14:29:49 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 14:29:49 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 14:29:49 thatswhyyoualwaysleaveanote.go:183: in 238 ms
+LOG:   2016/03/19 14:30:00 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 14:30:00 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 14:30:00 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 14:30:00 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 14:30:00 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 14:30:00 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 14:30:00 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 14:30:00 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 14:30:00 thatswhyyoualwaysleaveanote.go:183: in 269 ms
+LOG:   2016/03/19 14:30:26 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 14:30:26 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 14:30:26 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 14:30:26 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 14:30:26 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 14:30:26 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 14:30:26 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 14:30:26 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 14:30:26 thatswhyyoualwaysleaveanote.go:183: in 162 ms
+LOG:   2016/03/19 14:33:13 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 14:33:14 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 14:33:14 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 14:33:14 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 14:33:14 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 14:33:14 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 14:33:14 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 14:33:14 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 14:33:14 thatswhyyoualwaysleaveanote.go:183: in 320 ms
+LOG:   2016/03/19 14:34:45 thatswhyyoualwaysleaveanote.go:175: 0 draft content
+LOG:   2016/03/19 14:34:45 thatswhyyoualwaysleaveanote.go:175: 0 future content
+LOG:   2016/03/19 14:34:45 thatswhyyoualwaysleaveanote.go:183: 29 pages created
+LOG:   2016/03/19 14:34:45 thatswhyyoualwaysleaveanote.go:183: 1 paginator pages created
+LOG:   2016/03/19 14:34:45 thatswhyyoualwaysleaveanote.go:183: 4 topics created
+LOG:   2016/03/19 14:34:45 thatswhyyoualwaysleaveanote.go:183: 1 courses created
+LOG:   2016/03/19 14:34:45 thatswhyyoualwaysleaveanote.go:183: 1 series created
+LOG:   2016/03/19 14:34:45 thatswhyyoualwaysleaveanote.go:183: 34 tags created
+LOG:   2016/03/19 14:34:45 thatswhyyoualwaysleaveanote.go:183: in 188 ms

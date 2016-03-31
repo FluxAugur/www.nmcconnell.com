@@ -1,6 +1,6 @@
 +++
-title = "Disciples of Code: Decoded, Part 3 -- Discipline as disciples"
-date = "2014-02-17"
+title = "Disciples of Code: Decoded, Part 3 – Discipline as disciples"
+date = "2014-02-17T11:13:12-04:00"
 description = "Discipline is important in learning any new skill."
 draft = false
 tags = ["Development", "Ruby", "Knowledge", "Learn", "Discipline"]

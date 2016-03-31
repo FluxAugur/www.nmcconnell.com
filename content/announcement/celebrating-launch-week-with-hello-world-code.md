@@ -1,6 +1,6 @@
 +++
 title = "Celebrating Launch Week with 'Hello, World' code"
-date = "2014-02-18"
+date = "2014-02-18T12:25:54-04:00"
 description = "Launch Week kicks off with Ruby's 'Hello, World'."
 draft = false
 tags = ["Development", "Ruby", "Hello, World", "Facebook"]
